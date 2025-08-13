@@ -1,0 +1,34 @@
+package myjsp;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+public class DepartmentUtil {
+	public List<String> getDeptList() throws Exception {
+		List<String> list = new  ArrayList<String>();
+		
+		Context initContext = new InitialContext();
+		Context envContext = (Context) initContext.lookup("java:comp/env");
+		DataSource dataSource = (DataSource) envContext.lookup("jdbc/mydb");
+		
+		Connection connection = dataSource.getConnection();
+		String sql = "select CONCAT(first_name, last_name) from employees where job_id = ?";
+		PreparedStatement psmt = connection.prepareStatement(sql);
+		ResultSet rs  = psmt.executeQuery();
+		
+		
+		
+		return list;
+				
+	}
+	
+	
+}

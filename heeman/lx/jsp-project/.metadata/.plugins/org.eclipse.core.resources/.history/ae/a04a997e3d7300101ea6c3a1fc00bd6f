@@ -1,0 +1,55 @@
+<%@page import="java.util.List"%>
+<%@page import="myjsp.EmpUtil"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+.relative {
+  
+  d-flex
+  position: relative;
+}
+
+</style>
+
+
+
+</head>
+<body>
+<%--
+	클라이언트로 부터 전송된 데이터를 추출한다.
+ --%>
+<%
+	EmpUtil empUtil = new EmpUtil();
+	String jobId = request.getParameter("jobId");
+	List<String> DeptNameList = empUtil.getDeptList(jobId);
+%>
+
+<div class="relative">
+	<h1><%=jobId %>의 부서원 목록</h1>
+</div>
+
+
+
+
+
+<%
+	
+	for(String DeptName : DeptNameList) {
+				
+		out.println(DeptName + "<br>");
+	}
+%>
+
+
+
+
+</body>
+</html>

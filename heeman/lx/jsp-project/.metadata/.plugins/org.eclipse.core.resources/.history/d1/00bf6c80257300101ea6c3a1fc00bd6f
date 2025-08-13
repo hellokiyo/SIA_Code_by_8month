@@ -1,0 +1,31 @@
+package myjsp;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+
+public class EmpUtil {
+	public static String[] getJobList() throws Exception{
+		String[] result = null;
+		
+		Context initContext = new InitialContext();
+		Context envContext = (Context) initContext.lookup("java:comp/env");
+		DataSource dataSource = (DataSource) envContext.lookup("jdbc/mydb");
+		Connection connection = dataSource.getConnection();
+		String sql = "select distinct job_id from employees";
+		PreparedStatement psmt = connection.prepareStatement(sql);
+		ResultSet rs  = psmt.executeQuery();
+		while(rs.next()) {
+			//out.println(rs.getString(1)+ "<br>");
+		}
+		connection.close();
+		
+		
+		return result;
+	}
+}
