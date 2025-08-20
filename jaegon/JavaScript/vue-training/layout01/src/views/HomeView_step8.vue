@@ -1,3 +1,4 @@
+
 <template>
 
   <!-- 상단 타이틀 추가하기 -->
@@ -24,87 +25,52 @@
     </div>
 
     <!-- 메인 영역 -->
-    <div class="flex-grow-1 overflow-auto bg-light p-3">
-      <div class="d-flex flex-row h-200px mb-3">
+    <div class="flex-grow-1 overflow-auto bg-secondary p-lg-20 h-90" style="padding-bottom: 60px;">
 
-        <!-- 왼쪽 컬럼 -->
-        <div class="flex-fill d-flex flex-column me-2">
-          <!-- 오늘의 등산로 (위쪽 큰 영역) -->
-          <div class="flex-fill bg-primary text-white d-flex align-items-center justify-content-center mb-2 rounded">
-            <div class="text-center">
-              <div class="fw-bold">오늘의 등산로</div>
-              <small>추천 코스</small>
-            </div>
-          </div>
-          <!-- 하단 두 개 영역 -->
-          <div class="d-flex flex-row h-80px">
-            <div class="flex-fill bg-info text-white d-flex align-items-center justify-content-center me-1 rounded">
-              <small>등산<br>나만의 등산기록</small>
-            </div>
-            <div class="flex-fill bg-primary text-white d-flex align-items-center justify-content-center ms-1 rounded">
-              <small>지휘센터<br>구조요청 및 신고</small>
-            </div>
-          </div>
-        </div>
+      <h1>메인 영역</h1>
 
-        <!-- 오른쪽 컬럼 -->
-        <div class="flex-fill d-flex flex-column ms-2">
-          <!-- 민원신청 -->
-          <div class="bg-warning text-white d-flex align-items-center justify-content-center mb-2 rounded h-60px">
-            <div class="text-center">
-              <div class="fw-bold">민원신청</div>
-              <small>간편하게 신청하세요</small>
-            </div>
-          </div>
-          <!-- 긴급 -->
-          <div class="flex-fill bg-danger text-white d-flex align-items-center justify-content-center rounded">
-            <div class="text-center">
-              <div class="fw-bold">긴급</div>
-              <small>SOS 신고</small>
-            </div>
-          </div>
-        </div>
+      <div class="d-flex flex-column border h-100px">
+
+        <div class="flex-fill bg-primary text-white">첫번째</div>
+
       </div>
 
-      <!-- 어서와 등산은 처음이지? 섹션 -->
-      <div class="mb-4">
-        <h6 class="fw-bold mb-3 text-dark">어서와 등산은 처음이지?</h6>
-        <div class="d-flex justify-content-between">
-          <div class="rounded-circle overflow-hidden w-60px h-60px d-flex align-items-center justify-content-center bg-light">
-            <img class="object-contain w-100 h-100" src="@/assets/images/climb.png">
-          </div>
-          <div class="rounded-circle overflow-hidden w-60px h-60px d-flex align-items-center justify-content-center bg-light">
-            <img class="object-contain w-100 h-100" src="@/assets/images/people.png">
-          </div>
-          <div class="rounded-circle overflow-hidden w-60px h-60px d-flex align-items-center justify-content-center bg-light">
-            <img class="object-contain h-60px w-60px" src="@/assets/images/clock.png">
-          </div>
-          <div class="rounded-circle overflow-hidden w-60px h-60px d-flex align-items-center justify-content-center bg-light">
-            <img class="object-contain w-100 h-100" src="@/assets/images/mountaion.png">
-          </div>
-          <div class="rounded-circle overflow-hidden w-60px h-60px d-flex align-items-center justify-content-center bg-light">
-            <img class="object-contain w-100 h-100" src="@/assets/images/map.png">
-          </div>
-        </div>
+      <div class="d-flex flex-column border h-200px">
+
+        <div class="flex-fill bg-primary text-white">첫번째</div>
+        <div class="flex-fill bg-info text-white">두번째</div>
+
       </div>
 
-      <!-- 지금 가장 화한 계절별 섹션 -->
-      <div class="mb-4">
-        <h6 class="fw-bold mb-3 text-dark">지금 가장 화한 계절별</h6>
-        <div class="d-flex flex-row h-100px">
-          <div class="flex-fill bg-primary text-white d-flex align-items-center justify-content-center me-2 rounded">
-            <span class="text-center">봄 등산로</span>
-          </div>
-          <div class="flex-fill bg-info text-white d-flex align-items-center justify-content-center ms-2 rounded">
-            <span class="text-center">겨울 등산로</span>
-          </div>
-        </div>
+      <div class="d-flex flex-row border h-200px">
+
+        <div class="flex-fill bg-primary text-white">첫번째</div>
+        <div class="flex-fill bg-info text-white">두번째</div>
+        <div class="flex-fill bg-success text-white">세번째</div>
+
       </div>
+
+      <div class="d-flex flex-column border h-200px">
+
+        <div class="h-50px bg-primary text-white">첫번째</div>
+        <div class="flex-grow-1 bg-info text-white">두번째</div>
+        <div class="h-50px bg-success text-white">세번째</div>
+
+      </div>
+
+      <div class="d-flex flex-column border h-200px">
+
+        <div class="bg-primary text-white" style="height: 25%;">첫번째</div>
+        <div class="bg-info text-white" style="height: 50%;">두번째</div>
+        <div class="bg-success text-white" style="height: 25%;">세번째</div>
+
+      </div>
+
 
     </div>
 
     <!-- 하단 탭 -->
-    <div class="fixed-bottom d-md-none bg-white border-top">
+    <div class="fixed-bottom d-md-none bg-white border-top h-10">
 
       <div class="menu menu-row d-flex justify-content-around py-2 fs-6 fw-bold cursor-pointer">
 
@@ -234,7 +200,7 @@
 
 <script setup>
 
-import {onMounted, ref} from 'vue'
+import { ref, onMounted } from 'vue'
 
 
 let drawer;
