@@ -13,3 +13,35 @@ jaegon/JAVA/hw_solve
 jaegon/JAVA/my_code/
 jaegon/JAVA/studentCodeTesk9/
 
+
+# ---------------------
+# Node.js / Vite
+# ---------------------
+**/node_modules/
+**/dist/
+**/.output/
+
+# ---------------------
+# 환경 변수
+# ---------------------
+**/.env.local
+**/.env.*.local
+
+# ---------------------
+# IntelliJ IDEA
+# ---------------------
+**/.idea/
+*.iml
+
+# ---------------------
+# VSCode (혹시 같이 쓸 경우)
+**/.vscode/*
+!**/.vscode/extensions.json
+
+# ---------------------
+# OS 생성 파일
+# ---------------------
+**/.DS_Store
+**/Thumbs.db
+
+
