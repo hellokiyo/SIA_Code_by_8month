@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let myp = document.getElement("myp");
+		windiw.alert('myp');
+	</script>
+	<p id ="myp"> test</p>
+</body>
+</html>

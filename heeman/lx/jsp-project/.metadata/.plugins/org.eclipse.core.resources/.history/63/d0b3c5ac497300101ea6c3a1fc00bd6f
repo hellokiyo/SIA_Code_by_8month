@@ -1,0 +1,64 @@
+<%@page import="java.util.List"%>
+<%@page import="myjsp.EmpUtil"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+.relative{
+	position: relative;
+	width: 200px;
+	margin: 0 auto
+}
+
+.container {
+	disply : grid;
+	grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+	grid-template-rows: repeat(3, minmax(100px, auto));
+}
+
+</style>
+
+
+
+</head>
+<body>
+<%--
+	클라이언트로 부터 전송된 데이터를 추출한다.
+ --%>
+ <div class="container">
+	 <div class = "item">1</div>
+	 <div class = "item">2</div>
+	 <div class = "item">3</div>
+	 <div class = "item">4</div>
+	 <div class = "item">5</div>
+	 <div class = "item">6</div>
+ </div>
+ 
+ 
+ 
+ 
+<%
+	EmpUtil empUtil = new EmpUtil();
+	String jobId = request.getParameter("jobId");
+	List<String> DeptNameList = empUtil.getDeptList(jobId);
+%>
+
+<div class="relative">
+	<h1><%=jobId %>의 부서원 목록</h1>
+</div>
+
+<%
+	for(String DeptName : DeptNameList) {
+		out.print(DeptName+"<br>");
+	}
+%>
+
+</body>
+</html>

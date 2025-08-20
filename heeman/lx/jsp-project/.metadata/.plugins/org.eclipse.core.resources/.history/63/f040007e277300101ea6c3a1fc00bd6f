@@ -1,0 +1,20 @@
+<%@page import="myjsp.EmpUtil"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	// job_id_list를 출력한다.
+	//String[] jobList = EmpUtil.getJobList(); //리턴타입 : 문자배열 //매개변수 : X
+	List<String> jobList = EmpUtil.getJobList();
+
+%>
+
+job list size : <%= jobList.length %>
+</body>
+</html>
