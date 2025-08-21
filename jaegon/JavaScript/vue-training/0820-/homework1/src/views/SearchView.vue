@@ -14,7 +14,7 @@ import { ref, onMounted} from "vue";
 import {storeToRefs} from "pinia";
 
 //가져오는건 아래 3줄로 만듦
-import {useAppStore} from "@/stores/app.js";
+import { useAppStore } from "../stores/app.js";
 const appStore = useAppStore();
 const {title} = storeToRefs(appStore);
 
