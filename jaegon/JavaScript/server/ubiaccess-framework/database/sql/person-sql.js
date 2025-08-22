@@ -9,11 +9,11 @@ module.exports = {
         order: `order by #`,
         page: `limit #`
     },
+
     test_person_list2: {
         sql: `select id, name, age, mobile
-                from test.person
-                where name like :name`
-
-
+              from test.person
+              where name like :name `
     }
+
 }

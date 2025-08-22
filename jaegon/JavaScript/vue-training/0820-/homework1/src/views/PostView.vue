@@ -74,6 +74,7 @@ const appStore = useAppStore();
 // 4. 반응형으로 가져오기
 const { title } = storeToRefs(appStore);
 
+
 //게시글 목록을 위한 변수
 const posts  = ref([
   {
@@ -109,7 +110,7 @@ const posts  = ref([
 ])
 
 onMounted(() => {
-  console.log(`HomeView::onMounted 호출됨`);
+  console.log(`PostView::onMounted 호출됨`);
 
   title.value ='게시물';
 })

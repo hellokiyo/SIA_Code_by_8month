@@ -2,7 +2,12 @@ const util = require('../util/util');
 const param = require('../util/param');
 
 const Database = require('../database/database_mysql');
+const DatabaseHelper = require('../util/database_helper');
+const ControllerHelper = require('../util/controller_helper');
+
+
 const personSql = require('../database/sql/person-sql');
+
 
 /**
  * @Controller(path="/person")
@@ -11,6 +16,9 @@ class Person {
 
     constructor() {
         this.database = new Database('database_mysql');
+        this.databaseHelper = new DatabaseHelper(this.database);
+        this.controllerHelper = new ControllerHelper(this.database)
+        //database로 만든 db를 DatabaseHelper에 넣어서 전달
     }
 
     /**
@@ -69,7 +77,7 @@ class Person {
     /**
      * @RequestMapping(path="/list2",method="get,post")
      * */
-    async testPerson(req, res) {
+    async testPersonList2(req, res) {
         const params = param.parse(req);
         try {
             const queryParams = {
@@ -95,5 +103,37 @@ class Person {
 
     }
 
+    /**
+     * @RequestMapping(path="/list3",method="get,post")
+     * */
+    async testPersonList3(req, res) {
+        const params = param.parse(req);
+
+        try {
+            const rows = await this.databaseHelper.query('test_person_list2',params);
+
+            const output = { // data부분
+                header: {
+                },
+                data :rows
+            }
+
+            util.sendRes(res, 200, 'OK', output );  // code 와 message부분
+
+        } catch (err) {
+            util.sendError(res, 400, `Error -> ${err}`)
+        }
+
+    }
+
+    /**
+     * @RequestMapping(path="/list4",method="get,post")
+     * */
+    async testPersonList4(req, res) {
+        const sqlName = 'test_person_list2';
+        this.controllerHelper.execute(req, res, sqlName);
+
+    }
 }
+
 module.exports = Person;
