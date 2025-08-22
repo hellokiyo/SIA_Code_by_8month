@@ -25,11 +25,22 @@ const router = createRouter({
       component: () => import('../views/PostWriteView.vue'),
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
-    }
+      path: '/user',
+      name: 'user',
+      component: () => import('../views/UserView.vue'),
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue'),
+    },
+      {
+          path: '/about',
+          name: 'about',
+          component: () => import('../views/AboutView.vue'),
+      }
   ],
+
 })
 
 export default router

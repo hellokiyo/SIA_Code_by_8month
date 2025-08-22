@@ -99,17 +99,52 @@
         </div>
       </div>
     </div>
+
+    <!-- 드로어 (좌측 사이드 메뉴) -->
+    <div id="kt_drawer_basic1"
+         class="bg-white d-flex flex-column drawer-hidden"
+         data-kt-drawer="true"
+         data-kt-drawer-activate="true"
+         data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle"
+         data-kt-drawer-width="{default: '250px', 'md': '500px'}"
+         data-kt-drawer-direction="start">
+
+      <!-- 드로어 상단 -->
+      <div class="p-5 border-bottom">
+        <h3>메뉴</h3>
+      </div>
+
+      <!-- 드로어 메뉴 아이템 -->
+      <div v-for="sidebar in sidebars" :key="sidebar.key" class="p-5">
+        <div class="menu menu-column fs-6 fw-bold">
+          <!-- 메뉴 항목 예시 -->
+          <div class="menu-item" @click="tabButtonClicked(sidebar.key)">
+            <div class="menu-link bg-light-secondary text-dark px-4 py-2 rounded">
+              <span class="menu-icon" v-html="sidebar.icon">
+              </span>
+              <span class="menu-title m-2">{{sidebar.title}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 드로어 닫기 버튼 -->
+      <div class="m-10">
+        <button class="btn btn-sm btn-primary" @click="closeDrawer()">닫기</button>
+      </div>
+
+    </div>
   </div>
 </template>
 
 <script setup>
-import {ref} from "vue";
+import {ref, onMounted} from "vue";
 import {useRouter} from 'vue-router'
 const router = useRouter();
 
 // Pinia 스토어 불러오기
 import { storeToRefs } from "pinia";          // store 속성을 반응형으로 가져오기 위함
-import { useAppStore } from "../src/stores/app.js";
+import { useAppStore } from "@/stores/app";
 const appStore = useAppStore();              // 스토어 실행
 
 const { title } = storeToRefs(appStore);     // title을 반응형으로 구조분해할당
@@ -118,6 +153,41 @@ const activeTab = ref('home')
 
 //전체 화면으로 보일 것인지의 여부
 const fullScreen = ref(false)
+
+
+// 드로어 인스턴스 변수
+let drawer;
+
+// 컴포넌트 마운트 시 실행
+onMounted(() => {
+  console.log(`app::onMounted 호출됨.`);
+
+  // Drawer 초기화 (KTDrawer 라이브러리)
+  KTDrawer.createInstances();
+
+  // 드로어 엘리먼트 가져오기
+  const drawerElem = document.querySelector('#kt_drawer_basic1');
+  drawer = KTDrawer.getInstance(drawerElem);
+
+  // 드로어 이벤트 리스너
+  drawer.on('kt.drawer.shown', () => {
+    console.log(`Drawer가 보여짐`);
+    drawerElem.classList.remove('drawer-hidden');
+  })
+  drawer.on('kt.drawer.hidden', () => {
+    console.log(`Drawer가 사라짐`);
+    drawerElem.classList.add('drawer-hidden');
+  })
+})
+
+
+// 드로어 닫기 함수
+function closeDrawer() {
+  console.log(`closeDrawer 호출됨`);
+  if (drawer) {
+    drawer.hide();
+  }
+}
 
 // 하단 탭의 버튼이 눌렸을 때
 function tabButtonClicked(name) {
@@ -136,6 +206,8 @@ function tabButtonClicked(name) {
   }
   else if(name === 'more') {
     goToMore();
+  }else if(name === 'user') {
+    goToUser()
   }
 }
 
@@ -161,6 +233,35 @@ function goToLogin() {
   router.push('/login')
 }
 
+function goToUser() {
+  router.push('/user')
+
+}
+
+const sidebars = ref([
+  {
+    key : 'home',
+    title :'홈',
+    icon:'<i class="ki-duotone ki-home fs-2x text-primary"></i>\n'
+  },
+  {
+    key : 'search',
+    title:'찾기',
+    icon :'<i class="ki-duotone ki-parcel-tracking fs-2x">\n' +
+          '    <span class="path1"></span>\n' +
+          '    <span class="path2"></span>\n' +
+          '    <span class="path3"></span>\n' +
+          '</i>'
+  },
+  {
+    key : 'user',
+    title : '내정보' ,
+    icon :'<i class="ki-duotone ki-user">\n' +
+        ' <span class="path1"></span>\n' +
+        ' <span class="path2"></span>\n' +
+        '</i>'
+  }
+])
 
 const tabs = ref([
   { key: 'home', title: '홈', icon: '<i class="ki-duotone fs-2x ki-home">\n</i>' },
@@ -177,11 +278,19 @@ const tabs = ref([
         ' <span class="path4"></span>\n' +
         ' <span class="path5"></span>\n' +
         '</i>'}
-
 ])
+
+
 </script>
 
 <style scoped>
+
+
+/* 드로어 숨김 상태 */
+.drawer-hidden {
+  transform: translateX(-100%);
+  visibility: hidden;
+}
 
 .tab-btn {
   padding: 4px 8px;

@@ -4,7 +4,7 @@
     <h1>찾기 화면</h1>\
   </div>
 
-  <div>
+  <div class="d-flex justify-content-around py-2">
     <button class="d-flex justify-content-center align-items-center h-100 btn btn-primary" @click="login()">로그인</button>
   </div>
 

@@ -6,16 +6,22 @@
       <!--제목추가 -->
       <div class="card-body">
         <div class="mb-10">
-          <label class="form-label fw-bold">제목</label>
-          <input type="text" class="form-control" v-model = "postTitle" placeholder="제목 입력">
+          <label class="form-label fw-bold">이름</label>
+          <input type="text" class="form-control" v-model = "postName" placeholder="제목 입력">
         </div>
 
         <div class="mb-10">
-          <label class="form-label fw-bold">내용</label>
-          <input type="text" class="form-control" rows="3" v-model = "postContents" placeholder="내용 입력">
+          <label class="form-label fw-bold">나이</label>
+          <input type="text" class="form-control" rows="3" v-model = "postAge" placeholder="내용 입력">
         </div>
 
-        <div>
+        <div class="mb-10">
+          <label class="form-label fw-bold">전화번호</label>
+          <input type="text" class="form-control" rows="3" v-model = "postMoblie" placeholder="내용 입력">
+        </div>
+
+        <!--이미지 선택 탭-->
+        <!--        <div>
           <label class="form-label fw-bold">이미지</label>
           <div class="image-upload-wrap">
             <p class="text-muted m-0">이미지 선택</p>
@@ -24,11 +30,11 @@
           <div class="image-preview">
             <img :src="imagePreviewUri">
           </div>
-        </div>
+        </div>-->
 
         <div class="card-footer">
           <div class="d-flex justify-content-around">
-            <button class="btn btn-light-primary w-45 px-20 py-5">
+            <button class="btn btn-light-primary w-45 px-20 py-5" @click="addPost()">
               <span class="fs-3 fw-bold">저장</span>
             </button>
 
@@ -64,6 +70,7 @@ import { storeToRefs } from "pinia";
 
 // 2. 내 스토어(app.js) 불러오기
 import { useAppStore } from "@/stores/app.js";
+import axios from "axios";
 
 // 3. 스토어 실행 (실제로 가져오기)
 const appStore = useAppStore();
@@ -71,6 +78,9 @@ const appStore = useAppStore();
 // 4. 반응형으로 가져오기
 const { title } = storeToRefs(appStore);
 
+const postName = ref('');
+const postAge = ref('');
+const postMoblie = ref('');
 
 onMounted(() => {
   console.log(`PostWriteView::onMounted 호출됨`);
@@ -85,7 +95,33 @@ function goToPost() {
   router.push('/document');
 
 }
+async function addPost() {
+  console.log("addPost 호출됨");
+  try{
 
+    const params = {
+      name: postName.value,
+      age :postAge.value,
+      mobile : postMoblie.value
+    }
+
+    const response = await axios({
+      method: "post",
+      baseURL: `http://localhost:8001`,
+      url: `/customer/v1/add`,
+      data: params,
+      timeout: 5000,
+      responseType: "json"
+    })
+
+    console.log(`응답 -> ${JSON.stringify(response.data)}`);
+
+    goToPost();
+
+  }catch (err) {
+    console.error(`에러 -> ${err}`);
+  }
+}
 
 </script>
 

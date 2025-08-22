@@ -85,7 +85,7 @@
       <h5 class="fw-bold mb-3">어서와 등산은 처음이지?</h5>
       <span class="text-gray-600 ">요즘 뜨는 등산멘트</span>
       <div class="d-flex flex-row overflow-auto">
-        <div v-for="n in 6" :key="n" class="me-3">
+        <div v-for="n in 6" :key="n" class="me-3 px-1">
           <div class="symbol symbol-60px">
             <img :src="`/assets/media/avatars/300-${n}.jpg`"/>
           </div>

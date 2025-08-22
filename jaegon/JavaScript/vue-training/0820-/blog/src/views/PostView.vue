@@ -7,11 +7,11 @@
       <div v-for="(item,index) in posts" :key="item.id" class="card postcard">
 
         <div class="card-body m-0 p-0">
-          <img :src="item.thumbnail">
+          <img src="/assets/media/books/2.png">
 
           <div class="p-4">
-            <h5 class="fw-bold fs-3">{{ item.title }}</h5>
-            <span class="text-muted">{{ item.contents }}</span>
+            <h5 class="fw-bold fs-3">{{ item.name }}</h5>
+            <span class="text-muted">{{ item.mobile }}</span>
           </div>
         </div>
 
@@ -30,7 +30,7 @@
              <span class="path2"></span>
              <span class="path3"></span>
             </i>
-              <span>1</span>
+              <span>{{ item.comments }}</span>
             </span>
 
           <span class="badge badge-light-primary px-5 py-2">{{ item.category }}</span>
@@ -60,13 +60,12 @@ import { ref, onMounted} from "vue";
 import { useRouter } from "vue-router";
 const router =useRouter();
 
-
 //스토어 불러오기
 // 1. storeToRefs 불러오기
 import { storeToRefs } from "pinia";
 
 // 2. 내 스토어(app.js) 불러오기
-import { useAppStore } from "@/stores/app.js";
+import { useAppStore } from "@/stores/app";
 
 // 3. 스토어 실행 (실제로 가져오기)
 const appStore = useAppStore();
@@ -74,6 +73,12 @@ const appStore = useAppStore();
 // 4. 반응형으로 가져오기
 const { title } = storeToRefs(appStore);
 
+// Axios 불러오기
+import axios from "axios";
+
+const posts = ref([])
+
+/*
 //게시글 목록을 위한 변수
 const posts  = ref([
   {
@@ -107,19 +112,43 @@ const posts  = ref([
     thumbnail : '/assets/media/books/13.png',
   }
 ])
+*/
 
 onMounted(() => {
-  console.log(`HomeView::onMounted 호출됨`);
+  console.log(`DocumentView::onMounted 호출됨`);
 
   title.value ='게시물';
+
+  //웹 서버로 요청하기
+  requestCustomerList();
 })
 
+async function requestCustomerList() {
+  console.log("requestCustomerList 호출됨");
+
+  try{
+
+    const response = await axios({
+      method: 'post',
+      baseURL: `http://localhost:8001`,
+      url: '/customer/v1/list-all',
+      data: {},
+      timeout: 5000,
+      responseType: "json"
+    })
+
+    console.log(`응답 -> ${JSON.stringify(response.data)}`);
+
+    posts.value = response.data.data.data;
+    
+  } catch (err) {
+    console.error(`에러 -> ${err}`);
+  }
+}
 
 //새 게시글 작성 화면으로
 function goToPostWrite() {
-
   router.push('/post-write');
-
 }
 
 
@@ -143,7 +172,5 @@ function goToPostWrite() {
    height: 180px;
    width: 100%;
  }
-
-
 
 </style>

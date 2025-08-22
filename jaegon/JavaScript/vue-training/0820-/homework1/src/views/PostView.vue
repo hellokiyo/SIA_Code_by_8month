@@ -74,40 +74,10 @@ const appStore = useAppStore();
 // 4. 반응형으로 가져오기
 const { title } = storeToRefs(appStore);
 
-
+//게시글 리스트를 JSON파일로 만들어서 받아오기
+import postList from "@/data/postList.json";
 //게시글 목록을 위한 변수
-const posts  = ref([
-  {
-    id :1,
-    title : '게시물 1',
-    contents : '게시물 내용입니다.',
-    category : '취미',
-    createDate : '1시간전',
-    likes : 3,
-    comments : 1,
-    thumbnail : '/assets/media/books/2.png',
-  },
-  {
-    id: 2,
-    title : '게시물 2',
-    contents: '게시물 내용입니다.',
-    category: '생활',
-    createDate: '3시간전',
-    likes: 2,
-    comments: 3,
-    thumbnail: '/assets/media/books/12.png',
-  },
-  {
-    id :3,
-    title : '게시물 3',
-    contents : '게시물 내용입니다.',
-    category : '예술',
-    createDate : '2025-08-20',
-    likes : 1,
-    comments : 6,
-    thumbnail : '/assets/media/books/13.png',
-  }
-])
+const posts = ref(postList)
 
 onMounted(() => {
   console.log(`PostView::onMounted 호출됨`);
@@ -115,14 +85,10 @@ onMounted(() => {
   title.value ='게시물';
 })
 
-
 //새 게시글 작성 화면으로
 function goToPostWrite() {
-
   router.push('/post-write');
-
 }
-
 
 </script>
 

@@ -1,7 +1,7 @@
 <template>
 
   <div class="d-flex justify-content-center align-items-center h-100 bg-light-primary">
-    <h1>찾기 화면</h1>
+    <h1>커뮤니티</h1>
   </div>
 
 </template>
@@ -21,7 +21,7 @@ const {title} = storeToRefs(appStore);
 onMounted(() => {
   console.log(`HomeView::onMounted 호출됨`);
 
-  title.value ='검색';
+  title.value ='커뮤니티';
 })
 </script>
 
