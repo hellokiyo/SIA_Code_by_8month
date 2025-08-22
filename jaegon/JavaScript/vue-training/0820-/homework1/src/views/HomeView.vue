@@ -194,11 +194,27 @@
 
     <!-- 하단 탭 -->
     <div class="fixed-bottom d-md-none bg-white border-top">
+      <!--
+      fixed-bottom 하단에 메뉴 고정시키기 스크롤 내려도 항상 자리에 유지
+      d-md-none medium 사이즈 이상의 화면(PC,태블릿)에서는 메뉴창 숨기기(앱 전용)
+      border-top 위쪽에 선 추가
+      -->
       <div class="menu menu-row d-flex justify-content-around py-2 fs-6 fw-bold cursor-pointer">
+        <!--
+        d-flex justify-content-around 내부의 메뉴 아이템들을 가로로 균등 배치
+        py-2  패딩 y축(위아래)
+        fs-6 글씨 크기 6단계로 조정
+        fw-bold 글씨 굵게(bold체)
+        cursor-pointer  마우스 커서가 올라갔을때 모양 바꾸기
+        -->
         <div v-for="tab in tabs" :key="tab.key"
              class="menu-item flex-column align-items-center flex-fill tab-btn"
              :class="{active: activeTab===tab.key}"
              @click="tabButtonClicked(tab.key)">
+          <!--
+          v-for
+          -->
+
           <span class="menu-icon mb-1" v-html="tab.icon">
           </span>
           <span class="menu-title">{{tab.title}}</span>
