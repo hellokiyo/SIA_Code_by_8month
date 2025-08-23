@@ -34,22 +34,35 @@
         </div>
 
         <div class="d-flex justify-content-around mb-3">
-          <button class="bg-light-primary border">
-          매칭한 멘토
-          </button>
+          <div>
+            <i class="ki-duotone ki-teacher">
+              <span class="path1"></span>
+              <span class="path2"></span>
+            </i>
+          </div>
+          <button class="bg-light-primary border" @click="goToHome()">매칭한 멘토</button>
         </div>
 
 
         <div class="d-flex justify-content-around mb-3">
-          <button class="bg-light-primary border">
-            고객센터
-          </button>
+          <div>
+            <i class="ki-duotone ki-address-book">
+              <span class="path1"></span>
+              <span class="path2"></span>
+              <span class="path3"></span>
+            </i>
+          </div>
+          <button class="bg-light-primary border">고객센터</button>
         </div>
 
         <div class="d-flex justify-content-around mb-3">
-          <button class="bg-light-primary border">
-            로그아웃
-          </button>
+          <div>
+            <i class="ki-duotone ki-exit-right">
+              <span class="path1"></span>
+              <span class="path2"></span>
+            </i>
+          </div>
+          <button class="bg-light-primary border">로그아웃</button>
         </div>
       </div>
 
