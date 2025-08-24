@@ -2,7 +2,6 @@
 
   <div class="px-4 py-2" style=" margin-bottom: 60px">
     <div class="card ">
-
       <!--제목추가 -->
       <div class="card-body">
         <div class="mb-10">

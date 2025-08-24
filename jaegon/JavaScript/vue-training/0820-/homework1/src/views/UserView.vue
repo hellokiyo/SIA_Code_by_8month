@@ -80,7 +80,7 @@
 
 <script setup>
 
-import { onMounted } from "vue";
+import { ref,onMounted } from "vue";
 import { useRouter } from "vue-router";
 const router =useRouter();
 
@@ -91,7 +91,7 @@ import {storeToRefs} from "pinia";
 import { useAppStore } from "../stores/app.js";
 const appStore = useAppStore();
 const {title} = storeToRefs(appStore);
-
+const fullScreen =ref(false);
 
 
 onMounted(() => {

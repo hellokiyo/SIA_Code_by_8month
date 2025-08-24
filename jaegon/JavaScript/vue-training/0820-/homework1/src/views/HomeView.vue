@@ -133,15 +133,19 @@ onMounted(() => {
   console.log(`HomeView::onMounted 호출됨`);
 
   title.value ='홈';
+
+  fullscreen
 })
+
+let cards_link = '/assets/media/stock/600x400/'
 
 // cards에 json형식으로 객체 생성
 const cards =ref( [
-  { id :1, title: '오늘의 등산로', ex: '등산로 보기', bg: '/assets/media/stock/600x400/img-20.jpg' },
-  { id :2, title: '민원신청', ex: '불편, 개선사항 접수', bg: '/assets/media/stock/600x400/img-15.jpg' },
-  { id :3, title: '긴급', ex: 'sos신고', bg: '/assets/media/stock/600x400/img-24.jpg' },
-  { id :4, title: '등산', ex: '나만의 등산기록', bg: '/assets/media/stock/600x400/img-18.jpg' },
-  { id :5, title: '커뮤니티', ex: '#오등완 #등린이', bg: '/assets/media/stock/600x400/img-25.jpg' }
+  { id :1, title: '오늘의 등산로', ex: '등산로 보기', bg: `${cards_link}img-20.jpg` },
+  { id :2, title: '민원신청', ex: '불편, 개선사항 접수', bg: `${cards_link}img-15.jpg` },
+  { id :3, title: '긴급', ex: 'sos신고', bg: `${cards_link}img-24.jpg`},
+  { id :4, title: '등산', ex: '나만의 등산기록', bg: `${cards_link}img-18.jpg`},
+  { id :5, title: '커뮤니티', ex: '#오등완 #등린이', bg: `${cards_link}img-25.jpg`}
 
 ])
 
