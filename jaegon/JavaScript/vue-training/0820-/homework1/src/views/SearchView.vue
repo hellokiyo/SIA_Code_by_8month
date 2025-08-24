@@ -8,6 +8,14 @@
     <button class="d-flex justify-content-center align-items-center h-100 btn btn-primary" @click="login()">로그인</button>
   </div>
 
+  <header class="d-flex align-items-center p-2 border-bottom">
+    <div class="fw-bold">Logo</div>
+    <nav class="ms-auto d-flex gap-2">
+      <a>Home</a><a>About</a><a>Contact</a>
+    </nav>
+  </header>
+
+
 </template>
 
 <script setup>
@@ -38,11 +46,7 @@ function login() {
 }
 
 function goToHome() {
-  //전체화면 변경하기
-  fullScreen.value = false;
-
   router.push('/')
-
 }
 </script>
 

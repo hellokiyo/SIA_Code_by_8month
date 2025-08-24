@@ -111,6 +111,21 @@
 
       <!-- 드로어 상단 -->
       <div class="p-5 border-bottom">
+        <div class="row">
+
+          <div class="col-3">
+            <img src="@/assets/images/cat_run.png" class="w-70px border border-4">
+          </div>
+
+          <div class="col-9 px-10 pt-4">
+            <span class="fw-bold">박정훈님 환영합니다.</span><br>
+            <span >환영합니다</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="p-5 border-bottom">
         <h3>메뉴</h3>
       </div>
 
@@ -152,7 +167,7 @@ const { title } = storeToRefs(appStore);     // title을 반응형으로 구조�
 const activeTab = ref('home')
 
 //전체 화면으로 보일 것인지의 여부
-const fullScreen = ref(false)
+const { fullScreen } = ref(false)
 
 
 // 드로어 인스턴스 변수
@@ -179,7 +194,6 @@ onMounted(() => {
     drawerElem.classList.add('drawer-hidden');
   })
 })
-
 
 // 드로어 닫기 함수
 function closeDrawer() {
@@ -211,31 +225,36 @@ function tabButtonClicked(name) {
   }
 }
 
+// 메인 페이지 이동
 function goToHome() {
   router.push('/')
 }
 
+// 검색 페이지 이동
 function goToSearch() {
   router.push('/search')
 }
 
+// 문서 페이지 이동
 function goToDocument() {
   router.push('/document')
 }
 
+// 더보기 페이지 이동
 function goToMore() {
   router.push('/more')
 }
 
+// 로그인 페이지 이동
 function goToLogin() {
   fullScreen.value =true;
 
   router.push('/login')
 }
 
+// 유저 페이지 이동
 function goToUser() {
   router.push('/user')
-
 }
 
 const sidebars = ref([
@@ -255,7 +274,7 @@ const sidebars = ref([
   },
   {
     key : 'user',
-    title : '내정보' ,
+    title : '마이페이지' ,
     icon :'<i class="ki-duotone ki-user">\n' +
         ' <span class="path1"></span>\n' +
         ' <span class="path2"></span>\n' +
@@ -284,8 +303,6 @@ const tabs = ref([
 </script>
 
 <style scoped>
-
-
 /* 드로어 숨김 상태 */
 .drawer-hidden {
   transform: translateX(-100%);

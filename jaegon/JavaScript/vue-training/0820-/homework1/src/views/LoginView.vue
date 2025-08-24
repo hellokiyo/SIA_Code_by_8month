@@ -8,8 +8,6 @@
     <div class="d-flex justify-content-around">
       <button class="d-flex justify-content-center align-items-center h-100 btn btn-primary" @click="login()">로그인</button>
     </div>
-
-
   </div>
 
 </template>
@@ -26,7 +24,7 @@ import {storeToRefs} from "pinia";
 //가져오는건 아래 3줄로 만듦
 import {useAppStore} from "@/stores/app.js";
 const app = useAppStore();
-const {fullScreen} = storeToRefs(app);
+const fullScreen = storeToRefs(app);
 
 
 function login() {

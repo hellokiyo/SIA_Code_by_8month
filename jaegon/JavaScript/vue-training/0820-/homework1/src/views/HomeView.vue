@@ -112,16 +112,14 @@
 </template>
 
 <script setup>
-
 import {onMounted, ref} from 'vue'
-
 
 //스토어 불러오기
 // 1. storeToRefs 불러오기
 import { storeToRefs } from "pinia";
 
 // 2. 내 스토어(app.js) 불러오기
-import { useAppStore } from "../stores/app.js";
+import { useAppStore } from "@/stores/app.js";
 
 // 3. 스토어 실행 (실제로 가져오기)
 const appStore = useAppStore();
@@ -137,6 +135,8 @@ onMounted(() => {
   fullscreen
 })
 
+
+//cards_link의 사진주소 경로를 변수에 담기
 let cards_link = '/assets/media/stock/600x400/'
 
 // cards에 json형식으로 객체 생성
