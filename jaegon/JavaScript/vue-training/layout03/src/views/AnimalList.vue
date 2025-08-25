@@ -64,6 +64,11 @@
 
       </div>
 
+      <div style="margin-top: 1em;">
+
+        <Pagination :requestFunc="requestAnimalList" :pagination="pagination1" />
+
+      </div>
 
     </div>
 
@@ -87,6 +92,12 @@ const { animals, mode, selectedIndex} =storeToRefs(animalStore)
 // 웹서버로 요청하기 위한 모듈
 import axios from 'axios'
 
+//페이지네이션
+import Pagination from "@/components/Pagination.vue"
+import { usePagination} from "@/util/pagination"
+const { makePagination } = usePagination()
+
+const pagination1 = ref({})
 
 // 감시할 수 있는 변수상자, ref 함수를 이용해서 만든다, 봉지를 씌운 것과 같다.
 // 자바스크립트 코드에서는 변수상자의 값을 바꿀 때 name.value를 사용해야 한다.
@@ -99,14 +110,12 @@ const nameInput =ref('')
 const nameVisible = ref(true)
 
 
-
-
 // 화면이 보이기 전에 한 번 실행됨
 // 목적 : 화면이 보이기 전에 초기화하거나 또는 실행해야 하는 것들을 실행해줌
 onMounted(()=> {
   console.log(`AnimalList::onMounted 호출됨`)
 
-  requestAnimalList(1,10)
+  requestAnimalList(1,1)
 })
 
 async function requestAnimalList(page, perPage) {
@@ -127,6 +136,8 @@ async function requestAnimalList(page, perPage) {
     console.log(`응답 -> ${JSON.stringify(response.data)}`)
 
     animals.value = response.data.data.data
+
+    pagination1.value = makePagination(response.data.data.header)
 
   } catch (err) {
     console.error(`에러 -> ${err}`);
