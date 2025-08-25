@@ -60,7 +60,7 @@ import { useRouter } from "vue-router";
 const router = useRouter()
 
 const animalStore = useAnimalStore()
-const {animals} =storeToRefs(animalStore)
+const { animals, mode, selectedIndex } =storeToRefs(animalStore)
 
 
 /* v-for사용시 오픈
@@ -97,6 +97,18 @@ const pathInput = ref('')
 // 목적 : 화면이 보이기 전에 초기화하거나 또는 실행해야 하는 것들을 실행해줌
 onMounted(()=> {
   console.log(`AnimalAdd::onMounted 호출됨`)
+
+  // 수정 모드인 경우, 입력상자에 선택된 아이템의 값을 넣어주기
+  if(mode.value == 'modify'){
+    const selected = animals.value[selectedIndex.value]
+
+    typeInput.value = selected.type
+    nameInput.value = selected.name
+    ageInput.value = selected.age
+    mobileInput.value = selected.mobile
+    pathInput.value = selected.path
+
+  }
 })
 
 
@@ -109,15 +121,21 @@ function save() {
   const mobile = mobileInput.value
   const path = pathInput.value
 
-  animals.value.push({
+  const item = {
     id : String(animals.length +1),
     type : type,
     name : name,
     age : age,
     mobile : mobile,
     path : path
+  }
 
-  })
+  if (mode.value == 'add'){
+    animals.value.push(item)
+  } else if (mode.value == 'modify'){
+    animals.value[selectedIndex.value] =item
+  }
+
   router.replace('/',{})
 }
 

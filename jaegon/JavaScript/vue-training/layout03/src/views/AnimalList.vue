@@ -37,6 +37,9 @@
         <div style="margin-bottom: 1em;">
             <label>구분 : </label>
             <span>{{(item.type === 'dog') ? '강아지' : (item.type === 'cat') ? '고양이' : '모름'}}</span>
+
+          <button @click="modifyAnimal(index)">수정</button>
+          <button @click="removeAnimal(index)">삭제</button>
         </div>
 
         <div style="margin-bottom: 1em;" >
@@ -59,10 +62,6 @@
           <img :src="item.path" width="50%" />
         </div>
 
-        <div >
-          <button style="margin-left: 110px;" @click="modifyAnimal(item)">수정</button>
-          <button @click="removeAnimal(item.id)">삭제</button>
-        </div>
       </div>
 
 
@@ -82,7 +81,7 @@ import { storeToRefs } from "pinia";
 
 import { useAnimalStore } from '@/stores/animal'
 const animalStore = useAnimalStore()
-const {animals} =storeToRefs(animalStore)
+const { animals, mode, selectedIndex} =storeToRefs(animalStore)
 
 
 // 감시할 수 있는 변수상자, ref 함수를 이용해서 만든다, 봉지를 씌운 것과 같다.
@@ -118,23 +117,27 @@ function show() {
 function addAnimal() {
   console.log(`addAnimal 함수 호출됨`)
 
+  mode.value= 'add'
   router.replace('/animal-add', {})
   //히스토리 기록이 남지 않고 옮길 수 있음
   //router.push('/animal-add')
 }
 
 // 수정 버튼
-function modifyAnimal(animal) {
-  console.log(`modifyAnimal 함수 호출됨`)
+function modifyAnimal(index) {
+  console.log(`modifyAnimal 함수 호출됨 -> ${index}` )
 
-  router.replace('/animal-modify', {animal})
+  mode.value= 'modify'
+  selectedIndex.value = index
+
+  router.replace('/animal-add', {index})
 }
 
 // 삭제 버튼
-function removeAnimal(animalId) {
-  console.log(`removeAnimal 함수 호출됨`)
+function removeAnimal(index) {
+  console.log(`removeAnimal 함수 호출됨 -> ${index}`)
 
-  animals.value.splice(animalId,)
+  animals.value.splice(index,1)
 
 }
 </script>

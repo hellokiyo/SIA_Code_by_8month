@@ -15,11 +15,6 @@ const router = createRouter({
       component: () => import('../views/AnimalAdd.vue'),
     },
     {
-      path: '/animal-modify',
-      name: 'animal-modify',
-      component: () => import('../views/AnimalModify.vue'),
-    },
-    {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),
