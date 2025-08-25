@@ -57,6 +57,7 @@ import { useAnimalStore } from '@/stores/animal'
 import { ref, onMounted} from "vue";
 
 import { useRouter } from "vue-router";
+import axios from "axios";
 const router = useRouter()
 
 const animalStore = useAnimalStore()
@@ -112,6 +113,9 @@ onMounted(()=> {
 })
 
 
+
+
+
 function save() {
   console.log(`save 함수 호출됨`)
 
@@ -122,7 +126,7 @@ function save() {
   const path = pathInput.value
 
   const item = {
-    id : String(animals.length +1),
+    //id : String(animals.length +1),
     type : type,
     name : name,
     age : age,
@@ -130,14 +134,66 @@ function save() {
     path : path
   }
 
-  if (mode.value == 'add'){
-    animals.value.push(item)
+  if (mode.value === 'add'){
+
+    requestAnimalAdd(item)
+
   }
 
-  else if (mode.value == 'modify'){
-    animals.value[selectedIndex.value] =item
-  }
+  else if (mode.value === 'modify'){
 
+    item.id = animals.value[selectedIndex.value].id
+
+    requestAnimalModify(item)
+
+  }
+}
+
+async function requestAnimalAdd(item) {
+  try{
+
+    const response = await axios({
+      method: 'post',
+      baseURL: `http://localhost:8001`,
+      url: '/animal/v1/add',
+      data: item,
+      timeout: 5000,
+      responseType: "json"
+    })
+
+    console.log(`응답 -> ${JSON.stringify(response.data)}`)
+
+    animals.value = response.data.data.data
+
+    goToList()
+
+  } catch (err) {
+    console.error(`에러 -> ${err}`);
+  }
+}
+
+async function requestAnimalModify(item) {
+  try{
+
+    const response = await axios({
+      method: 'post',
+      baseURL: `http://localhost:8001`,
+      url: '/animal/v1/modify',
+      data: item,
+      timeout: 5000,
+      responseType: "json"
+    })
+
+    console.log(`응답 -> ${JSON.stringify(response.data)}`)
+
+    goToList()
+
+  } catch (err) {
+    console.error(`에러 -> ${err}`);
+  }
+}
+
+function goToList(){
   router.replace('/',{})
 }
 
@@ -146,6 +202,10 @@ function cancel() {
 
   router.replace('/',{})
 }
+
+
+
+
 
 </script>
 

@@ -169,8 +169,32 @@ function modifyAnimal(index) {
 function removeAnimal(index) {
   console.log(`removeAnimal 함수 호출됨 -> ${index}`)
 
-  animals.value.splice(index,1)
+  const item = {
+    id : animals.value[index].id
+  }
 
+requestAnimalRemove(item)
+}
+
+async function requestAnimalRemove(item) {
+  try{
+
+    const response = await axios({
+      method: 'post',
+      baseURL: `http://localhost:8001`,
+      url: '/animal/v1/remove',
+      data: item,
+      timeout: 5000,
+      responseType: "json"
+    })
+
+    console.log(`응답 -> ${JSON.stringify(response.data)}`)
+
+    requestAnimalList(1,10)
+
+  } catch (err) {
+    console.error(`에러 -> ${err}`);
+  }
 }
 </script>
 
