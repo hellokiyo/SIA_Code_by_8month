@@ -4,11 +4,34 @@
     <div class="card ">
       <div class="card-body">
 
-        <div v-for="(item, index) in addPostInfo" :key="index">
-          <div class="mb-10" >
-            <label class="form-label fw-bold">{{item.name}}</label>
-            <input type="text" class="form-control" v-model = "item.value" :placeholder="item.name +' 입력'">
-          </div>
+        <div class="mb-10" >
+          <label class="form-label fw-bold">제목</label>
+          <input type="text" class="form-control" v-model = "titleInput" placeholder="제목 입력">
+        </div>
+
+        <div class="mb-10">
+          <label class="form-label fw-bold">내용</label>
+          <input type="text" class="form-control" rows="3" v-model = "contentInput" placeholder="내용 입력">
+        </div>
+
+        <div class="mb-10">
+          <label class="form-label fw-bold">카테고리</label>
+          <input type="text" class="form-control" rows="3" v-model = "categoryInput" placeholder="카테고리 입력">
+        </div>
+
+        <div class="mb-10">
+          <label class="form-label fw-bold">날짜</label>
+          <input type="text" class="form-control" rows="3" v-model = "createDateInput" placeholder="날짜 입력">
+        </div>
+
+        <div class="mb-10">
+          <label class="form-label fw-bold">좋아요 수</label>
+          <input type="text" class="form-control" rows="3" v-model = "likeInput" placeholder="좋아요 수 입력">
+        </div>
+
+        <div class="mb-10">
+          <label class="form-label fw-bold">댓글갯수</label>
+          <input type="text" class="form-control" rows="3" v-model = "commentInput" placeholder="댓글갯수 입력">
         </div>
 
         <div class="mb-10">
@@ -69,35 +92,13 @@ const appStore = useAppStore();
 const { title } = storeToRefs(appStore);
 
 // ref로 각 입력 필드와 연결될 반응형 변수들을 선언합니다.
+const titleInput = ref("");
+const contentInput = ref("");
+const categoryInput = ref("");
+const createDateInput = ref("");
+const likeInput = ref("");
+const commentInput = ref("");
 const thumbnailInput = ref(""); // 썸네일 입력 필드용 변수
-
-// 게시글 수정 UI 반복
-const addPostInfo = ref([
-  {
-    name : '제목',
-    value: ""
-  },
-  {
-    name : '내용',
-    value: ""
-  },
-  {
-    name : '카테고리',
-    value: ""
-  },
-  {
-    name : '날짜',
-    value: ""
-  },
-  {
-    name : '좋아요 수',
-    value: ""
-  },
-  {
-    name : '댓글갯수',
-    value: ""
-  }
-])
 
 // 컴포넌트가 마운트(화면에 나타남)된 후 실행되는 훅입니다.
 onMounted(() => {
@@ -112,15 +113,16 @@ function save() {
 
   console.log(`save 함수 호출됨`)
 
-  // addPostInfo 배열의 첫 번째 요소(제목)의 value를 가져옵니다.
-  const title = addPostInfo.value[0].value;
-  const contents = addPostInfo.value[1].value;
-  const category = addPostInfo.value[2].value;
-  const createDate = addPostInfo.value[3].value;
-  const likes = addPostInfo.value[4].value;
-  const comments = addPostInfo.value[5].value;
-  const thumbnail = thumbnailInput.value;
+  // 각 입력 필드의 현재 값을 변수에 할당합니다.
+  const title = titleInput.value
+  const contents = contentInput.value
+  const category = categoryInput.value
+  const createDate = createDateInput.value
+  const likes = likeInput.value
+  const comments = commentInput.value
+  const thumbnail = thumbnailInput.value
 
+  // 입력된 값들을 하나의 객체로 묶습니다.
   const item = {
     title: title,
     contents: contents,
@@ -130,27 +132,10 @@ function save() {
     comments: comments,
     thumbnail: thumbnail
   }
+
   // 게시물 추가 요청 함수를 호출하며 item 객체를 전달합니다.
   requestPostAdd(item)
 }
-
-/* 가장 좋은 방법
-function save() {
-  console.log(`save 함수 호출됨`);
-
-  const item = {};
-
-  addPostInfo.value.forEach(info => {
-    item[info.key] = info.value;
-  });
-
-  item.thumbnail = thumbnailInput.value;
-
-  requestPostAdd(item);
-}
-*/
-
-
 
 // API를 통해 게시물을 추가하는 비동기 함수
 async function requestPostAdd(item) {

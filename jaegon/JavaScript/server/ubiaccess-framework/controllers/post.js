@@ -111,5 +111,15 @@ module.exports = class Post {
 
     }
 
+    /**
+     * @RequestMapping(path="/like/:postId", method="get,post")
+     */
+    async like(req, res) {
+        logger.debug(`post::like 호출됨.`);
+
+        const sqlName = 'post_like';
+        this.controllerHelper.execute(req, res, sqlName);
+    }
+
 }
 

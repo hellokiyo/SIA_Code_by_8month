@@ -42,6 +42,13 @@ module.exports = {
     post_remove: {
         sql: `delete from test.post
               where id = :id `
+    },
+
+    // 좋아요 수 증가
+    post_like: {
+        sql: `update test.post
+              set likes = likes + 1
+              where id = :id `
     }
 
 }

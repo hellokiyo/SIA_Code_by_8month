@@ -24,7 +24,7 @@
         <div class="card-footer d-flex justify-content-between align-items-center py-5">
 
           <!-- 좋아요 영역 -->
-          <span class="d-flex align-items-center text-gray-600 fs-5">
+          <span class="d-flex align-items-center text-gray-600 fs-5" @click="requestPostLike(item)">
             <i class="ki-duotone ki-like text-primary fs-2x me-2">
              <span class="path1"></span>
              <span class="path2"></span>
@@ -91,11 +91,8 @@ const appStore = useAppStore();
 const { title } = storeToRefs(appStore);
 
 // ========================= 게시물 데이터 설정 =========================
-
-// 게시글 리스트를 JSON파일로 임포트
-import postList from "@/data/postList.json";
 // 게시글 목록을 ref로 관리
-const posts = ref(postList)
+const posts = ref([])
 
 // ========================= 페이지네이션 설정 =========================
 import Pagination from "@/components/Pagination.vue"   // Pagination 컴포넌트 불러오기
@@ -140,6 +137,30 @@ async function requestAnimalList(page, perPage) {
 
   } catch (err) {
     console.error(`에러 -> ${err}`);
+  }
+}
+
+// ========================= 좋아요 추가 기능 함수 =========================
+// 좋아요 클릭시 좋아요가 증가하는 함수
+async function requestPostLike(item) {
+  try {
+
+    item.likes++;
+
+    const response = await axios({
+      method: 'post',               // POST 요청
+      baseURL: `http://localhost:8001`, // 서버 주소
+      url: '/post/v1/like',       // API 엔드포인트
+      data: {id: item.id},
+      timeout: 5000,                // 5초 동안 응답 없으면 에러
+      responseType: "json"          // 응답 타입: JSON
+    })
+
+    console.log(`응답 -> ${JSON.stringify(response.data)}`) // 응답 로그
+
+  } catch (err) {
+    console.error(`에러 -> ${err}`);
+    item.likes--;
   }
 }
 
