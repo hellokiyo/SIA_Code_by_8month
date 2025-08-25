@@ -1,9 +1,9 @@
 module.exports = {
     post_list_all: {
-        sql: `select id, name, age, mobile
+        sql: `select id, title, contents, category,createDate, likes, comments,thumbnail
               from test.post`
     },post_list: {
-        sql: `select id, name, age, mobile
+        sql: `select id, title, contents, category,createDate, likes, comments,thumbnail
               from test.post`,
         count: `select count(*) as total
                 from test.post`,
@@ -13,24 +13,28 @@ module.exports = {
     },
 
     post_read: {
-        sql: `select id, name, age, mobile
+        sql: `select id, title, contents, category,createDate, likes, comments,thumbnail
               from test.post
               where id = :id`
     },
 
     // 고객 데이터 추가
     post_add: {
-        sql: `insert into test.post(name, age, mobile)
+        sql: `insert into test.post(title, contents, category,createDate, likes, comments,thumbnail)
               values
-                  (:name, :age, :mobile)`
+                  (:title, :contents, :category, :createDate, :likes, :comments, :thumbnail)`
     },
 
     // 고객 데이터 수정
     post_modify: {
         sql: `update test.post
-              set name = :name,
-                  age = :age,
-                  mobile = :mobile
+              set title = :title,
+                  contents = :contents,
+                  category = :category,
+                  createDate = :createDate,
+                  likes = :likes,
+                  comments = :comments,
+                  thumbnail = :thumbnail
               where id = :id `
     },
 

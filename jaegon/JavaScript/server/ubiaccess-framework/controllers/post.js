@@ -1,4 +1,4 @@
-
+const logger = require('../util/logger');
 
 const Database = require('../database/database_mysql')
 
