@@ -1,16 +1,17 @@
 
+const logger = require('../util/logger');
 
-const Database = require('../database/database_mysql')
+const Database = require('../database/database_mysql');
 
 const DatabaseHelper = require('../util/database_helper');
 const ControllerHelper = require('../util/controller_helper');
 
-const postSql = require('../database/sql/post-sql');
+const animalSql = require('../database/sql/animal-sql');
 
 /**
- * @Controller(path="/post/v1")
+ * @Controller(path="/animal/v1")
  */
-module.exports = class Post {
+module.exports = class Animal {
 
     constructor() {
         this.database = new Database('database_mysql');
@@ -27,9 +28,9 @@ module.exports = class Post {
      * @RequestMapping(path="/list-all", method="get,post")
      */
     async listAll(req, res) {
-        logger.debug(`post::listAll 호출됨.`);
+        logger.debug(`Animal::listAll 호출됨.`);
 
-        const sqlName = 'post_list_all';
+        const sqlName = 'animal_list_all';
         this.controllerHelper.execute(req, res, sqlName);
 
     }
@@ -42,9 +43,9 @@ module.exports = class Post {
      * @RequestMapping(path="/list", method="get,post")
      */
     async list(req, res) {
-        logger.debug(`post::list 호출됨.`);
+        logger.debug(`Animal::list 호출됨.`);
 
-        const sqlObj = postSql.post_list;
+        const sqlObj = animalSql.animal_list;
         this.controllerHelper.executeList(req, res, sqlObj);
 
     }
@@ -57,9 +58,9 @@ module.exports = class Post {
      * @RequestMapping(path="/read", method="get,post")
      */
     async read(req, res) {
-        logger.debug(`post::read 호출됨.`);
+        logger.debug(`Animal::read 호출됨.`);
 
-        const sqlName = 'post_read';
+        const sqlName = 'animal_read';
         this.controllerHelper.execute(req, res, sqlName);
 
     }
@@ -72,9 +73,9 @@ module.exports = class Post {
      * @RequestMapping(path="/add", method="get,post")
      */
     async add(req, res) {
-        logger.debug(`post::add 호출됨.`);
+        logger.debug(`Animal::add 호출됨.`);
 
-        const sqlName = 'post_add';
+        const sqlName = 'animal_add';
         this.controllerHelper.execute(req, res, sqlName);
 
     }
@@ -88,9 +89,9 @@ module.exports = class Post {
      * @RequestMapping(path="/modify", method="get,post")
      */
     async modify(req, res) {
-        logger.debug(`post::modify 호출됨.`);
+        logger.debug(`Animal::modify 호출됨.`);
 
-        const sqlName = 'post_modify';
+        const sqlName = 'animal_modify';
         this.controllerHelper.execute(req, res, sqlName);
 
     }
@@ -104,12 +105,11 @@ module.exports = class Post {
      * @RequestMapping(path="/remove", method="get,post")
      */
     async remove(req, res) {
-        logger.debug(`post::remove 호출됨.`);
+        logger.debug(`Animal::remove 호출됨.`);
 
-        const sqlName = 'post_remove';
+        const sqlName = 'animal_remove';
         this.controllerHelper.execute(req, res, sqlName);
 
     }
 
 }
-

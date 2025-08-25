@@ -84,10 +84,6 @@ const animalStore = useAnimalStore()
 const { animals, mode, selectedIndex} =storeToRefs(animalStore)
 
 
-// 웹서버로 요청하기 위한 모듈
-import axios from 'axios'
-
-
 // 감시할 수 있는 변수상자, ref 함수를 이용해서 만든다, 봉지를 씌운 것과 같다.
 // 자바스크립트 코드에서는 변수상자의 값을 바꿀 때 name.value를 사용해야 한다.
 // <template> 안에 있는 태그에서 값을 감시할 때는 name을 사용해야 한다.
@@ -105,35 +101,7 @@ const nameVisible = ref(true)
 // 목적 : 화면이 보이기 전에 초기화하거나 또는 실행해야 하는 것들을 실행해줌
 onMounted(()=> {
   console.log(`AnimalList::onMounted 호출됨`)
-
-  requestAnimalList(1,10)
 })
-
-async function requestAnimalList(page, perPage) {
-  try{
-
-    const response = await axios({
-      method: 'post',
-      baseURL: `http://localhost:8001`,
-      url: '/animal/v1/list',
-      data: {
-        page : page,
-        perPage : perPage
-      },
-      timeout: 5000,
-      responseType: "json"
-    })
-
-    console.log(`응답 -> ${JSON.stringify(response.data)}`)
-
-    animals.value = response.data.data.data
-
-  } catch (err) {
-    console.error(`에러 -> ${err}`);
-  }
-}
-
-
 
 function show() {
   console.log(`show함수 호출됨`)
