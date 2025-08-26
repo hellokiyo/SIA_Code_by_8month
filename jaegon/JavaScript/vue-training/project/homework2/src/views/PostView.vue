@@ -10,7 +10,7 @@
         <!-- 카드 본문 -->
         <div class="card-body m-0 p-0">
           <!-- 게시물 썸네일 -->
-          <img :src="item.thumbnail">
+          <img :src="item.thumbnail" class="">
 
           <div class="p-4">
             <!-- 게시물 제목 -->

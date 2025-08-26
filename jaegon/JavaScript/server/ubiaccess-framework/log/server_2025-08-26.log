@@ -4159,3 +4159,2607 @@
                     END AS relativeTime
             from test.post
           limit 0, 1 
+2025-08-26 20:51:51.575 - INFO: [logger.js:246:9] service loader called.
+2025-08-26 20:51:51.587 - INFO: [logger.js:246:9] controller loader called.
+2025-08-26 20:51:51.587 - DEBUG: [logger.js:246:9] external_loader called.
+2025-08-26 20:51:51.588 - DEBUG: [logger.js:246:9] No external configuration.
+2025-08-26 20:51:51.786 - INFO: [logger.js:246:9] Http Server started.
+2025-08-26 20:51:51.787 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2025-08-26 20:51:51.787 - INFO: [logger.js:246:9] Namespace -> ::_8001_21428
+2025-08-26 20:51:51.791 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2025-08-26 20:51:57.515 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:51:57.516 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:51:57.517 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 20:51:57.549 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:51:57.551 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 20:52:47.618 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:52:47.619 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:52:47.619 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 20:52:47.626 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:52:47.629 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 20:58:42.218 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:42.218 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:42.219 - DEBUG: [logger.js:246:9] PARAMS -> {"page":2,"perPage":1}
+2025-08-26 20:58:42.223 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:42.224 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 1, 1 
+2025-08-26 20:58:42.608 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:42.609 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:42.609 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 20:58:42.611 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:42.614 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 20:58:42.912 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:42.912 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:42.913 - DEBUG: [logger.js:246:9] PARAMS -> {"page":4,"perPage":1}
+2025-08-26 20:58:42.914 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:42.917 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 3, 1 
+2025-08-26 20:58:43.624 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:43.624 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:43.625 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 20:58:43.626 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:43.628 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 20:58:44.239 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:44.240 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:44.240 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 20:58:44.316 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:44.322 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 20:58:44.357 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:44.360 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:44.363 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 20:58:44.367 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:44.368 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 20:58:44.937 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:44.937 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:44.938 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 20:58:44.939 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:44.942 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 20:58:45.200 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:45.200 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:45.200 - DEBUG: [logger.js:246:9] PARAMS -> {"page":8,"perPage":1}
+2025-08-26 20:58:45.202 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:45.205 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 7, 1 
+2025-08-26 20:58:45.735 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:45.736 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:45.736 - DEBUG: [logger.js:246:9] PARAMS -> {"page":9,"perPage":1}
+2025-08-26 20:58:45.737 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:45.738 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 8, 1 
+2025-08-26 20:58:51.329 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:51.329 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:51.330 - DEBUG: [logger.js:246:9] PARAMS -> {"page":8,"perPage":1}
+2025-08-26 20:58:51.331 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:51.333 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 7, 1 
+2025-08-26 20:58:51.727 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:51.728 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:51.728 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 20:58:51.730 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:51.731 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 20:58:52.383 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:52.384 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:52.384 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 20:58:52.387 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:52.389 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 20:58:52.967 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:52.968 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:52.968 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 20:58:52.969 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:52.970 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 20:58:53.399 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:53.400 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:53.400 - DEBUG: [logger.js:246:9] PARAMS -> {"page":4,"perPage":1}
+2025-08-26 20:58:53.401 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:53.403 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 3, 1 
+2025-08-26 20:58:54.103 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:54.103 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:54.104 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 20:58:54.105 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:54.106 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 20:58:54.488 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 20:58:54.488 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 20:58:54.489 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 20:58:54.490 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 20:58:54.491 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 21:39:24.905 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:39:24.907 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:39:24.907 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 21:39:24.912 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:39:24.914 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 21:45:08.582 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:45:08.582 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:45:08.583 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 21:45:08.585 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:45:08.586 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 21:46:16.644 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:46:16.645 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:46:16.646 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 21:46:16.647 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:46:16.648 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 21:57:57.711 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:57:57.712 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:57:57.713 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 21:57:57.714 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:57:57.717 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 21:58:29.849 - DEBUG: [logger.js:246:9] POST /profile/upload requested
+2025-08-26 21:58:29.850 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2025-08-26 21:58:29.850 - DEBUG: [logger.js:246:9] FILES
+2025-08-26 21:58:29.850 - DEBUG: [logger.js:246:9] [{"fieldname":"photo","originalname":"movie1.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"movie11756213109843.png","path":"uploads\\movie11756213109843.png","size":898800}]
+2025-08-26 21:58:29.851 - DEBUG: [logger.js:246:9] File copied to C:\LX_AC\jaegon\JavaScript\server\ubiaccess-framework\controllers/../public/images/movie11756213109843.png
+2025-08-26 21:58:29.857 - DEBUG: [logger.js:246:9] post::add2 호출됨.
+2025-08-26 21:58:29.857 - DEBUG: [logger.js:246:9] POST /post/v1/add2 requested
+2025-08-26 21:58:29.858 - DEBUG: [logger.js:246:9] PARAMS -> {"title":"준하","contents":"주나","category":"추나","likes":0,"comments":0,"thumbnail":"http://localhost:8001/images/movie11756213109843.png"}
+2025-08-26 21:58:29.868 - DEBUG: [logger.js:246:9] SQL -> insert into test.post(title, contents, category, likes, comments,thumbnail)
+              values
+                  ('준하', '주나', '추나', '0', '0', 'http://localhost:8001/images/movie11756213109843.png')
+2025-08-26 21:58:29.884 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:29.884 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:29.884 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 21:58:29.885 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:29.887 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 21:58:31.305 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:31.305 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:31.306 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 21:58:31.307 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:31.308 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 21:58:33.609 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:33.609 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:33.610 - DEBUG: [logger.js:246:9] PARAMS -> {"page":9,"perPage":1}
+2025-08-26 21:58:33.611 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:33.612 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 8, 1 
+2025-08-26 21:58:35.074 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:35.075 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:35.075 - DEBUG: [logger.js:246:9] PARAMS -> {"page":8,"perPage":1}
+2025-08-26 21:58:35.077 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:35.079 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 7, 1 
+2025-08-26 21:58:36.497 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:36.497 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:36.498 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 21:58:36.498 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:36.499 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 21:58:36.929 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:36.929 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:36.930 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 21:58:36.931 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:36.932 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 21:58:37.361 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:37.361 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:37.362 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 21:58:37.363 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:37.364 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 21:58:38.041 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:38.042 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:38.042 - DEBUG: [logger.js:246:9] PARAMS -> {"page":2,"perPage":1}
+2025-08-26 21:58:38.043 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:38.044 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 1, 1 
+2025-08-26 21:58:38.592 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:38.593 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:38.593 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 21:58:38.594 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:38.597 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 21:58:41.530 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 21:58:41.530 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 21:58:41.531 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 21:58:41.532 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 21:58:41.534 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 21:58:45.322 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:45.323 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:45.323 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:45.334 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:45.504 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:45.504 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:45.505 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:45.507 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:45.832 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:45.833 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:45.833 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:45.843 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:46.344 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:46.345 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:46.345 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:46.354 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:46.520 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:46.520 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:46.520 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:46.523 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:46.672 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:46.672 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:46.673 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:46.675 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:46.816 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:46.816 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:46.817 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:46.820 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:46.960 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:46.960 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:46.961 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:46.963 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:47.112 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:47.112 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:47.112 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:47.115 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:47.256 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:47.257 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:47.257 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:47.260 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:47.392 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:47.392 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:47.392 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:47.395 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:47.552 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:47.553 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:47.553 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:47.556 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:47.680 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:47.680 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:47.681 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:47.683 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:47.816 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:47.816 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:47.817 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:47.819 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:48.856 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:48.856 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:48.857 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:48.859 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:48.992 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:48.992 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:48.993 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:48.995 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:49.240 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:49.240 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:49.241 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:49.243 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:49.360 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:49.360 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:49.361 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:49.363 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 21:58:49.480 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 21:58:49.480 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 21:58:49.481 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":19}
+2025-08-26 21:58:49.483 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '19' 
+2025-08-26 22:01:25.762 - DEBUG: [logger.js:246:9] POST /profile/upload requested
+2025-08-26 22:01:25.762 - DEBUG: [logger.js:246:9] PARAMS -> {"photo":""}
+2025-08-26 22:01:25.762 - DEBUG: [logger.js:246:9] FILES
+2025-08-26 22:01:25.763 - DEBUG: [logger.js:246:9] []
+2025-08-26 22:02:45.154 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:02:45.154 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:02:45.155 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:02:45.156 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:02:45.157 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:02:46.702 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:46.703 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:46.703 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:46.713 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:46.829 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:46.829 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:46.830 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:46.832 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:46.982 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:46.982 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:46.983 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:46.985 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:47.125 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:47.126 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:47.126 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:47.129 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:47.245 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:47.246 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:47.246 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:47.248 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:47.397 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:47.397 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:47.398 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:47.400 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:47.517 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:47.517 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:47.518 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:47.520 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:47.653 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:47.653 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:47.654 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:47.656 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:47.789 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:47.790 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:47.790 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:47.792 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:47.933 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:47.933 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:47.934 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:47.936 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:48.069 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:48.069 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:48.070 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:48.072 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:48.197 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:48.197 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:48.198 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:48.200 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:48.333 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:48.333 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:48.334 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:48.336 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:48.477 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:48.477 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:48.478 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:48.480 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:48.605 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:48.605 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:48.606 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:48.608 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:48.749 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:48.749 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:48.750 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:48.752 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:48.885 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:48.885 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:48.886 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:48.888 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:49.021 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:49.021 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:49.022 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:49.024 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:49.173 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:49.173 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:49.174 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:49.176 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:49.317 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:49.318 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:49.318 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:49.321 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:49.461 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:49.462 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:49.462 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:49.465 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:49.613 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:49.613 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:49.614 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:49.617 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:49.765 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:49.765 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:49.766 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:49.768 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:49.901 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:49.902 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:49.902 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:49.905 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:50.053 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:50.053 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:50.054 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:50.056 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:50.197 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:50.197 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:50.198 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:50.200 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:50.357 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:50.357 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:50.358 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:50.360 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:50.501 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:50.501 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:50.502 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:50.505 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:50.645 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:50.646 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:50.646 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:50.648 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:50.797 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:50.797 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:50.798 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:50.800 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:50.949 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:50.949 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:50.950 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:50.952 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:51.101 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:51.101 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:51.102 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:51.104 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:51.261 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:51.262 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:51.262 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:51.264 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:51.429 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:51.429 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:51.430 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:51.432 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:51.597 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:51.597 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:51.598 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:51.600 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:51.902 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:51.902 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:51.903 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:51.912 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:52.029 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:52.029 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:52.030 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:52.032 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:52.197 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:52.198 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:52.198 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:52.200 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:53.757 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:53.757 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:53.758 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:53.762 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:53.901 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:53.901 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:53.902 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:53.904 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:54.021 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:54.021 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:54.022 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:54.024 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:54.141 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:54.141 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:54.142 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:54.144 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:54.277 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:54.277 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:54.278 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:54.280 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:54.421 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:54.421 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:54.422 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:54.425 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:54.549 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:54.549 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:54.550 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:54.552 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:54.677 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:54.677 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:54.678 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:54.680 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:54.821 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:54.821 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:54.822 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:54.824 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:54.933 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:02:54.933 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:02:54.934 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:02:54.936 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:02:58.287 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:02:58.287 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:02:58.288 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 22:02:58.290 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:02:58.291 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 22:02:58.798 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:02:58.798 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:02:58.799 - DEBUG: [logger.js:246:9] PARAMS -> {"page":9,"perPage":1}
+2025-08-26 22:02:58.800 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:02:58.801 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 8, 1 
+2025-08-26 22:03:00.022 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:00.022 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:00.022 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 22:03:00.023 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:00.025 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 22:03:18.802 - DEBUG: [logger.js:246:9] POST /profile/upload requested
+2025-08-26 22:03:18.803 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2025-08-26 22:03:18.803 - DEBUG: [logger.js:246:9] FILES
+2025-08-26 22:03:18.803 - DEBUG: [logger.js:246:9] [{"fieldname":"photo","originalname":"people.png","encoding":"7bit","mimetype":"image/png","destination":"uploads","filename":"people1756213398801.png","path":"uploads\\people1756213398801.png","size":17721}]
+2025-08-26 22:03:18.804 - DEBUG: [logger.js:246:9] File copied to C:\LX_AC\jaegon\JavaScript\server\ubiaccess-framework\controllers/../public/images/people1756213398801.png
+2025-08-26 22:03:18.815 - DEBUG: [logger.js:246:9] post::add2 호출됨.
+2025-08-26 22:03:18.815 - DEBUG: [logger.js:246:9] POST /post/v1/add2 requested
+2025-08-26 22:03:18.816 - DEBUG: [logger.js:246:9] PARAMS -> {"title":"정훈","contents":"후니","category":"인간","likes":0,"comments":0,"thumbnail":"http://localhost:8001/images/people1756213398801.png"}
+2025-08-26 22:03:18.818 - DEBUG: [logger.js:246:9] SQL -> insert into test.post(title, contents, category, likes, comments,thumbnail)
+              values
+                  ('정훈', '후니', '인간', '0', '0', 'http://localhost:8001/images/people1756213398801.png')
+2025-08-26 22:03:18.833 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:18.834 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:18.834 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:03:18.835 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:18.836 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:03:20.118 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:20.118 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:20.119 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 22:03:20.120 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:20.121 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 22:03:22.070 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:22.070 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:22.071 - DEBUG: [logger.js:246:9] PARAMS -> {"page":11,"perPage":1}
+2025-08-26 22:03:22.072 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:22.074 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 10, 1 
+2025-08-26 22:03:40.015 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:40.016 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:40.016 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:03:40.017 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:40.019 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:03:42.557 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:42.558 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:42.558 - DEBUG: [logger.js:246:9] PARAMS -> {"page":2,"perPage":1}
+2025-08-26 22:03:42.559 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:42.560 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 1, 1 
+2025-08-26 22:03:43.534 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:43.534 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:43.535 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 22:03:43.536 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:43.537 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 22:03:43.814 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:43.814 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:43.815 - DEBUG: [logger.js:246:9] PARAMS -> {"page":4,"perPage":1}
+2025-08-26 22:03:43.816 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:43.818 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 3, 1 
+2025-08-26 22:03:44.198 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:44.199 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:44.199 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 22:03:44.200 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:44.201 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 22:03:44.630 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:44.630 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:44.631 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 22:03:44.632 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:44.634 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 22:03:45.800 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:45.801 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:45.801 - DEBUG: [logger.js:246:9] PARAMS -> {"page":4,"perPage":1}
+2025-08-26 22:03:45.802 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:45.803 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 3, 1 
+2025-08-26 22:03:47.279 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:47.279 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:47.280 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 22:03:47.281 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:47.283 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 22:03:47.831 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:47.832 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:47.832 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 22:03:47.834 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:47.835 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 22:03:51.128 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:51.128 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:51.129 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 22:03:51.130 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:51.132 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 22:03:51.575 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:51.575 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:51.576 - DEBUG: [logger.js:246:9] PARAMS -> {"page":8,"perPage":1}
+2025-08-26 22:03:51.577 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:51.578 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 7, 1 
+2025-08-26 22:03:51.847 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:51.848 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:51.848 - DEBUG: [logger.js:246:9] PARAMS -> {"page":9,"perPage":1}
+2025-08-26 22:03:51.849 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:51.851 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 8, 1 
+2025-08-26 22:03:52.079 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:52.080 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:52.080 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 22:03:52.081 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:52.082 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 22:03:54.407 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:54.408 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:54.408 - DEBUG: [logger.js:246:9] PARAMS -> {"page":9,"perPage":1}
+2025-08-26 22:03:54.409 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:54.412 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 8, 1 
+2025-08-26 22:03:54.671 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:54.671 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:54.672 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 22:03:54.673 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:54.674 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 22:03:55.134 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:55.135 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:55.135 - DEBUG: [logger.js:246:9] PARAMS -> {"page":4,"perPage":1}
+2025-08-26 22:03:55.136 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:55.137 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 3, 1 
+2025-08-26 22:03:55.599 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:55.599 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:55.600 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 22:03:55.601 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:55.603 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 22:03:55.903 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:55.904 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:55.904 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 22:03:55.905 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:55.906 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 22:03:56.416 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:56.417 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:56.417 - DEBUG: [logger.js:246:9] PARAMS -> {"page":8,"perPage":1}
+2025-08-26 22:03:56.419 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:56.421 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 7, 1 
+2025-08-26 22:03:57.231 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:57.232 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:57.232 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 22:03:57.234 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:57.235 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 22:03:57.887 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:03:57.887 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:03:57.888 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 22:03:57.889 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:03:57.891 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 22:03:59.527 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:03:59.528 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:03:59.528 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:03:59.531 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:03:59.662 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:03:59.663 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:03:59.663 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:03:59.665 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:03:59.798 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:03:59.798 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:03:59.799 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:03:59.802 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:03:59.950 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:03:59.951 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:03:59.951 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:03:59.953 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:00.054 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:00.054 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:00.055 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:00.057 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:02.990 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:02.991 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:02.991 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:03.001 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:03.094 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:03.095 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:03.095 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:03.117 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:03.254 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:03.255 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:03.255 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:03.258 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:03.430 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:03.431 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:03.431 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:03.433 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:03.478 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:03.479 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:03.479 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:03.482 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:03.710 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:03.711 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:03.711 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:03.715 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:03.830 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:03.831 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:03.831 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:03.833 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:03.942 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:03.943 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:03.943 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:03.945 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.054 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.054 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.055 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.057 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.174 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.175 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.175 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.177 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.294 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.295 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.295 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.298 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.422 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.422 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.423 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.425 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.551 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.552 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.552 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.554 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.662 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.663 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.663 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.665 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.766 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.767 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.767 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.769 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.902 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.903 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.903 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.905 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:04.990 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:04.990 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:04.991 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:04.994 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:05.110 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:05.111 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:05.111 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:05.114 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:05.230 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:05.230 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:05.231 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:05.233 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:05.326 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:05.327 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:05.327 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:05.330 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:05.478 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:05.479 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:05.479 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:05.482 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:05.582 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:05.583 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:05.583 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:05.585 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:05.702 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:05.703 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:05.703 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:05.705 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:05.814 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:05.815 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:05.815 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:05.817 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:05.942 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:05.943 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:05.943 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:05.946 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:06.062 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:06.063 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:06.063 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:06.065 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:06.190 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:06.191 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:06.191 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:06.194 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:06.310 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:06.311 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:06.311 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:06.314 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:06.446 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:06.447 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:06.447 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:06.449 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:06.590 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:06.590 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:06.591 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:06.593 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:06.718 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:06.719 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:06.719 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:06.721 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:04:06.838 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:04:06.839 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:04:06.839 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":3}
+2025-08-26 22:04:06.841 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '3' 
+2025-08-26 22:05:06.219 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:05:06.220 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:05:06.220 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:05:06.222 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:05:06.223 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:05:17.049 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:17.049 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:17.050 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:17.059 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:17.223 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:17.224 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:17.224 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:17.226 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:17.375 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:17.376 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:17.376 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:17.379 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:17.536 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:17.536 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:17.537 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:17.539 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:17.695 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:17.696 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:17.696 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:17.698 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:17.847 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:17.848 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:17.848 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:17.850 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:17.999 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:18.000 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:18.000 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:18.003 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:18.135 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:18.136 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:18.136 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:18.138 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:18.279 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:18.280 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:18.280 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:18.282 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:05:18.447 - DEBUG: [logger.js:246:9] post::like 호출됨.
+2025-08-26 22:05:18.447 - DEBUG: [logger.js:246:9] POST /post/v1/like/:postId requested
+2025-08-26 22:05:18.448 - DEBUG: [logger.js:246:9] PARAMS -> {"postId":":postId","id":1}
+2025-08-26 22:05:18.450 - DEBUG: [logger.js:246:9] SQL -> update test.post
+              set likes = likes + 1
+              where id = '1' 
+2025-08-26 22:07:51.057 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:07:51.057 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:07:51.058 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:07:51.060 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:07:51.062 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:07:59.366 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:07:59.367 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:07:59.367 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:07:59.368 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:07:59.369 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:10:13.343 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:10:13.344 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:10:13.345 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:10:13.346 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:10:13.347 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:31:19.349 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:31:19.350 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:31:19.350 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:31:19.351 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:31:19.353 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:31:20.473 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:31:20.474 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:31:20.474 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:31:20.476 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:31:20.477 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:44:57.684 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:44:57.685 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:44:57.685 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:44:57.688 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:44:57.689 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:44:59.647 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:44:59.648 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:44:59.648 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:44:59.664 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:44:59.666 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:45:15.952 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:15.953 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:15.953 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:45:15.954 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:15.957 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:45:18.160 - INFO: [logger.js:246:9] service loader called.
+2025-08-26 22:45:18.174 - INFO: [logger.js:246:9] controller loader called.
+2025-08-26 22:45:18.175 - DEBUG: [logger.js:246:9] external_loader called.
+2025-08-26 22:45:18.175 - DEBUG: [logger.js:246:9] No external configuration.
+2025-08-26 22:45:18.374 - INFO: [logger.js:246:9] Http Server started.
+2025-08-26 22:45:18.375 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2025-08-26 22:45:18.375 - INFO: [logger.js:246:9] Namespace -> ::_8001_5868
+2025-08-26 22:45:18.379 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2025-08-26 22:45:22.583 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:22.583 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:22.584 - DEBUG: [logger.js:246:9] PARAMS -> {"page":2,"perPage":1}
+2025-08-26 22:45:22.604 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:22.606 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 1, 1 
+2025-08-26 22:45:23.056 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:23.056 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:23.057 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:45:23.058 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:23.060 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:45:23.383 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:23.384 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:23.384 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 22:45:23.386 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:23.388 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 22:45:24.343 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:24.344 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:24.344 - DEBUG: [logger.js:246:9] PARAMS -> {"page":4,"perPage":1}
+2025-08-26 22:45:24.345 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:24.347 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 3, 1 
+2025-08-26 22:45:24.719 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:24.720 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:24.720 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 22:45:24.722 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:24.724 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 22:45:25.648 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:25.648 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:25.649 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 22:45:25.650 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:25.651 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 22:45:26.231 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:26.232 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:26.232 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 22:45:26.233 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:26.234 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 22:45:26.968 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:26.968 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:26.969 - DEBUG: [logger.js:246:9] PARAMS -> {"page":8,"perPage":1}
+2025-08-26 22:45:26.970 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:26.973 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 7, 1 
+2025-08-26 22:45:27.761 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:27.762 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:27.762 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 22:45:27.765 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:27.766 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 22:45:28.327 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:28.328 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:28.328 - DEBUG: [logger.js:246:9] PARAMS -> {"page":9,"perPage":1}
+2025-08-26 22:45:28.329 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:28.331 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 8, 1 
+2025-08-26 22:45:29.007 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:29.007 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:29.008 - DEBUG: [logger.js:246:9] PARAMS -> {"page":2,"perPage":1}
+2025-08-26 22:45:29.010 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:29.011 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 1, 1 
+2025-08-26 22:45:29.399 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:29.399 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:29.400 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:45:29.401 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:29.403 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:45:30.071 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:30.072 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:30.072 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 22:45:30.073 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:30.075 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 22:45:57.660 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:45:57.660 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:45:57.661 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:45:57.677 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:45:57.678 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:46:23.258 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:23.259 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:23.259 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:46:23.261 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:23.261 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:46:26.381 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:26.381 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:26.381 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 22:46:26.382 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:26.383 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 22:46:27.037 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:27.038 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:27.038 - DEBUG: [logger.js:246:9] PARAMS -> {"page":9,"perPage":1}
+2025-08-26 22:46:27.039 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:27.040 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 8, 1 
+2025-08-26 22:46:27.573 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:27.574 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:27.574 - DEBUG: [logger.js:246:9] PARAMS -> {"page":8,"perPage":1}
+2025-08-26 22:46:27.575 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:27.576 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 7, 1 
+2025-08-26 22:46:28.478 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:28.479 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:28.479 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 22:46:28.480 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:28.482 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 22:46:28.829 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:28.829 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:28.829 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 22:46:28.830 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:28.831 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 22:46:29.269 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:29.270 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:29.270 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 22:46:29.272 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:29.273 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 22:46:29.830 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:29.830 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:29.830 - DEBUG: [logger.js:246:9] PARAMS -> {"page":4,"perPage":1}
+2025-08-26 22:46:29.832 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:29.833 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 3, 1 
+2025-08-26 22:46:30.445 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:30.445 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:30.446 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 22:46:30.447 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:30.447 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 22:46:30.925 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:30.925 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:30.926 - DEBUG: [logger.js:246:9] PARAMS -> {"page":2,"perPage":1}
+2025-08-26 22:46:30.927 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:30.928 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 1, 1 
+2025-08-26 22:46:31.333 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:31.333 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:31.334 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:46:31.335 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:31.337 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:46:35.188 - INFO: [logger.js:246:9] service loader called.
+2025-08-26 22:46:35.203 - INFO: [logger.js:246:9] controller loader called.
+2025-08-26 22:46:35.204 - DEBUG: [logger.js:246:9] external_loader called.
+2025-08-26 22:46:35.204 - DEBUG: [logger.js:246:9] No external configuration.
+2025-08-26 22:46:35.418 - INFO: [logger.js:246:9] Http Server started.
+2025-08-26 22:46:35.419 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2025-08-26 22:46:35.419 - INFO: [logger.js:246:9] Namespace -> ::_8001_7788
+2025-08-26 22:46:35.424 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2025-08-26 22:46:59.872 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:46:59.873 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:46:59.873 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:46:59.966 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:46:59.980 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:47:01.439 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:01.440 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:01.440 - DEBUG: [logger.js:246:9] PARAMS -> {"page":2,"perPage":1}
+2025-08-26 22:47:01.441 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:01.444 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 1, 1 
+2025-08-26 22:47:01.894 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:01.894 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:01.894 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 22:47:01.896 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:01.898 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 22:47:02.341 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:02.342 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:02.342 - DEBUG: [logger.js:246:9] PARAMS -> {"page":4,"perPage":1}
+2025-08-26 22:47:02.344 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:02.345 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 3, 1 
+2025-08-26 22:47:02.757 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:02.757 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:02.758 - DEBUG: [logger.js:246:9] PARAMS -> {"page":5,"perPage":1}
+2025-08-26 22:47:02.759 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:02.761 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 4, 1 
+2025-08-26 22:47:03.142 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:03.142 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:03.143 - DEBUG: [logger.js:246:9] PARAMS -> {"page":6,"perPage":1}
+2025-08-26 22:47:03.144 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:03.146 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 5, 1 
+2025-08-26 22:47:03.629 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:03.630 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:03.630 - DEBUG: [logger.js:246:9] PARAMS -> {"page":7,"perPage":1}
+2025-08-26 22:47:03.631 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:03.632 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 6, 1 
+2025-08-26 22:47:04.381 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:04.382 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:04.382 - DEBUG: [logger.js:246:9] PARAMS -> {"page":8,"perPage":1}
+2025-08-26 22:47:04.383 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:04.385 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 7, 1 
+2025-08-26 22:47:05.566 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:05.567 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:05.567 - DEBUG: [logger.js:246:9] PARAMS -> {"page":9,"perPage":1}
+2025-08-26 22:47:05.568 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:05.571 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 8, 1 
+2025-08-26 22:47:06.061 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:06.061 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:06.062 - DEBUG: [logger.js:246:9] PARAMS -> {"page":10,"perPage":1}
+2025-08-26 22:47:06.063 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:06.065 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 9, 1 
+2025-08-26 22:47:07.189 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:07.190 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:07.190 - DEBUG: [logger.js:246:9] PARAMS -> {"page":11,"perPage":1}
+2025-08-26 22:47:07.191 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:07.192 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 10, 1 
+2025-08-26 22:47:36.074 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:36.075 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:36.075 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:47:36.076 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:36.077 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:47:37.215 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:37.215 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:37.216 - DEBUG: [logger.js:246:9] PARAMS -> {"page":2,"perPage":1}
+2025-08-26 22:47:37.217 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:37.218 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 1, 1 
+2025-08-26 22:47:38.478 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:38.479 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:38.479 - DEBUG: [logger.js:246:9] PARAMS -> {"page":3,"perPage":1}
+2025-08-26 22:47:38.480 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:38.481 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 2, 1 
+2025-08-26 22:47:39.334 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:47:39.334 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:47:39.334 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:47:39.335 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:47:39.337 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 
+2025-08-26 22:48:27.449 - DEBUG: [logger.js:246:9] post::list 호출됨.
+2025-08-26 22:48:27.514 - DEBUG: [logger.js:246:9] POST /post/v1/list requested
+2025-08-26 22:48:27.605 - DEBUG: [logger.js:246:9] PARAMS -> {"page":1,"perPage":1}
+2025-08-26 22:48:27.691 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total from test.post
+2025-08-26 22:48:27.693 - DEBUG: [logger.js:246:9] SQL -> 
+            select id, title, contents, category, createDate, likes, comments, thumbnail,
+                CASE
+                    WHEN TIMESTAMPDIFF(MINUTE, createDate, NOW()) < 1
+                        THEN '방금전'
+                    WHEN TIMESTAMPDIFF(HOUR, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(MINUTE, createDate, NOW()), '분전')
+                    WHEN TIMESTAMPDIFF(DAY, createDate, NOW()) < 1
+                        THEN CONCAT(TIMESTAMPDIFF(HOUR, createDate, NOW()), '시간전')
+                    ELSE CONCAT(TIMESTAMPDIFF(DAY, createDate, NOW()), '일전')
+                    END AS relativeTime
+            from test.post
+          limit 0, 1 

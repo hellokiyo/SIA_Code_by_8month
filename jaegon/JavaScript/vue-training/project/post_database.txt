@@ -1,0 +1,12 @@
+CREATE TABLE post ( 
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(20) NOT NULL,
+    contents VARCHAR(50) NOT NULL,
+    category VARCHAR(10),
+    createDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+    likes INT DEFAULT 0,
+    comments INT DEFAULT 0,
+    thumbnail TEXT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+
+

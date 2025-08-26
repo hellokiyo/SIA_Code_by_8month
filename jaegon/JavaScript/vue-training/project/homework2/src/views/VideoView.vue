@@ -1,17 +1,6 @@
 <template>
-  <header class="d-flex align-items-center p-2 border-bottom">
-    <div class="fw-bold">Logo</div>
-    <nav class="ms-auto d-flex gap-2">
-      <a>Home</a><a>About</a><a>Contact</a>
-    </nav>
-  </header>
-  <div class="d-flex justify-content-center align-items-center h-100 bg-light-primary">
-    <h1>찾기 화면</h1>\
-  </div>
 
-  <div class="d-flex justify-content-around py-2">
-    <button class="d-flex justify-content-center align-items-center h-100 btn btn-primary" @click="login()">검색</button>
-  </div>
+  <VideoUpload />
 
 </template>
 
@@ -30,6 +19,8 @@ const appStore = useAppStore();
 const {title} = storeToRefs(appStore);
 
 
+
+
 onMounted(() => {
   console.log(`HomeView::onMounted 호출됨`);
 
@@ -44,6 +35,7 @@ function login() {
 function goToHome() {
   router.push('/')
 }
+
 </script>
 
 <style scoped>

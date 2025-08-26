@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import('../views/PostView.vue'),
     },
     {
+      path: '/video',
+      name: 'video',
+      component: () => import('../views/VideoView.vue'),
+    },
+    {
       path: '/post-write',
       name: 'post-write',
       component: () => import('../views/PostWriteView.vue'),

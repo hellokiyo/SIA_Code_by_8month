@@ -111,6 +111,10 @@
 
       <!-- 드로어 상단 -->
       <div class="p-5 border-bottom">
+        <h3>메뉴</h3>
+      </div>
+      <!-- 내 정보 -->
+      <div class="p-5 border-bottom">
         <div class="row">
 
           <div class="col-3">
@@ -123,10 +127,6 @@
           </div>
 
         </div>
-      </div>
-
-      <div class="p-5 border-bottom">
-        <h3>메뉴</h3>
       </div>
 
       <!-- 드로어 메뉴 아이템 -->
@@ -222,6 +222,8 @@ function tabButtonClicked(name) {
     goToMore();
   }else if(name === 'user') {
     goToUser()
+  }else if(name === 'video') {
+    goToVideo()
   }
 }
 
@@ -257,6 +259,13 @@ function goToUser() {
   router.push('/user')
 }
 
+// 더보기 페이지 이동
+function goToVideo() {
+  router.push('/video')
+}
+
+
+//드로어 사이드 바 메뉴
 const sidebars = ref([
   {
     key : 'home',
@@ -282,6 +291,7 @@ const sidebars = ref([
   }
 ])
 
+// 하단 탭 메뉴
 const tabs = ref([
   { key: 'home', title: '홈', icon: '<i class="ki-duotone fs-2x ki-home">\n</i>' },
 
@@ -296,6 +306,10 @@ const tabs = ref([
         ' <span class="path3"></span>\n' +
         ' <span class="path4"></span>\n' +
         ' <span class="path5"></span>\n' +
+        '</i>'},
+  { key: 'video', title: '영상', icon: '<i class="ki-duotone ki-youtube">\n' +
+        ' <span class="path1"></span>\n' +
+        ' <span class="path2"></span>\n' +
         '</i>'}
 ])
 
