@@ -215,8 +215,8 @@ function tabButtonClicked(name) {
   }else if(name === 'search') {
     goToSearch();
   }
-  else if(name === 'document') {
-    goToDocument();
+  else if(name === 'post') {
+    goToPost();
   }
   else if(name === 'more') {
     goToMore();
@@ -236,8 +236,8 @@ function goToSearch() {
 }
 
 // 문서 페이지 이동
-function goToDocument() {
-  router.push('/document')
+function goToPost() {
+  router.push('/post')
 }
 
 // 더보기 페이지 이동
@@ -290,7 +290,7 @@ const tabs = ref([
         ' <span class="path2"></span>\n' +
         ' <span class="path3"></span>\n' +
         '</i>' },
-  { key: 'document', title: '게시물', icon: '<i class="ki-duotone fs-2x ki-people">\n' +
+  { key: 'post', title: '게시물', icon: '<i class="ki-duotone fs-2x ki-people">\n' +
         ' <span class="path1"></span>\n' +
         ' <span class="path2"></span>\n' +
         ' <span class="path3"></span>\n' +

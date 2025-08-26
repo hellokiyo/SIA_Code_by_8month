@@ -108,7 +108,7 @@ onMounted(() => {
   title.value ='게시물';
 
   // (page, perPage) → 1페이지에 2개 게시물 불러오기
-  requestAnimalList(1,5)
+  requestAnimalList(1,1)
 })
 
 // ========================= 게시물 요청 함수 =========================

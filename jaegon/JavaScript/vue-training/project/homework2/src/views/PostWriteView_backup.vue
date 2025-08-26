@@ -168,8 +168,8 @@ async function requestPostAdd(item) {
 // 게시물 목록 화면으로 이동하는 함수
 function goToPost() {
   console.log("goToPost 함수 호출됨");
-  // '/document' 경로로 페이지를 이동시킵니다.
-  router.push('/document');
+  // '/post' 경로로 페이지를 이동시킵니다.
+  router.push('/post');
 
 }
 </script>

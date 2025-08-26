@@ -15,16 +15,6 @@ const router = createRouter({
       component: () => import('../views/SearchView.vue'),
     },
     {
-      path: '/document',
-      name: 'document',
-      component: () => import('../views/PostView.vue'),
-    },
-    {
-      path: '/post-write',
-      name: 'post-write',
-      component: () => import('../views/PostWriteView.vue'),
-    },
-    {
       path: '/user',
       name: 'user',
       component: () => import('../views/UserView.vue'),

@@ -11,30 +11,28 @@
           </div>
         </div>
 
-        <div class="mb-10">
-          <label class="form-label fw-bold">이미지</label>
-          <input type="file" class="form-control" rows="3" placeholder="이미지 입력">
-        </div>
-
         <div>
           <label class="form-label fw-bold">이미지</label>
           <div class="image-upload-wrap">
             <p class="text-muted m-0">이미지 선택</p>
-            <input type="file" class="d-none" >
+            <input type="file" id="uploadImage" hidden @change="getFilename($event.target.files)">
           </div>
           <div class="image-preview">
-            <img :src="imagePreviewUri">
+            <!-- 이미지 프리뷰(미리보기)-->
+            <label for="uploadImage" class="d-flex justify-content-center">
+              <img src="@/assets/images/InputImage.png" id="preview" width="50%">
+            </label>
           </div>
         </div>
 
         <div class="card-footer">
           <div class="d-flex justify-content-around">
-            <button class="btn btn-light-primary w-45 px-20 py-5" @click="save()">
-              <span class="fs-3 fw-bold">저장</span>
+            <button class="btn btn-light-primary px-20 py-5" @click="save()">
+              <span class="fs-1 fw-bold">저장</span>
             </button>
 
             <button class="btn btn-light-secondary w-45 px-20 py-5" @click="goToPost()">
-              <span class="fs-3 fw-bold">취소</span>
+              <span class="fs-1 fw-bold">취소</span>
             </button>
 
           </div>
@@ -84,51 +82,63 @@ const addPostInfo = ref([
   {
     name : '카테고리',
     value: ""
-  },
-  {
-    name : '날짜',
-    value: ""
-  },
-  {
-    name : '좋아요 수',
-    value: ""
-  },
-  {
-    name : '댓글갯수',
-    value: ""
   }
 ])
+
+// 선택된 파일 저장소
+const selectedFile = ref('')
+
+import { useUpload } from "@/util/upload.js"
+const { upload } = useUpload()
+import { requestConfig } from "../../app.config.js"
+
 
 // 컴포넌트가 마운트(화면에 나타남)된 후 실행되는 훅입니다.
 onMounted(() => {
   console.log(`PostWriteView::onMounted 호출됨`);
 
+
   // 페이지 제목을 '새 게시물 작성'으로 설정합니다.
   title.value ='새 게시물 작성';
 })
+
+// ===== 파일 선택 =====
+async function getFilename(files) {
+  selectedFile.value = files[0]  // 첫 번째 파일만 저장
+  await base64()                 // base64 변환 실행
+}
+
+// base64 변환 (미리보기용)
+function base64() {
+  return new Promise((resolve, reject) => {
+    let reader = new FileReader()
+    reader.onload = e => {
+      resolve(e.target.result)
+
+      // 미리보기 이미지 표시
+      const previewImage = document.querySelector('#preview')
+      previewImage.src = e.target.result
+    }
+    reader.readAsDataURL(selectedFile.value)
+  })
+}
+
 
 // '저장' 버튼 클릭 시 호출되는 함수
 function save() {
 
   console.log(`save 함수 호출됨`)
 
-  // addPostInfo 배열의 첫 번째 요소(제목)의 value를 가져옵니다.
-  const title = addPostInfo.value[0].value;
-  const contents = addPostInfo.value[1].value;
-  const category = addPostInfo.value[2].value;
-  const createDate = addPostInfo.value[3].value;
-  const likes = addPostInfo.value[4].value;
-  const comments = addPostInfo.value[5].value;
-  const thumbnail = thumbnailInput.value;
+  let today =new Date();
 
   const item = {
-    title: title,
-    contents: contents,
-    category: category,
-    createDate: createDate,
-    likes: likes,
-    comments: comments,
-    thumbnail: thumbnail
+    title: addPostInfo.value[0].value,
+    contents: addPostInfo.value[1].value,
+    category: addPostInfo.value[2].value,
+    createDate: today,
+    likes: 0,
+    comments: 0,
+    thumbnail: thumbnailInput.value
   }
   // 게시물 추가 요청 함수를 호출하며 item 객체를 전달합니다.
   requestPostAdd(item)
@@ -158,8 +168,21 @@ async function requestPostAdd(item) {
   console.log(`requestPostAdd 함수 호출됨`);
 
   try{
+
+    // 1. 업로드 요청
+    let response = await upload(selectedFile.value, (progress) => {
+      console.log(`업로드 진행률 : ${progress}%`)
+    })
+
+    console.log(`업로드 응답 -> ${JSON.stringify(response)}`)
+
+    // 2 업로드 완료된 이미지 경로 추가
+    item.thumbnail = `${requestConfig.baseUrl}${response.data.filename}`
+
+
+
     // axios를 사용하여 POST 요청을 보냅니다.
-    const response = await axios({
+    response = await axios({
       method: 'post',
       baseURL: `http://localhost:8001`,
       url: '/post/v1/add',
@@ -169,6 +192,9 @@ async function requestPostAdd(item) {
     })
 
     console.log(`응답 -> ${JSON.stringify(response.data)}`)
+
+    // 4️⃣ DB 갱신 → Vue 데이터 반영
+    //posts.value = response.data.data.data
 
     // 게시물 추가 성공 후 게시물 목록 페이지로 이동합니다.
     goToPost()
@@ -183,8 +209,8 @@ async function requestPostAdd(item) {
 // 게시물 목록 화면으로 이동하는 함수
 function goToPost() {
   console.log("goToPost 함수 호출됨");
-  // '/document' 경로로 페이지를 이동시킵니다.
-  router.push('/document');
+  // '/post' 경로로 페이지를 이동시킵니다.
+  router.push('/post');
 
 }
 </script>

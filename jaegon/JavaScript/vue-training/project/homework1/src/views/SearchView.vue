@@ -1,19 +1,21 @@
 <template>
 
-  <div class="d-flex justify-content-center align-items-center h-100 bg-light-primary">
-    <h1>찾기 화면</h1>\
-  </div>
-
-  <div class="d-flex justify-content-around py-2">
-    <button class="d-flex justify-content-center align-items-center h-100 btn btn-primary" @click="login()">로그인</button>
-  </div>
-
   <header class="d-flex align-items-center p-2 border-bottom">
     <div class="fw-bold">Logo</div>
     <nav class="ms-auto d-flex gap-2">
       <a>Home</a><a>About</a><a>Contact</a>
     </nav>
   </header>
+
+  <div class="d-flex justify-content-center align-items-center h-100 bg-light-primary">
+    <h1>찾기 화면</h1>
+  </div>
+
+  <div class="d-flex justify-content-around py-2">
+    <button class="d-flex justify-content-center align-items-center h-100 btn btn-primary" @click="login()">로그인</button>
+  </div>
+
+
 
 
 </template>

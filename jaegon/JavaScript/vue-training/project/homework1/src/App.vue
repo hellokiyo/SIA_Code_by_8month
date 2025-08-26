@@ -111,6 +111,11 @@
 
       <!-- 드로어 상단 -->
       <div class="p-5 border-bottom">
+        <h3>메뉴</h3>
+      </div>
+
+      <!-- 드로어 상단 -->
+      <div class="p-5 border-bottom">
         <div class="row">
 
           <div class="col-3">
@@ -123,10 +128,6 @@
           </div>
 
         </div>
-      </div>
-
-      <div class="p-5 border-bottom">
-        <h3>메뉴</h3>
       </div>
 
       <!-- 드로어 메뉴 아이템 -->
@@ -290,7 +291,7 @@ const tabs = ref([
         ' <span class="path2"></span>\n' +
         ' <span class="path3"></span>\n' +
         '</i>' },
-  { key: 'document', title: '게시물', icon: '<i class="ki-duotone fs-2x ki-people">\n' +
+  { key: 'user', title: '마이페이지', icon: '<i class="ki-duotone fs-2x ki-people">\n' +
         ' <span class="path1"></span>\n' +
         ' <span class="path2"></span>\n' +
         ' <span class="path3"></span>\n' +
