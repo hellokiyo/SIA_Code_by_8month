@@ -24,8 +24,8 @@
         <div class="card-footer d-flex justify-content-between align-items-center py-5">
 
           <!-- 좋아요 영역 -->
-          <span class="d-flex align-items-center text-gray-600 fs-5" @click="requestPostLike(item)">
-            <i class="ki-duotone ki-like text-primary fs-2x me-2">
+          <span class="d-flex align-items-center text-gray-600 fs-5" >
+            <i class="ki-duotone ki-like text-primary fs-2x me-2" @click="requestPostLike(item)">
              <span class="path1"></span>
              <span class="path2"></span>
             </i>
@@ -46,7 +46,7 @@
           <span class="badge badge-light-primary px-5 py-2">{{ item.category }}</span>
 
           <!-- 작성일 표시 -->
-          <span class="text-muted">{{ item.createDate }}</span>
+          <span class="text-muted">{{ item.relativeTime }}</span>
 
         </div>
 
@@ -142,17 +142,17 @@ async function requestAnimalList(page, perPage) {
 
 // ========================= 좋아요 추가 기능 함수 =========================
 // 좋아요 클릭시 좋아요가 증가하는 함수
-async function requestPostLike(item) {
+async function requestPostLike(posts) {
   try {
 
-    item.likes++;
+    posts.likes++;
 
     const response = await axios({
       method: 'post',               // POST 요청
       baseURL: `http://localhost:8001`, // 서버 주소
       url: '/post/v1/like/:postId',       // API 엔드포인트
       data: {
-        id: item.id
+        id: posts.id
       },
       timeout: 5000,                // 5초 동안 응답 없으면 에러
       responseType: "json"          // 응답 타입: JSON
@@ -162,7 +162,7 @@ async function requestPostLike(item) {
 
   } catch (err) {
     console.error(`에러 -> ${err}`);
-    item.likes--;
+    posts.likes--;
   }
 }
 

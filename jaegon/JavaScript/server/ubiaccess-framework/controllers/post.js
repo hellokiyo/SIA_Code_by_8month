@@ -79,6 +79,20 @@ module.exports = class Post {
 
     }
 
+    ///
+    /// 추가하기2
+    ///
+
+    /**
+     * @RequestMapping(path="/add2", method="get,post")
+     */
+    async add2(req, res) {
+        logger.debug(`post::add2 호출됨.`);
+
+        const sqlName = 'post_add2';
+        this.controllerHelper.execute(req, res, sqlName);
+
+    }
 
     ///
     /// 수정하기

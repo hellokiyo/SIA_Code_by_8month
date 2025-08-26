@@ -88,6 +88,7 @@ const addPostInfo = ref([
 // 선택된 파일 저장소
 const selectedFile = ref('')
 
+
 import { useUpload } from "@/util/upload.js"
 const { upload } = useUpload()
 import { requestConfig } from "../../app.config.js"
@@ -96,7 +97,6 @@ import { requestConfig } from "../../app.config.js"
 // 컴포넌트가 마운트(화면에 나타남)된 후 실행되는 훅입니다.
 onMounted(() => {
   console.log(`PostWriteView::onMounted 호출됨`);
-
 
   // 페이지 제목을 '새 게시물 작성'으로 설정합니다.
   title.value ='새 게시물 작성';
@@ -124,18 +124,26 @@ function base64() {
 }
 
 
+
 // '저장' 버튼 클릭 시 호출되는 함수
 function save() {
 
   console.log(`save 함수 호출됨`)
 
-  let today =new Date();
+
+  // 포스트 작성 시각
+  const postTime = new Date();
+
+  /*  switch (thumbnailInput.value == null) {
+      case true:
+      case false:
+
+    }*/
 
   const item = {
     title: addPostInfo.value[0].value,
     contents: addPostInfo.value[1].value,
     category: addPostInfo.value[2].value,
-    createDate: today,
     likes: 0,
     comments: 0,
     thumbnail: thumbnailInput.value
@@ -185,7 +193,7 @@ async function requestPostAdd(item) {
     response = await axios({
       method: 'post',
       baseURL: `http://localhost:8001`,
-      url: '/post/v1/add',
+      url: '/post/v1/add2',
       data: item,
       timeout: 5000,
       responseType: "json"
