@@ -5,17 +5,6 @@
       <h1>추가 화면</h1>
     </div>
 
-    <!-- v-for로 바꾸기
-    <div v-for="(item,index) in animal_info" :key="index">
-      <div>
-        <label>{{item.label}}</label>
-        <input type="text" v-model="animals[item.model]">
-      </div>
-    </div>-->
-
-
-
-
     <div>
       <label>구분</label>
       <input type="text" v-model="typeInput">
@@ -35,6 +24,17 @@
       <label>전화번호</label>
       <input type="text" v-model="mobileInput">
     </div>
+
+    <div class="mt-4">
+      <input type="file" id="uploadImage" hidden @change="getFilename($event.target.files)">
+      <!-- 파일선택 자체를 hidden으로 안보이게, 이벤트발생시 files를 담은 함수 실행-->
+
+      <!-- 이미지 프리뷰(미리보기)-->
+      <label for="uploadImage" class="d-flex justify-content-center">
+        <img src="/assets/media/avatars/300-20.jpg" id="preview" width="50%">
+      </label>
+    </div>
+
 
     <div>
       <label>이미지 경로</label>
@@ -94,13 +94,23 @@ const ageInput = ref('')
 const mobileInput = ref('')
 const pathInput = ref('')
 
+
+//선택된파일
+const selectedFile = ref('')
+//업로드
+import { useUpload } from "@/util/upload.js" //업로드
+const { upload } = useUpload()
+
+//
+import {requestConfig } from "../../app.config.js"
+
 // 화면이 보이기 전에 한 번 실행됨
 // 목적 : 화면이 보이기 전에 초기화하거나 또는 실행해야 하는 것들을 실행해줌
 onMounted(()=> {
   console.log(`AnimalAdd::onMounted 호출됨`)
 
   // 수정 모드인 경우, 입력상자에 선택된 아이템의 값을 넣어주기
-  if(mode.value == 'modify'){
+  if(mode.value === 'modify'){
     const selected = animals.value[selectedIndex.value]
 
     typeInput.value = selected.type
@@ -113,6 +123,26 @@ onMounted(()=> {
 })
 
 
+// ===== 파일 선택 =====
+async function getFilename(files) {
+  selectedFile.value = files[0]
+  await base64()
+}
+function base64() {
+  return new Promise((resolve, reject) => {
+    let reader = new FileReader()
+    reader.onload = e => { // 화살표함수에서 파라미터 하나면 소괄호 생략
+      // 다 읽으면 e 함수 실행
+      resolve(e.target.result)
+
+      const previewImage = document.querySelector('#preview')
+      previewImage.src = e.target.result
+      // 결과물 업로드
+    }
+
+    reader.readAsDataURL(selectedFile.value)
+  })
+}
 
 
 
@@ -152,7 +182,16 @@ function save() {
 async function requestAnimalAdd(item) {
   try{
 
-    const response = await axios({
+      //이미지 업로드
+      let response = await upload(selectedFile.value, (progress) => {
+        console.log(`업로드 진행률 : ${progress}`)
+      })
+
+      console.log(`업로드 응답 -> ${JSON.stringify(response)}`)
+
+      item.path = `${requestConfig.baseUrl}${response.data.filename}`
+
+      response = await axios({
       method: 'post',
       baseURL: `http://localhost:8001`,
       url: '/animal/v1/add',

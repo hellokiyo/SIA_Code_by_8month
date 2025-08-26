@@ -13,9 +13,6 @@
       </div>
     </div>-->
 
-
-
-
     <div>
       <label>구분</label>
       <input type="text" v-model="typeInput">
