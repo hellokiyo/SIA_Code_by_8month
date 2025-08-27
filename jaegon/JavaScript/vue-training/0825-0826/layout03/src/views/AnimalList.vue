@@ -138,6 +138,8 @@ import { Modal } from 'bootstrap'  //부트스트랩
 import { useUpload } from "@/util/upload.js" //업로드
 const { upload } = useUpload()
 
+import {requestConfig} from "../../app.config.js";
+
 
 // ===== 전역/스토어 =====
 const router = useRouter()
@@ -169,7 +171,7 @@ async function requestAnimalList(page, perPage) {
   try{
     const response = await axios({
       method: 'post',
-      baseURL: `http://localhost:8001`,
+      baseURL: requestConfig.baseUrl,
       url: '/animal/v1/list',
       data: { page, perPage },
       timeout: 5000,

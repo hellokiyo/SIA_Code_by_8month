@@ -1,0 +1,8 @@
+2025-08-27 09:06:17.842 - INFO: [logger.js:246:9] service loader called.
+2025-08-27 09:06:17.857 - INFO: [logger.js:246:9] controller loader called.
+2025-08-27 09:06:17.857 - DEBUG: [logger.js:246:9] external_loader called.
+2025-08-27 09:06:17.857 - DEBUG: [logger.js:246:9] No external configuration.
+2025-08-27 09:06:18.110 - INFO: [logger.js:246:9] Http Server started.
+2025-08-27 09:06:18.111 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2025-08-27 09:06:18.111 - INFO: [logger.js:246:9] Namespace -> ::_8001_9872
+2025-08-27 09:06:18.116 - DEBUG: [logger.js:246:9] database SQL file loaded.

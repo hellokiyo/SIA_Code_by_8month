@@ -168,7 +168,7 @@ async function requestAnimalAdd(item) {
 
       response = await axios({
       method: 'post',
-      baseURL: `http://localhost:8001`,
+      baseURL: requestConfig.baseUrl,
       url: '/animal/v1/add',
       data: item,
       timeout: 5000,
@@ -191,7 +191,7 @@ async function requestAnimalModify(item) {
 
     const response = await axios({
       method: 'post',
-      baseURL: `http://localhost:8001`,
+      baseURL: requestConfig.baseUrl,
       url: '/animal/v1/modify',
       data: item,
       timeout: 5000,
