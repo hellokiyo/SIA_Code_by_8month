@@ -54,6 +54,17 @@
       </button>
 
     </div>
+    <!--
+    fullScrenn > vue 디렉티브
+    app-header > 메트로닉 커스텀 속성임
+    d-flex : 부트스트랩 유틸리티 클래스 / display: flex;속성을 적용한다. / 이 요소의 자식들의 button, span등 유연하게 정렬,배치함 /
+    align-content-center : 부트스트랩 유틸리티 클래스 / flex 컨테이너 자식 요소들을 수직방향에 따라 정렬 > 자식요소들이 수직방향으로 가운데 위치/
+    justify-content-between : 부트스트랩 유틸리티 클래스 / flex 컨테이너 자식 요소들을 수평방향에 따라 정렬 > / between 첫번째와 마지막 항목을 양끝에 배치
+    나머지 항목들 사이에 동일한 간격을 만듬 / ex 왼쪽 햄버거 버튼, 가운데 타이틀, 오른쪽 로그인 버튼을 양끝과 중앙에 깔끔하게 배치
+    border-bottem : 부트스트랩 유틸리티 클래스 / 아랫쪽에 얇은 테두리 추가
+    bg-white : 부트스트랩 유틸리티 클래스 / background-color를 흰색으로 설정
+    p-2 : 부트스트랩의 유틸리티 클래스 /padding을 2단계
+    -->
 
     <!-- 메인 컨텐츠 -->
     <div class="flex-grow-1 overflow-auto bg-light p-4" style="padding-bottom: 80px;">

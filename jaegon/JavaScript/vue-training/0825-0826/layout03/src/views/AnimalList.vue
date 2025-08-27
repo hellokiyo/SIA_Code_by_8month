@@ -180,6 +180,8 @@ async function requestAnimalList(page, perPage) {
     console.log(`응답 -> ${JSON.stringify(response.data)}`)
     animals.value = response.data.data.data
     pagination1.value = makePagination(response.data.data.header)
+
+
   } catch (err) {
     console.error(`에러 -> ${err}`);
   }
@@ -272,7 +274,7 @@ async function requestAnimalRemove(item) {
   try{
     const response = await axios({
       method: 'post',
-      baseURL: `http://localhost:8001`,
+      baseURL: requestConfig.baseUrl,
       url: '/animal/v1/remove',
       data: item,
       timeout: 5000,

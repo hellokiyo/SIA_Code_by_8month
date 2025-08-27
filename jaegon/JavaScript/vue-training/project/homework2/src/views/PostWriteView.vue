@@ -192,7 +192,7 @@ async function requestPostAdd(item) {
     // axios를 사용하여 POST 요청을 보냅니다.
     response = await axios({
       method: 'post',
-      baseURL: `http://localhost:8001`,
+      baseURL: requestConfig.baseUrl,
       url: '/post/v1/add2',
       data: item,
       timeout: 5000,

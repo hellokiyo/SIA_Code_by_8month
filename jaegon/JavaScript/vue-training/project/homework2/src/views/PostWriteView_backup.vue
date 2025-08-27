@@ -84,6 +84,7 @@ import { storeToRefs } from "pinia";
 
 // 2. 내 스토어(app.js) 불러오기
 import { useAppStore } from "@/stores/app.js";
+import {requestConfig} from "../../app.config.js";
 
 // 3. 스토어 실행
 const appStore = useAppStore();
@@ -146,7 +147,7 @@ async function requestPostAdd(item) {
     // axios를 사용하여 POST 요청을 보냅니다.
     const response = await axios({
       method: 'post',
-      baseURL: `http://localhost:8001`,
+      baseURL: requestConfig.baseUrl,
       url: '/post/v1/add',
       data: item,
       timeout: 5000,

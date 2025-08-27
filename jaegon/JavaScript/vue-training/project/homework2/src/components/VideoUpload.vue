@@ -12,9 +12,7 @@
         <div class="col-12">
           <div class="dropzone dropzone-queue mb-2" id="video-dropzone">
             <div class="dropzone-panel mb-4">
-              <a class="dropzone-select btn btn-sm btn-primary me-2">선택한 파일</a>
               <input type="file" accept="video/*" @change="handleFileUpload" ref="fileInput" style="display: none;"/>
-              <span class="dropzone-filename ms-2">{{ selectedFileName || '영상 파일을 선택해주세요' }}</span>
             </div>
           </div>
 
@@ -65,20 +63,8 @@
 
               <div class="mt-4">
                 <div class="d-flex justify-content-center gap-3">
-                  <button @click="playVideo" class="btn btn-success">
-                    <i class="ki-duotone ki-play fs-2">
-                      <span class="path1"></span>
-                      <span class="path2"></span>
-                    </i>
-                    재생
-                  </button>
-                  <button @click="pauseVideo" class="btn btn-warning">
-                    <i class="ki-duotone ki-pause fs-2">
-                      <span class="path1"></span>
-                      <span class="path2"></span>
-                    </i>
-                    정지
-                  </button>
+                  <button @click="playVideo" class="btn btn-success">재생</button>
+                  <button @click="pauseVideo" class="btn btn-warning">정지 </button>
                   <button @click="resetVideo" class="btn btn-secondary">
                     <i class="ki-duotone ki-arrows-circle fs-2">
                       <span class="path1"></span>
@@ -113,12 +99,7 @@
       <div v-if="!videoSrc && !isUploading" class="row">
         <div class="col-12">
           <div class="text-center py-10">
-            <i class="ki-duotone ki-video fs-5x text-gray-400 mb-4">
-              <span class="path1"></span>
-              <span class="path2"></span>
-            </i>
             <h4 class="text-gray-600 mb-2">영상을 업로드하면 여기에 표시됩니다</h4>
-            <p class="text-gray-500">MP4, AVI, MOV 등의 영상 파일을 지원합니다</p>
           </div>
         </div>
       </div>

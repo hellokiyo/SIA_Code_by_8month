@@ -99,7 +99,8 @@ import Pagination from "@/components/Pagination.vue"   // Pagination 컴포넌�
 import { usePagination } from "@/util/pagination"      // usePagination 훅 가져오기
 const { makePagination } = usePagination()             // makePagination 함수 꺼내기
 const pagination1 = ref({})                            // 반응형 pagination 데이터
-
+//=========================== 서버 주소로 설정 ========================
+import { requestConfig } from "../../app.config.js"
 // ========================= 라이프사이클 =========================
 onMounted(() => {
   console.log(`PostView::onMounted 호출됨`);
@@ -117,7 +118,7 @@ async function requestAnimalList(page, perPage) {
   try {
     const response = await axios({
       method: 'post',               // POST 요청
-      baseURL: `http://localhost:8001`, // 서버 주소
+      baseURL: requestConfig.baseUrl, // 서버 주소
       url: '/post/v1/list',       // API 엔드포인트
       data: {
         page : page,                // 현재 페이지 번호
@@ -149,7 +150,7 @@ async function requestPostLike(posts) {
 
     const response = await axios({
       method: 'post',               // POST 요청
-      baseURL: `http://localhost:8001`, // 서버 주소
+      baseURL: requestConfig.baseUrl, // 서버 주소
       url: '/post/v1/like/:postId',       // API 엔드포인트
       data: {
         id: posts.id

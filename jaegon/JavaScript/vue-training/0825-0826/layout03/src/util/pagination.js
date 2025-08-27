@@ -14,9 +14,9 @@ export const usePagination = () => {
 
         const pagination = {};
 
-        let curPage = Number(header.page);
-        let perPage = Number(header.perPage);
-        let totalRecords = header.total;
+            let curPage = Number(header.page);
+            let perPage = Number(header.perPage);
+            let totalRecords = header.total;
         console.log(`헤더 : ${curPage}, ${perPage}, ${totalRecords}`);
 
         let pageCount = Math.ceil(totalRecords / perPage);
