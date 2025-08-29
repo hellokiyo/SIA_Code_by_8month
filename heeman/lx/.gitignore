@@ -1,0 +1,17 @@
+#maven설치하면 필요없는 파일들
+#.project
+jstl-1.2.jar
+mysql-connector-j-8.4.0.jar
+moment.js
+
+
+#사라진 파일들
+contents/AK_0721/
+hw_quiz
+lx/eclipse-workspace/
+projects
+eclipse2024-09
+
+
+# Node.js 설치 폴더 무시
+eclipse2024-09/.node/
