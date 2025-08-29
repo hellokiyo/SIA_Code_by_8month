@@ -1,0 +1,51 @@
+Signature-Version: 1.0
+Created-By: 11.0.11 (AdoptOpenJDK)
+SHA-256-Digest-Manifest: qn3Ikc4Gs/p7Bgcg/HhH0nJtICFQZTythX1JKINhhk8=
+SHA-256-Digest-Manifest-Main-Attributes: WuYiG4hkJ/wuCudnsRiAAg7qEvm0AjI
+ vPx1EA04gRGE=
+
+Name: about.html
+SHA-256-Digest: fz3somdR7f7Qlv4MFhaJfkDWglIbzI8gaTyRV90fCPs=
+
+Name: plugin.xml
+SHA-256-Digest: 4rBpS2m9qde7D+vJQNw62W+/ga0PO15O/xn3raQIyng=
+
+Name: Subversive.png
+SHA-256-Digest: lNdsjT2A6Q5Z8+YgBBzF31GGzyR6G5bsdQMUjl8Po9s=
+
+Name: intro/css/overview.css
+SHA-256-Digest: JbaM0TffvQNDS2Pl296zz2o79KOKaOKo052VMs3SEk0=
+
+Name: intro/migrate.xml
+SHA-256-Digest: p9D5TXD1fb7azsR4QNEbdcGRZ9bo+wYxYYiVNRNC4/A=
+
+Name: intro/css/migrate.css
+SHA-256-Digest: 781bip8LLYVnoB1g2EDtGZWwNXCKfMZvWzAxeAWvn3M=
+
+Name: intro/tutorials.xml
+SHA-256-Digest: QMGHGun3Y+rTx8dV+RMM6iWZo2ceO1q8h03fwATD5lw=
+
+Name: intro/css/graphics/Subversive_hover.png
+SHA-256-Digest: 4U7zC042SIEpdg3eP++YajSKeXFfjLaAElRoYYm5cdA=
+
+Name: intro/css/tutorials.css
+SHA-256-Digest: ormcK5uQKVu5IrvZ096A3UAoLFYiIKgGEhlE4PLdnQE=
+
+Name: intro/overview.xml
+SHA-256-Digest: u40i83SsaUXihqYgmUk8EWij1hksv1I+QeLlozYy5jA=
+
+Name: about.ini
+SHA-256-Digest: cJV40VaV5A2EP/KRxXcxZhVnENolHkw49zH3IKZNxiE=
+
+Name: plugin.properties
+SHA-256-Digest: cfwyA9WKzOK0ZA/qYf3pn05HIaKlvp67vLmGK9aVfrI=
+
+Name: intro/css/graphics/Subversive.png
+SHA-256-Digest: Ch0MVjkz4qVNWF3cJkk7Xm69vHw8I2cPL2bTyU94esc=
+
+Name: intro/css/firststeps.css
+SHA-256-Digest: b8qe7k9VMCcgS+6q5NTlobpQdRhVccUom0RR7xfKDNI=
+
+Name: intro/firststeps.xml
+SHA-256-Digest: vd8K3BSOg960mLgz7OJOKKsg2A5HVEzT7B9c5EHIrVQ=
+

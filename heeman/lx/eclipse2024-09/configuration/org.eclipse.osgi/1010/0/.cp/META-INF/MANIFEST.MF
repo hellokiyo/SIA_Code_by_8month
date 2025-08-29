@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.0
+Build-Jdk-Spec: 11
+Bundle-RequiredExecutionEnvironment: J2SE-1.5, JavaSE-1.6
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.team.svn;singleton:=true
+Bundle-Version: 4.0.6.v20220904-1901
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui.intro,org.eclipse.ui.intro.universal,org.
+ eclipse.ui
+
+Name: about.html
+SHA-256-Digest: 0RM1x9lTJa7T8YkysaegPuBIeaEvSZypRDfXoMpsJAU=
+
+Name: plugin.xml
+SHA-256-Digest: xlwg1AiH5ugiDTp8R76wAqSO/MVkmWhHMk6rBij43Q4=
+
+Name: Subversive.png
+SHA-256-Digest: TOT0JKb2ik/B0tW7a+U8VRnPF7zImf619eDMWmvxpt8=
+
+Name: intro/css/overview.css
+SHA-256-Digest: JNqgivU7w3rBw+MgVWOf7v40XUqsrk5E/MnsaqEQpWs=
+
+Name: intro/migrate.xml
+SHA-256-Digest: chmhG7oJNCXuYe6aDmZC3qELsYdUBIQuQqWVDSoi3jQ=
+
+Name: intro/css/migrate.css
+SHA-256-Digest: 4q0tcgQKKixJ74BEQIzAJ8EVl1dE/HIbXjsfou91McQ=
+
+Name: intro/tutorials.xml
+SHA-256-Digest: j19Qc4ySTP4XoedMN417LWWddQsDqF6w+f7LaqmJJAw=
+
+Name: intro/css/graphics/Subversive_hover.png
+SHA-256-Digest: WN1pHtTjSrHE7ZKToxMAVIJ9iq136637lvkYXSdsrGI=
+
+Name: intro/css/tutorials.css
+SHA-256-Digest: xii7iNonKJxwSv9flAt19IVepbJeKXOcR8k6hRiGUvQ=
+
+Name: intro/overview.xml
+SHA-256-Digest: Ir02I3fega5hfhjyrKm99C7MZBFK2/gTF8onL1UD/LM=
+
+Name: about.ini
+SHA-256-Digest: bQKyQWvVOQufSqg/0pxG/6Rkc+UpaoPDA6cMe5+Voq4=
+
+Name: plugin.properties
+SHA-256-Digest: 4KwBjI7GXNoF486ZsqJaIZ0xZfXdy+Nf8TbMn58XPRI=
+
+Name: intro/css/graphics/Subversive.png
+SHA-256-Digest: WN1pHtTjSrHE7ZKToxMAVIJ9iq136637lvkYXSdsrGI=
+
+Name: intro/css/firststeps.css
+SHA-256-Digest: NvVPxOecsH6pmSJ1sNRXE0SIl0ne9gN8xg4Dhh6Bupw=
+
+Name: intro/firststeps.xml
+SHA-256-Digest: VOu4f4Bs4w8X4HYOP/K3Mp8Ur1BILF/GKFtWpjOA0s8=
+

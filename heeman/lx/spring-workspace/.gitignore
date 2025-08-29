@@ -1,0 +1,31 @@
+# Eclipse
+.metadata
+.settings
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.project
+.classpath
+.factorypath
+
+# Maven/Gradle
+target/
+build/
+.gradle
+!/src/main/resources/application.properties
+
+# Log files
+*.log
+logs/
+
+# IDE files
+.idea/
+*.iml
+out/
+
+# etc
+.DS_Store
