@@ -1,0 +1,110 @@
+package com.lx;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+public class getEmpInfo2 {
+	public static String sql = null;
+	public PreparedStatement stmt = null;
+	public static String a= null;
+	
+	//1번
+	public static List<Emp> getEmpInfoByName(String name) throws Exception {
+		a = name;
+		sql = "select * from employees where concat(last_name,' ',first_name) like +?";
+		return add(sql);
+	}
+	//2번
+	public static List<Emp> getEmpInfoByHireYear(int year) throws Exception {
+		a = Integer.toString(year);
+		sql = "select * from employees where year(hire_date) like +?";
+		return add(sql);
+	}
+	//3번
+	public static List<Emp> getEmpInfoByDepId(int dep_id) throws Exception {
+		a = Integer.toString(dep_id);
+		sql = "select * from employees where department_id like +?";
+		return add(sql);
+	}
+	//4번
+	public static List<Emp> getEmpInfoByJobId(String job_id) throws Exception {
+		a = job_id;
+		sql = "select * from employees where job_id = ?";
+		return add(sql);
+	}
+	//5번
+	public static List<Emp> getEmpInfoByCity(String city) throws Exception {
+		a = city;
+		sql = "select * from employees e where e.department_id in (select d.department_id from departments d where d.location_id in "
+				+ "(select location_id  from locations l where city = ?))";
+		return add(sql);
+	}
+	//6번
+	public static List<Emp> getEmpInfoByDepLastName(String dep_last) throws Exception {
+		a = dep_last;
+		sql = "select * from employees where (department_id in (select department_id from departments where manager_id in "
+				+ "(select employee_id from employees where last_name = ?)))";
+		return add(sql);
+	}
+	//7번
+	public static List<Emp> getEmpInfoByCountry(String country) throws Exception {
+		a = country;
+		sql = "select * from employees e where (e.department_id in (select d.department_id from departments d "
+				+ "where d.location_id in (select l.location_id from locations l where l.country_id in "
+				+ "(select c.country_id from countries c where c.country_name = ?))))";
+		return add(sql);
+	}
+	//8번
+	public static void getStatics() throws Exception {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newhr", "root", "rootroot");
+		String sql = "SELECT COUNT(*) AS total_employees, AVG(salary) AS avg_salary,MAX(salary) AS max_salary, MIN(salary) AS min_salary from employees";
+		PreparedStatement stmt = conn.prepareStatement(sql);
+		ResultSet rs = stmt.executeQuery();
+		while (rs.next()) {
+			int totalEmployees = rs.getInt("total_employees");
+			int avgSalary = rs.getInt("avg_salary");
+			int maxSalary = rs.getInt("max_salary");
+			int minSalary = rs.getInt("min_salary");
+			System.out.println("전체 사원 수: " + totalEmployees + "명, 평균급여: " + avgSalary + "원, 최고급여: " + maxSalary + "원, 최저급여: " + minSalary + "원");	
+		}
+		conn.close();
+	}
+	//8.1번
+	
+	//2개 이상 선택
+	/*public static List<Emp> intersection() throws Exception {
+		교집합써야되면..전에꺼 list add를 해야되나
+	}*/
+
+	
+	//사원출력함수
+	public static List<Emp> add(String sql) throws Exception {
+		List<Emp> result = new ArrayList<Emp>();
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newhr", "root", "rootroot");
+		PreparedStatement stmt = conn.prepareStatement(sql);
+		stmt.setString(1, a);
+		ResultSet rs = stmt.executeQuery();
+		while(rs.next()) {
+			Emp emp = new Emp();
+			emp.employee_id = rs.getInt("employee_id");
+			emp.first_name = rs.getString("first_name");
+			emp.last_name = rs.getString("last_name");
+			emp.email = rs.getString("email");
+			emp.phone_number = rs.getString("phone_number");
+			emp.hire_date = rs.getString("hire_date");
+			emp.job_id = rs.getString("job_id");
+			emp.salary= rs.getInt("salary");
+			emp.commission_pct = rs.getDouble("commission_pct");
+			emp.manager_id = rs.getInt("manager_id");
+			emp.department_id = rs.getInt("department_id");
+			result.add(emp);
+		}
+		return result;
+	}
+	
+}

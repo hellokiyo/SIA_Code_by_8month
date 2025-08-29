@@ -1,0 +1,56 @@
+package com.lx;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class Project1 {
+
+	public static void main(String[] args) throws Exception {
+		Scanner scan = new Scanner(System.in);
+		boolean a = true;
+		List<Emp> empList = null;
+		while (a) {
+			System.out.println("어떤 컬럼으로 입력하시겠습니까? (1.직원이름 2.입사년도 3.부서번호 4.직무 5.도시이름 6.부사원 성 7.나라이름	0.종료");
+			int num = scan.nextInt();
+			scan.nextLine();
+			if (num == 0) {
+				a = false;
+			}
+			else if (num >7) {
+				System.out.println("1~7 숫자로 다시 입력");
+			}
+			else {
+				/*if (num == 1) {
+					System.out.println("직원 이름을 입력하세요");
+					String name = scan.nextLine();
+					System.out.println("입력된 이름 : "+ name);			
+					empList = getEmpInfo.getEmpInfoByName(name);
+				}
+				if (num == 2) {
+					System.out.println("입사년도를 입력하세요");
+					int year = scan.nextInt();
+					System.out.println("입사년도 : "+ year);
+					empList = getEmpInfo.getEmpInfoByHireYear(year);
+				}*/
+				if (num == 3) {
+					System.out.println("부서번호를 입력하세요");
+					int dep_id = scan.nextInt();
+					System.out.println("부서번호 : "+ dep_id);
+					empList = getEmpInfo.getEmpInfoByDepId(dep_id);
+				}
+				if (num == 4) {
+					System.out.println("직무를 입력하세요");
+					String job_id = scan.nextLine();
+					System.out.println("직무 : "+ job_id);
+					empList = getEmpInfo.getEmpInfoByJobId(job_id);
+				}
+			}
+		
+		}
+		for (Emp emp : empList) {
+			System.out.println(emp);
+		}
+	}
+}
+
+

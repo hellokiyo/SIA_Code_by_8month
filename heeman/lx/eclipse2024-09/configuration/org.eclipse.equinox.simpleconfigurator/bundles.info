@@ -82,6 +82,7 @@ junit-platform-suite-commons,1.11.0,plugins/junit-platform-suite-commons_1.11.0.
 junit-platform-suite-engine,1.11.0,plugins/junit-platform-suite-engine_1.11.0.jar,4,false
 junit-vintage-engine,5.11.0,plugins/junit-vintage-engine_5.11.0.jar,4,false
 net.bytebuddy.byte-buddy-agent,1.15.0,plugins/net.bytebuddy.byte-buddy-agent_1.15.0.jar,4,false
+net.harawata.mybatipse,1.3.0.202210300418,plugins/net.harawata.mybatipse_1.3.0.202210300418.jar,4,false
 net.i2p.crypto.eddsa,0.3.0,plugins/net.i2p.crypto.eddsa_0.3.0.jar,4,false
 org.aopalliance,1.0.0.v20230720-0728,plugins/org.aopalliance_1.0.0.v20230720-0728.jar,4,false
 org.apache.ant,1.10.14.v20230922-1200,plugins/org.apache.ant_1.10.14.v20230922-1200/,4,false
