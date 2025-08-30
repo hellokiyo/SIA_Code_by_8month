@@ -1,9 +1,0 @@
-package myjsp;
-
-public class DepartmentUtil {
-	public List<String> getDeptList() {
-		
-	}
-	
-	
-}
