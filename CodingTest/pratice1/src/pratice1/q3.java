@@ -21,9 +21,10 @@ public class q3 {
 	Scanner sc = new Scanner(System.in);
 	String[] input = sc.nextLine().trim().split("\\s+");
 	
-	double avg = Arrays.stream(input).mapToDouble(Double::parseDouble)
-						.average()
-						.orElse(Double.NaN);
+	double avg = Arrays.stream(input) //스트림 생성
+						.mapToDouble(Double::parseDouble) //더블형으로 형변환
+						.average() //평균 구하기
+						.orElse(Double.NaN);// 예외처리(만약 비어있다면 NaN(Not a Number)으로 표시)
 	
 	
 	System.out.println("평균은 : " + String.format("%.1f", avg));

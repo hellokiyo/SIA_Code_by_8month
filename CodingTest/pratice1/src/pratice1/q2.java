@@ -1,5 +1,6 @@
 package pratice1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -25,14 +26,13 @@ public class q2 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("정수를 입력해주세요 (공백 구분)");
 		
-		//문자열 받기
-		String input = sc.nextLine();
+		String[] input = sc.nextLine().trim().split("\\s+");
 		
-		int max = Arrays.stream(input.trim().split("\\s+"))
-								.mapToInt(Integer::parseInt)
-								.max()
-								.orElseThrow();
-		
+		long even = Arrays.stream(input)
+							.mapToInt(Integer::parseInt)
+							.filter(n -> n%2 == 0)
+							.count();
+		long odd = input.length - even;
 		
 		// 배열이 굳이 안담고 for문에서 int형 변수에 담아서 
 		// 그 자리에서 if조건문 

@@ -1,5 +1,6 @@
 package pratice1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -21,23 +22,19 @@ public class q1 {
 
 		// 빈숫자 예외 방지 넣기 inputArr.length == 0 || inputArr[0].isEmpty()
 		
-		String[] inputArr = sc.nextLine().split(" ");//다중공백 대응 :  split("\\s+") 권장
-		int[] numbers = new int[inputArr.length];
+		//문자열 받기
+		String input = sc.nextLine();
 		
-		for(int i = 0; i<inputArr.length; i++) {
-			numbers[i] = Integer.parseInt(inputArr[i]);
-		}
-		
-		// 위쪽 for문에서 변수에 Integer.parseInt(inputArr[i])넣고
-		// for문 안에서 max값 비교해버리기
-		
-		int max = numbers[0];
-		
-		for(int i = 0; i<numbers.length; i++) { //자기자신은 제외 하기위해 i=1부터 시작하기
-			if(numbers[i]>max) {
-				max = numbers[i];
-			}
-		}
+		int max = Arrays.stream(input.trim().split("\\s+"))
+		//trim() => 입력받은 문자열 앞뒤 공백, split("\\s+")) => " " 기준으로 나눔
+		//Arrays.stream() => Stream으로 변환
+								.mapToInt(Integer::parseInt) // 문자열을 정수형으로 형변환
+								.max() //최댓값찾기 OptionalInt(값이 없음)반환
+								.orElseThrow();// 값이 없으면 예외 던지고, 있으면 최댓값 반환
+		// .orElse(defaultValue)와 .orElseThrow()의 차이점
+		// .orElse는 값이 있으면 그 값을 반환, 없으면 defaultValue를 반환함
+		// .orElseThrow() 값이 있으면 그 값을 반환, 없으면 예외를 던짐
+		// 기본값으로 대체할 거냐 (orElse), 없으면 아예 프로그램 터뜨릴 거냐 (orElseThrow)의 차이
 		System.out.println("최댓값은 > " + max);
 	}
 	
