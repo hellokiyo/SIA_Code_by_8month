@@ -14,7 +14,7 @@
 
 	<select id="getEmpListByDeptId" parameterType="int"
 		resultType="mybatis.Emp">
-		<!--id는 메서드 이름으로 봐도 좋다 / alas일수도 있고 /sql을 감싸는 이름으로볼 수도 있다. -->
+		<!--id는 메서드 이름으로 봐도 좋다 / alias일수도 있고 /sql을 감싸는 이름으로볼 수도 있다. -->
 		<!-- parameterType이 int인 이유는 where에서 deptId를 찾고 있기때문에 deptId가 int형 이기 때문 -->
 		<!-- mybatis내에서 생성한 메서드가 뱉는 리턴타입은 List<Emp> 함수를 실행하면 하나만 뱉는게 아니라 부서자체에서 
 			사람여러명을 뽑는거기 때문에 사람자체 리턴타입은 emp이기에 emp를여러명 담아둔 List<emp>임 -->
@@ -35,6 +35,5 @@
 		from employees
 		where job_id = #{jobId}
 	</select>
-
 
 </mapper>

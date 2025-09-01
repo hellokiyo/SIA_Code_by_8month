@@ -19,6 +19,7 @@
 	<!-- SQL이 작성되는 mapper 파일 위치 등록 -->
 	<mappers>
 		<mapper resource="mapper-emp.xml" />
+		<mapper resource="mapper-addrbook.xml" />
 	</mappers>
 
 </configuration>
