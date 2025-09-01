@@ -24,7 +24,8 @@
 		<property name="dAO" ref="empDAO"/> 
 	</bean>
 	
-	<!--먼저 실행 
+	<!--먼저 실행-why? empService id를 가진 bean객체가 ref에 empDAO를 찾고 있기 때문에 **의존**하고 있다
+	
 		Spring : Ok, id가 empDAO인 bean객체를 만들라는 지시이군! 
 				myjdbc.EmpDAO 클래스를 이용해서 객체를 만들어야겠다!
 		EmpDAO empDAO = new EmpDAO();를 실행한 것과 동일한 결과임
