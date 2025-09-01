@@ -1,35 +1,28 @@
 /*입력한 배열의 합을 구하는 프로그램을 작성하시오.
  - 입력 : 4 9 3 50 => 문자열로 입력됨
- - 출력 : 64*/
+ - 출력 : 66*/
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class test1 {
 
 	public static void main(String[] args) {
-		int sum = 0; //합계
-		int num = 0; // 문자를 숫자로 바꾸는 
-		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.print("숫자를 입력하세요(0 입력시 계산 시작) => ");
-		
-		
-		String input = scan.nextLine();				
 
-		while(true) {
-			if(input.equals("0")) {
-				break;
-			}
-			
-			num = Integer.parseInt(input);
-			sum = sum + num;
-			input = scan.nextLine();			
-						
-		}
+		Scanner scan = new Scanner(System.in);
+		System.out.println("숫자를 입력하세요. 입력시 숫자사이 공백해주세요 => ex) 4 9 3 50 ");
 		
-		System.out.println(sum);
+		int sum = Arrays.stream(scan.nextLine().trim().split("\\s+"))
+				.mapToInt(Integer::parseInt)
+				.sum();
+		System.out.println("합계 : " + sum);
+		
+
+		
+		
+		
 
 	}
+
 
 }

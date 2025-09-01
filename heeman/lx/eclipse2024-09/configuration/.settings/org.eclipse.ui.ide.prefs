@@ -1,5 +1,9 @@
 MAX_RECENT_WORKSPACES=10
+<<<<<<< HEAD
 RECENT_WORKSPACES=C\:\\LX_AC\\heeman\\lx\\spring-workspace\\AK_0829\nC\:\\LX_AC\\heeman\\lx\\spring-workspace\nC\:\\LX_AC\\CodingTest\nC\:\\lx\\jsp-project
+=======
+RECENT_WORKSPACES=C\:\\Users\\JungHun\\LX_AC\\CodingTest\nC\:\\Users\\JungHun\\LX_AC\\CodingTest\\CordingTest\nC\:\\LX_AC\\heeman\\lx\\spring-workspace\nC\:\\LX_AC\\CodingTest\nC\:\\lx\\jsp-project
+>>>>>>> 741765b9bba0c0918486dfb995c57650fbdb382a
 RECENT_WORKSPACES_PROTOCOL=3
 SHOW_RECENT_WORKSPACES=false
 SHOW_WORKSPACE_SELECTION_DIALOG=true
