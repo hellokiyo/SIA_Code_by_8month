@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id ="service" class="myjdbc.EmpServiceImpl">
+	
+		<property name="empDAO" ref="empDAO"></property> 
+		<!-- property의 name은 Setter 메소드의 이름 
+		property는 Setter만 관리함 (앞자리가 알아서 대문자로 바뀜)
+		-->
+		
+		
+	</bean>
+	<bean id="empDAO" class="myjdbc.EmpDAO"></bean>
+</beans>

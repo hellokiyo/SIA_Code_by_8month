@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config date="1756552315222" transient="false" version="3.0">
+<config date="1756706943819" transient="false" version="3.0">
 <site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
 <feature id="org.eclipse.help" plugin-identifier="org.eclipse.help.base" url="features/org.eclipse.help_2.3.1900.v20240903-0240/" version="2.3.1900.v20240903-0240">
 </feature>
@@ -9,9 +9,9 @@
 </feature>
 <feature id="org.eclipse.jsf.feature" url="features/org.eclipse.jsf.feature_3.13.200.v202408212140/" version="3.13.200.v202408212140">
 </feature>
-<feature id="org.eclipse.buildship" plugin-identifier="org.eclipse.buildship.branding" url="features/org.eclipse.buildship_3.1.9.v20240115-1636/" version="3.1.9.v20240115-1636">
+<feature id="org.eclipse.wst.xml_core.feature" url="features/org.eclipse.wst.xml_core.feature_3.37.0.v202503020853/" version="3.37.0.v202503020853">
 </feature>
-<feature id="org.eclipse.wst.xml_core.feature" url="features/org.eclipse.wst.xml_core.feature_3.34.0.v202405130132/" version="3.34.0.v202405130132">
+<feature id="org.eclipse.buildship" plugin-identifier="org.eclipse.buildship.branding" url="features/org.eclipse.buildship_3.1.9.v20240115-1636/" version="3.1.9.v20240115-1636">
 </feature>
 <feature id="org.eclipse.datatools.common.doc.user" url="features/org.eclipse.datatools.common.doc.user_1.15.0.202311071249/" version="1.15.0.202311071249">
 </feature>
@@ -25,7 +25,7 @@
 </feature>
 <feature id="org.eclipse.tm.terminal.connector.telnet.feature" url="features/org.eclipse.tm.terminal.connector.telnet.feature_11.6.1.202406241230/" version="11.6.1.202406241230">
 </feature>
-<feature id="org.eclipse.gef" url="features/org.eclipse.gef_3.21.0.202409021815/" version="3.21.0.202409021815">
+<feature id="org.eclipse.gef" url="features/org.eclipse.gef_3.24.0.202505280821/" version="3.24.0.202505280821">
 </feature>
 <feature id="org.eclipse.datatools.enablement.hsqldb.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.hsqldb.feature_1.15.0.202311071249/" version="1.15.0.202311071249">
 </feature>
@@ -215,7 +215,7 @@
 </feature>
 <feature id="org.eclipse.userstorage" url="features/org.eclipse.userstorage_1.2.0.v20210517-0327/" version="1.2.0.v20210517-0327">
 </feature>
-<feature id="org.eclipse.draw2d" url="features/org.eclipse.draw2d_3.21.0.202409021815/" version="3.21.0.202409021815">
+<feature id="org.eclipse.draw2d" url="features/org.eclipse.draw2d_3.24.0.202505280821/" version="3.24.0.202505280821">
 </feature>
 <feature id="org.eclipse.emf.edit" url="features/org.eclipse.emf.edit_2.24.0.v20250330-0741/" version="2.24.0.v20250330-0741">
 </feature>
@@ -322,6 +322,8 @@
 <feature id="org.eclipse.ecf.core.feature" url="features/org.eclipse.ecf.core.feature_1.6.2.v20240812-1535/" version="1.6.2.v20240812-1535">
 </feature>
 <feature id="org.eclipse.emf.ecore.editor" url="features/org.eclipse.emf.ecore.editor_2.20.0.v20240604-0832/" version="2.20.0.v20240604-0832">
+</feature>
+<feature id="net.java.amateras.modeler" url="features/net.java.amateras.modeler_2.2.0.202406292300/" version="2.2.0.202406292300">
 </feature>
 <feature id="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature" url="features/org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature_1.15.0.202311071249/" version="1.15.0.202311071249">
 </feature>

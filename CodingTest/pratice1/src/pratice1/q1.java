@@ -29,7 +29,8 @@ public class q1 {
 		//trim() => 입력받은 문자열 앞뒤 공백, split("\\s+")) => " " 기준으로 나눔
 		//Arrays.stream() => Stream으로 변환
 								.mapToInt(Integer::parseInt) // 문자열을 정수형으로 형변환
-								.max() //최댓값찾기 OptionalInt(값이 없음)반환
+								.max()
+								//최댓값찾기 OptionalInt(값이 없음)반환
 								.orElseThrow();// 값이 없으면 예외 던지고, 있으면 최댓값 반환
 		// .orElse(defaultValue)와 .orElseThrow()의 차이점
 		// .orElse는 값이 있으면 그 값을 반환, 없으면 defaultValue를 반환함
@@ -37,7 +38,5 @@ public class q1 {
 		// 기본값으로 대체할 거냐 (orElse), 없으면 아예 프로그램 터뜨릴 거냐 (orElseThrow)의 차이
 		System.out.println("최댓값은 > " + max);
 	}
-	
-	
 	
 }

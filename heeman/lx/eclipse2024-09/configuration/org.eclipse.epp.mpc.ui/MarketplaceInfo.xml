@@ -107,6 +107,14 @@
     </object>
    </void>
    <void method="put">
+    <string>org.moreunit.light.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#194</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <string>org.eclipse.team.svn.mylyn</string>
     <object class="java.util.ArrayList">
      <void method="add">
@@ -325,6 +333,14 @@
     <object class="java.util.ArrayList">
      <void method="add">
       <string>https://marketplace.eclipse.org#900708</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.eclipse.cdt.embsysregview_feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#1508376</string>
      </void>
     </object>
    </void>
@@ -814,10 +830,26 @@
     </object>
    </void>
    <void method="put">
+    <string>org.eclipse.cdt.embsysregview.data_feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#1508376</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <string>org.jboss.tools.jst.feature</string>
     <object class="java.util.ArrayList">
      <void method="add">
       <string>https://marketplace.eclipse.org#1617241</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>com.tlcsdm.eclipse.minimap.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#6997908</string>
      </void>
     </object>
    </void>
@@ -850,6 +882,14 @@
     <object class="java.util.ArrayList">
      <void method="add">
       <string>https://marketplace.eclipse.org#1617241</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>io.deviam.java.debug.stream.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#6343790</string>
      </void>
     </object>
    </void>
@@ -1326,6 +1366,14 @@
     </object>
    </void>
    <void method="put">
+    <string>org.moreunit.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#194</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <string>org.springframework.ide.eclipse.boot.dash.feature</string>
     <object class="java.util.ArrayList">
      <void method="add">
@@ -1484,6 +1532,22 @@
     </object>
    </void>
    <void method="put">
+    <string>MER</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#5656115</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>com.tlcsdm.eclipse.bpep.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#7009215</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <string>org.springsource.ide.eclipse.dashboard</string>
     <object class="java.util.ArrayList">
      <void method="add">
@@ -1599,6 +1663,14 @@
     </object>
    </void>
    <void method="put">
+    <string>org.moreunit.mock.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#194</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <string>org.springframework.ide.eclipse.data.feature</string>
     <object class="java.util.ArrayList">
      <void method="add">
@@ -1622,6 +1694,14 @@
     <object class="java.util.ArrayList">
      <void method="add">
       <string>https://marketplace.eclipse.org#4716941</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>JDepend4Eclipse</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#88</string>
      </void>
     </object>
    </void>
@@ -1668,6 +1748,14 @@
      </void>
     </object>
    </void>
+   <void method="put">
+    <string>com.opcoach.genmodeladdon.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#3043584</string>
+     </void>
+    </object>
+   </void>
   </void>
   <void property="nodeKeyToIU">
    <void method="put">
@@ -1679,10 +1767,29 @@
     </object>
    </void>
    <void method="put">
+    <string>https://marketplace.eclipse.org#88</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>JDepend4Eclipse</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <string>https://marketplace.eclipse.org#2318334</string>
     <object class="java.util.ArrayList">
      <void method="add">
       <string>de.marw.cmake4eclipse.feature</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>https://marketplace.eclipse.org#1508376</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>org.eclipse.cdt.embsysregview_feature</string>
+     </void>
+     <void method="add">
+      <string>org.eclipse.cdt.embsysregview.data_feature</string>
      </void>
     </object>
    </void>
@@ -1805,6 +1912,14 @@
     </object>
    </void>
    <void method="put">
+    <string>https://marketplace.eclipse.org#5656115</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>MER</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <string>https://marketplace.eclipse.org#1640500</string>
     <object class="java.util.ArrayList">
      <void method="add">
@@ -1827,6 +1942,14 @@
      </void>
      <void method="add">
       <string>zipeditor</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>https://marketplace.eclipse.org#6343790</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>io.deviam.java.debug.stream.feature</string>
      </void>
     </object>
    </void>
@@ -1978,6 +2101,14 @@
     </object>
    </void>
    <void method="put">
+    <string>https://marketplace.eclipse.org#7009215</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>com.tlcsdm.eclipse.bpep.feature</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <string>https://marketplace.eclipse.org#5725920</string>
     <object class="java.util.ArrayList">
      <void method="add">
@@ -1990,6 +2121,14 @@
     <object class="java.util.ArrayList">
      <void method="add">
       <string>org.eclipse.xtext.sdk</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>https://marketplace.eclipse.org#3043584</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>com.opcoach.genmodeladdon.feature</string>
      </void>
     </object>
    </void>
@@ -2034,6 +2173,20 @@
     <object class="java.util.ArrayList">
      <void method="add">
       <string>net.flexmojos.m2e.feature</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>https://marketplace.eclipse.org#194</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>org.moreunit.feature</string>
+     </void>
+     <void method="add">
+      <string>org.moreunit.mock.feature</string>
+     </void>
+     <void method="add">
+      <string>org.moreunit.light.feature</string>
      </void>
     </object>
    </void>
@@ -2498,6 +2651,14 @@
     <object class="java.util.ArrayList">
      <void method="add">
       <string>de.javabeginners.cent.feature</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>https://marketplace.eclipse.org#6997908</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>com.tlcsdm.eclipse.minimap.feature</string>
      </void>
     </object>
    </void>
