@@ -19,7 +19,14 @@
 		values (#{abName}, #{abEmail}, #{abComdept}, #{abBirth}, #{abTel}, #{abMemo})					
 	</insert>
 
-	<delete id="deleteDB" parameterType="addrbook.AddrBookVO">
+	<update id="updateDB" parameterType="addrbook.AddrBookVO">
+		update addrbook set ab_name = #{abName}, ab_email =#{abEmail}, ab_comdept = #{abComdept}, ab_birth =#{abBirth},
+										ab_tel = #{abTel}, ab_memo = #{abMemo}
+						where ab_id = #{abId}
+	
+	</update>
+
+	<delete id="deleteDB" parameterType="int">
 		delete from addrbook 
 				where ab_id = #{abId}
 	</delete>

@@ -44,6 +44,15 @@ public class AddrBookDAO {
 		 */
 		return result;
 	}
+	public boolean updateDB(AddrBookVO ab) throws Exception {
+		boolean result= false;
+		SqlSession session = SessionUtil.getSession();
+		int updatedAmount = session.insert("updateDB", ab); // 결과의 갯수를 넘긴다..? 그렇기때문에 int로 함?
+		session.commit();
+		if(updatedAmount > 0) result =true;	
+		return result;
+	}
+	
 
 	public boolean deleteDB(int abId) throws Exception {
 		boolean result= false;
@@ -92,9 +101,7 @@ public class AddrBookDAO {
 		con.close();
 		return vo;
 	}
-	public boolean updateDB(AddrBookVO ab) throws Exception {
-		return false;
-	}
+	
 	private static Connection getConnection() throws Exception  {
 		Context initContext = new InitialContext();
 		Context envContext = (Context) initContext.lookup("java:comp/env");
