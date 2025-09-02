@@ -47,7 +47,7 @@ public class ProjectMain {
 				break;
 
 			case 6: // 통계자료
-				//EmpDAO.printStat();
+				printStat();
 				break;
 
 			default:
@@ -107,7 +107,7 @@ public class ProjectMain {
 		EmpService service = (EmpService) context.getBean(EmpService.class);
 	
 		int deptId = service.findEmpByManagerName(managerName);
-
+		
 		System.out.println(deptId);
 	}
 
@@ -149,4 +149,17 @@ public class ProjectMain {
 		firstName = scan.nextLine();
 	}
 
+	// 6. 통계함수 출력
+		static void printStat() {
+			ApplicationContext context = new ClassPathXmlApplicationContext("spring-context.xml");
+
+			EmpService service = (EmpService) context.getBean(EmpService.class);
+			List<AggregateVO> empList = service.printStat();
+
+			for (AggregateVO emp : empList) {
+				System.out.println(emp);
+			}
+
+		}
+	
 }

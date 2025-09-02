@@ -37,7 +37,7 @@ public class EmpDAO {
 		return session.selectList("findEmpByName", firstName);
 	}
 	// 집계함수 
-	public List<Emp> printStat(){
-		return session.selectList("findEmpByDeptId");
+	public List<AggregateVO> printStat(){
+		return session.selectList("printStat");
 	}
 }

@@ -40,7 +40,7 @@ public class EmpServiceImpl implements EmpService {
 	}
 	
 	@Override //통계자료
-	public List<Emp> printStat(){
+	public List<AggregateVO> printStat(){
 		return this.dao.printStat();
 	}
 	

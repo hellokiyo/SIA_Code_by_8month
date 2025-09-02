@@ -31,12 +31,12 @@
 	</select>
 
 	<!-- 부서장 성으로 찾기 -->
-	<select id="findEmpByManagerName" parameterType="tesk.Emp" resultType="tesk.Emp">
+	<select id="findEmpByManagerName" parameterType="String" resultType="int">
 		select
-		d.department_id
-		from departments d
-		join employees e on d.Manager_id = e.Employee_id
-		where lower(concat(e.first_name)) = #{managerName};
+		d.department_id deptId
+		from departments d join employees e 
+							on d.Manager_id = e.Employee_id
+		where lower(e.first_name) = #{managerName};
 	</select>
 
 	<!-- 도시이름으로 찾기 -->
@@ -72,7 +72,7 @@
 	</select>
 
 	<!-- 집계함수 -->
-	<select id="printStat" resultType="tesk.Emp">
+	<select id="printStat" resultType="tesk.AggregateVO">
 		select
 		d.department_name deptName,
 		round(avg(e.salary), -2) avg,
