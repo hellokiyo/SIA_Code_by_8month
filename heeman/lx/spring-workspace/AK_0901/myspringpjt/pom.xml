@@ -6,7 +6,7 @@
 	<artifactId>myspringpjt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-	
+
 		<!-- MySql connector-j  
 			https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 		<dependency>
@@ -46,7 +46,15 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>6.2.10</version>
 		</dependency>
-		
+
+		<!--Mybatis 
+			https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>3.0.5</version>
+		</dependency>
+
 	</dependencies>
 
 
