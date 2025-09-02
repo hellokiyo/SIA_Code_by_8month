@@ -22,7 +22,7 @@ public class EmpDAO {
 	SqlSession session;
 	
 	public List<Emp> getEmpListByDeptNo(int deptNo) throws Exception {
-		return session.selectList("getEmpListByDeptNo",deptNo);
+		return session.selectList("getEmpListByDeptNod",deptNo);
 		/*		/*
 		 * List<Emp> result = new ArrayList<Emp>(); // db 접속 데이터를 가져와서 result에 담는다. //
 		 * 커넥션을 생성한다. Connection conn = dataSource.getConnection(); // String sql =

@@ -46,3 +46,15 @@
 <runtimes/>
 
 [2025-09-01 14:08:58] 
+[2025-09-02 14:10:25] Executing startup tasks
+[2025-09-02 14:10:25] OpenJDK Runtime Environment 21.0.8+9-LTS
+[2025-09-02 14:10:25] Product self.product.version
+[2025-09-02 14:10:25] Workspace C:\LX_AC\heeman\lx\spring-workspace\AK_0902
+[2025-09-02 14:10:25] Bundle org.eclipse.oomph.setup 1.29.0.v20240723-0951, build=756, branch=8f937af4325fb2002f1f88d65d3beafffb760f16
+[2025-09-02 14:10:25] Bundle org.eclipse.oomph.setup.core 1.31.0.v20240420-0837, build=756, branch=8f937af4325fb2002f1f88d65d3beafffb760f16
+[2025-09-02 14:10:25] Bundle org.eclipse.oomph.setup.p2 1.21.0.v20240420-0837, build=756, branch=8f937af4325fb2002f1f88d65d3beafffb760f16
+[2025-09-02 14:10:25] Performing Preference /instance/org.eclipse.wst.server.core/runtimes = <?xml version="1.0" encoding="UTF-8" standalone="no"?>...
+[2025-09-02 14:10:25] <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runtimes/>
+
+[2025-09-02 14:10:25] 

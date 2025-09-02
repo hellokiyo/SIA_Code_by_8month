@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper-emp">
+
+	<!-- 입사년도로 찾기 -->
+	<select id="findEmpByYear" resultType="tesk.Emp">
+		select
+		employee_id empId
+		,department_id deptId
+		,first_name firstName"
+		,last_name lastName
+		,date_format(hire_date, '%Y-%m-%d') hireDate
+		,salary salary
+		,email email
+		from employees where year(hire_date) = #{year}
+	</select>
+
+	<!-- 부서번호로 찾기 -->
+	<select id="findEmpByDeptId" resultType="tesk.Emp">
+		select
+		employee_id empId
+		, department_id deptId
+		, first_name firstName
+		, last_name lastName
+		, date_format(hire_date, '%Y-%m-%d') hireDate
+		,salary salary
+		,email email
+		from employees
+		where department_id = #{deptId}
+
+	</select>
+
+	<!-- 부서장 성으로 찾기 -->
+	<select id="findEmpByManagerName" parameterType="tesk.Emp" resultType="tesk.Emp">
+		select
+		d.department_id
+		from departments d
+		join employees e on d.Manager_id = e.Employee_id
+		where lower(concat(e.first_name)) = #{managerName};
+	</select>
+
+	<!-- 도시이름으로 찾기 -->
+	<select id="findByCity" resultType="tesk.Emp" >
+		select
+		e.employee_id empId,
+		e.department_id deptId,
+		e.first_name firstName,
+		e.last_name lastName,
+		date_format(e.hire_date, '%Y-%m-%d') hireDate,
+		e.salary salary,
+		e.email	email
+		from employees e
+		join departments d on e.department_id =
+		d.department_id
+		join locations l on d.location_id = l.location_id
+		where
+		lower(l.city) = #{city};
+	</select>
+
+	<!-- 직원이름으로 찾기 -->
+	<select id="findEmpByName" resultType="tesk.Emp">
+		select
+		employee_id empId
+		, department_id deptId
+		, first_name firstName
+		, last_name lastName
+		, date_format(hire_date, '%Y-%m-%d') hireDate
+		,salary salary
+		,email email
+		from employees
+		where lower(first_name) = #{firstName.toLowerCase()}
+	</select>
+
+	<!-- 집계함수 -->
+	<select id="printStat" resultType="tesk.Emp">
+		select
+		d.department_name deptName,
+		round(avg(e.salary), -2) avg,
+		max(e.salary) maxs,
+		min(e.salary) mins
+		from employees e
+		join departments d ON e.department_id = d.department_id
+		group by d.department_id, d.department_name
+		order by d.department_id;
+	</select>
+
+</mapper>
