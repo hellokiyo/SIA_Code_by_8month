@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-context.xsd">
 
-  <!-- 
-  1. EmpserviceImpl empService = new EmpServiceImpl(); : bean 구문 
-  
-  2.empService.setDAO(dao) : property쪽 구문 -->
-  
-  <!-- 
-  Spring : 이번엔 id가 empService인 bean객체를 만들 차례군, my jdbc.EmpServiceImpl 클래스를 사용해야지
-  EmpserviceImpl empService = new EmpServiceImpl();와 동일한 결과임
-  어! 그런데 bean 태그는 아직 안끝났네? property 추가지시가 있다 해결해보자
-   -->
-	<bean id ="empService" class="myjdbc.EmpServiceImpl">
-		<!-- property 태그는 Setter 메서드를 호출하라는 지시임
-			name="dAO"를 보고 정해진 규칙(set+이름 첫글자대문자)에 따라 setDAO()라는 메서드를 EmpServiceImpl 클래스 안에서 찾음
-			ref="empDAO" > id가 empDAO인 객체를 찾아라 라는 의미
-			!!이제 setDAO()라는 메서드와 그 안에 넣어줄 empDAO 객체를 모두 찾았음.
-			
-			마지막으로 empService객체의 setDAO()메서드를 호출하면서 empDAO 객체를 전달함. 
-			즉 empService.setDAO(empDAO)코드가 실행됨-->	
-		<property name="dAO" ref="empDAO"/> 
-	</bean>
-	
-	<!--먼저 실행-why? empService id를 가진 bean객체가 ref에 empDAO를 찾고 있기 때문에 **의존**하고 있다
-	
-		Spring : Ok, id가 empDAO인 bean객체를 만들라는 지시이군! 
-				myjdbc.EmpDAO 클래스를 이용해서 객체를 만들어야겠다!
-		EmpDAO empDAO = new EmpDAO();를 실행한 것과 동일한 결과임
-		이 객체를 스Spring IoC 컨테이너에 보관-->
-	<bean id="empDAO" class="myjdbc.EmpDAO"/>
-	
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+	
 		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/newhr"/>
+		<property name="username" value="root"/>
+		<property name="password" value="rootroot"/>
+		
 	</bean>
+
+  <context:component-scan base-package="myspring" />
+	
 </beans>

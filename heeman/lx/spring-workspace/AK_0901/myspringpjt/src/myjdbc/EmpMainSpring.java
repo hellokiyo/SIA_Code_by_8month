@@ -22,7 +22,12 @@ public class EmpMainSpring { // EmpMain class = main 화면 담당
 		String[] nameList = context.getBeanDefinitionNames();
 		for (String name : nameList)
 			System.out.println(name);// 출력 결과: empService, empDAO, dataSource
-
+		// 스프링의 빈이름 생성전략 :
+		// @Repository나 @Service로 등록된 어노테이션들에 이름을 지정해주지 않으면 
+		// 스프링에서 알아서 앞자리 소문자로 객체를 생성함 
+		
+		
+		
 		
 		// 3. 컨테이너로부터 필요한 Bean을 이름(id)으로 요청(Look up)합니다.
         // 주석 설명: context.getBean("bean의 id") 메소드는 컨테이너가 관리하는 객체를 가져오는 역할을 합니다.

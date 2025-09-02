@@ -1,5 +1,4 @@
-package testspring;
-
+package myspring;
 
 public class Emp {
 

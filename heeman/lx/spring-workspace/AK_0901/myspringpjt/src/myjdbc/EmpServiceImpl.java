@@ -7,9 +7,12 @@ public class EmpServiceImpl implements EmpService {
 
 	//객체지향원칙: 캡슐화  > 변수는 private, 함수는 public로 해야함
 	private EmpDAO dao; //EmpDAO에 대한 의존성을 필드로 선언
+	//객체 변수
+	
 	
 	// Spring 컨테이너가 의존성을 주입하기 위해 호출할 Setter 메소드
 	// XML의 <property name="dAO"> 설정에 의해 호출됨
+	@Override
 	public void setDAO(EmpDAO dao) {
 		this.dao =dao;
 	}

@@ -1,22 +1,30 @@
-package testspring;
-
+package myspring;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+//@Repository // 이 클래스가 빈 객체로 생성되지 않으면 객체를 못 찾기 때문에 @Autowired가 되지 않음 
 public class EmpDAO {
 
+	@Autowired
+	DataSource dataSource;
+	
 	public List<Emp> getEmpListByDeptNo(int deptNo) throws Exception {
-	List<Emp> result = new ArrayList<Emp>();
+		List<Emp> result = new ArrayList<Emp>();
 		// db 접속 데이터를 가져와서 result에 담는다.
 		// 커넥션을 생성한다.
-		Connection conn = // Connection 타입의 객체
-				DriverManager.getConnection("jdbc:mysql://localhost:3306/newhr", "root", "rootroot");
-		//String sql = "select * from employees where job_id = ?";
-				
+		Connection conn = dataSource.getConnection();
+		// String sql = "select * from employees where job_id = ?";
+
 		// Statement를 생성한다.
 		Statement stmt = conn.createStatement(); // Connection 인터페이스의 하위 클래스에 선언된 리턴타입이 Statement인 객체
 		// 쿼리를 실행하여 ResultSet을 참조한다.
@@ -41,8 +49,7 @@ public class EmpDAO {
 		List<Emp> result = new ArrayList<Emp>();
 		// db 접속 데이터를 가져와서 result에 담는다.
 		// 커넥션을 생성한다.
-		Connection conn = 
-				DriverManager.getConnection("jdbc:mysql://localhost:3306/newhr", "root", "rootroot");
+		Connection conn = dataSource.getConnection();
 		// Statement를 생성한다.
 		Statement stmt = conn.createStatement();
 		// 쿼리를 실행하여 ResultSet을 참조한다.

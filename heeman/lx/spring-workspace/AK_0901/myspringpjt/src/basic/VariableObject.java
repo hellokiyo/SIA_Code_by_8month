@@ -1,4 +1,4 @@
-package myjdbc;
+package basic;
 
 public class VariableObject {
 	public static void main(String[] args) {
