@@ -5,15 +5,10 @@
 	<select id="getEmpByFirstNLastName" resultType="myspring.Emp"
 		parameterType="myspring.Emp">
 		<!-- mybatis내에서 생성한 메서드가 뱉는 리턴타입은 Emp -->
-		select
-		last_name
-		, first_name
-		, employee_id
-		, salary
+		select last_name, first_name, employee_id, salary
 		from employees
 		where 1=1
 		<choose>
-		
 			<when test="firstName != null">
 				and first_name = #{firstName}
 			</when>
@@ -21,29 +16,19 @@
 			<when test="lastName != null">
 				and last_name = #{lastName}
 			</when>
-			
 		</choose>
 	</select>
 
 	<select id="getEmpListByJobId" resultType="myspring.Emp">
 		<!-- mybatis내에서 생성한 메서드가 뱉는 리턴타입은 Emp -->
-		select last_name
-		, first_name
-		employee_id
-		,salary
-		from
-		where job_id =
-		#{jobId}
+		select last_name, first_name, employee_id, salary
+		from where job_id =	#{jobId}
 	</select>
 
 	<select id="getEmpListByDeptNo" parameterType="int"
 		resultType="myspring.Emp">
 		<!-- mybatis내에서 생성한 메서드가 뱉는 리턴타입은 Emp -->
-		select
-		employee_id
-		, last_name
-		, first_name
-		,salary
+		select employee_id, last_name, first_name,salary
 		from employees
 		where department_id = #{deptNo}
 	</select>

@@ -2,9 +2,7 @@ package myspring;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 
 @Component("empService") // 이름을 정의할땐 이전 이름을 찾는 곳을 찾아서 수정해줘야함 
