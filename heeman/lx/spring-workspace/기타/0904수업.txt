@@ -2,11 +2,12 @@
 
 https://mkyong.com/logging/log4j-xml-example/의 첫번째꺼
 
-root경로 info로 변경
 
+servlet-context,spring-context의 경로를 web.xml에서 root경로 info로 변경
+경로를 classpath:spring-context.xml로 변경
 
 logger 이용해서 RequestMappingHandlerMapping이쪽 보면 페이지가 나옴 
 
 2. 
 
-aop설정
+aop설정 

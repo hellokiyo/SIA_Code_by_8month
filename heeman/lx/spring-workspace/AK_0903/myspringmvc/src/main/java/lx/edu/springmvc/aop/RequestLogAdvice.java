@@ -8,7 +8,6 @@ import org.aspectj.lang.annotation.Before;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StopWatch;
 
 import lx.edu.springmvc.dao.RequestLogDAO;
 import lx.edu.springmvc.vo.RequestLogVO;

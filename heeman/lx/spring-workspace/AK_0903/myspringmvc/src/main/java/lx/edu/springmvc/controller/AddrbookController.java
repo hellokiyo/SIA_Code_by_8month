@@ -11,14 +11,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+import lx.edu.springmvc.aop.RequestLogAdvice;
 import lx.edu.springmvc.dao.AddrBookDAO;
 import lx.edu.springmvc.vo.AddrBookVO;
 
 @Controller
 public class AddrbookController {
 
+    private final RequestLogAdvice requestLogAdvice;
+
 	@Autowired
 	AddrBookDAO dao;
+
+    AddrbookController(RequestLogAdvice requestLogAdvice) {
+        this.requestLogAdvice = requestLogAdvice;
+    }
 
 	@RequestMapping("/addrbook_form.do")
 	public String form() {
@@ -34,12 +42,12 @@ public class AddrbookController {
 //	}
 
 	@RequestMapping("/addrbook_list.do")
-	public ModelAndView list(Model model) throws Exception {
-		ModelAndView result = new ModelAndView();
+	public String list(HttpSession session, HttpServletRequest req) throws Exception {
+		if(session.getAttribute("userId")==null) {
+			return "login";
+		}
 		List<AddrBookVO> list = this.dao.getDBList();
-		result.addObject("data", list);
-		result.setViewName("addrbook_list");
-		return result;
+		return "addrbook_list";
 	}
 
 	@RequestMapping("/insert.do")
