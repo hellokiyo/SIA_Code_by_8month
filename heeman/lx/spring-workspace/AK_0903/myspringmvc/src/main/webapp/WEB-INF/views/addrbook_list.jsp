@@ -6,15 +6,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" href="${webappRoot}/resources/css/addrbook.css" type="text/css"
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/addrbook.css" type="text/css"
 	media="screen"/>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script type="text/javascript">
 	function check(ab_Id) {
-		//pwd = prompt('수정/삭제 하려면 비밀번호를 넣으세요');
-		document.location.href = "edit.do?ab_id=" + ab_id;
-		//+ "&upasswd=" + pwd;
-		//document.location.href="editview.do?ab_id="+ab_id+"&upasswd="+pwd;
+		document.location.href = "edit.do?abId";
 	}
 </script>
 
@@ -24,7 +21,7 @@
 </head>
 <!--
 -->
-<jsp:useBean id="data" scope="request" type="java.util.List<lx.edu.springmvc.AddrBookVO>" />
+<jsp:useBean id="data" scope="request" type="java.util.List<lx.edu.springmvc.vo.AddrBookVO>" />
 
 <body>
 	<div align="center">
@@ -45,7 +42,7 @@
 				
 				<c:forEach items="${data}" var="vo">
 					<tr>
-						<td><a href="/addrbook_edit_form.do/abId=${vo.abId}">${vo.abId}</a></td>
+						<td><a href="/addrbook_edit_form.do?abId=${vo.abId}">${vo.abId}</a></td>
 						<td>${vo.abName}</td>
 						<td>${vo.abTel}</td>
 						<td>${vo.abBirth}</td>
@@ -59,12 +56,5 @@
 			</table>
 		</form>
 	</div>
-	<script type="text/javascript">
-/* 		$('tr').on('click',function () {
-			//ab_id
-			let abId = $(this).find('a').text();
-			document.location.href = "edit.do?ab_id=" + abId;
-		}) */
-	</script>
 </body>
 </html>

@@ -5,14 +5,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" href="${webappRoot}/resources/css/addrbook.css"
-	type="text/css" media="screen" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/addrbook.css" type="text/css" media="screen" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>주소록:수정화면</title>
 </head>
 
-<jsp:useBean id="ab" scope="request" class="lx.edu.springmvc.AddrBookVO" />
+<jsp:useBean id="ab" scope="request" class="lx.edu.springmvc.vo.AddrBookVO" />
 
 <body>
 	<div align="center">
@@ -22,9 +21,7 @@
 		<p>
 			ab_id : ${ab.abId} <br>
 		<form name=form1 method=post action=/addrbook_list.do>
-			<input type=hidden name="ab_id" value="${ab.abId}"> <input
-				type=hidden name="action" value="update">
-
+			<input type=hidden name="ab_id" value="${ab.abId}"> 
 			<table border="1">
 				<tr>
 					<th>이 름</th>
@@ -52,21 +49,24 @@
 
 				<tr>
 					<th>회 사</th>
-					<td><input type="text" name="abComdept"
-						value="${ab.abComdept}"></td>
+					<td>
+						<input type="text" name="abComdept"	value="${ab.abComdept}">
+					</td>
 				</tr>
 
 				<tr>
 					<th>메 모</th>
-					<td><input type="text" name="abMemo" value="${ab.abMemo}">
+					<td>
+						<input type="text" name="abMemo" value="${ab.abMemo}">
 					</td>
 				</tr>
 
 				<tr>
 					<td colspan=2 align=center>
-					<input type=submit value="저장">
+						<input type=submit value="저장" onclick="updateCheck(${ab})">
 						<input type=reset value="취소"> 
-						<input type="button"value="삭제" onClick="delcheck()"></td>
+						<input type="button"value="삭제" onClick="deleleCheck()">
+					</td>
 				</tr>
 			</table>
 		</form>
@@ -74,14 +74,19 @@
 	</div>
 </body>
 <script type="text/javascript">
-	function delcheck() {
+	function updateCheck(ab) {
+		document.location.href ="/update.do?ab="+ab;
+	}
+	
+	function deleleCheck() {
 		result = confirm("정말로 삭제하시겠습니까 ?");
 	
 		if (result == true) {
-			document.location.href = "/delete.do/abId=${ab.abId}";
+			document.location.href = "/delete.do/${ab.abId}";
 			document.form1.submit();
 		} else
 			return;
 	}
+	
 </script>
 </html>

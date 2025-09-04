@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan(basePackages = "myspring")
-//  <context:component-scan base-package="myspring"/>
+// <context:component-scan base-package="myspring"/>
 
 public class SpringConfig {
 

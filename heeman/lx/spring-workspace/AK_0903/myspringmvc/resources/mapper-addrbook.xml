@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper-addrbook">
 
-	<select id="getDB" resultType="lx.edu.springmvc.AddrBookVO">
+	<select id="getDB" resultType="lx.edu.springmvc.vo.AddrBookVO">
 		select 
 			ab_id abId
 		,  ab_name abName
@@ -17,7 +17,7 @@
 
 
 	<!-- select -->
-	<select id="getDBList" resultType="lx.edu.springmvc.AddrBookVO">
+	<select id="getDBList" resultType="lx.edu.springmvc.vo.AddrBookVO">
 		select 
 			ab_id abId
 		,  ab_name abName

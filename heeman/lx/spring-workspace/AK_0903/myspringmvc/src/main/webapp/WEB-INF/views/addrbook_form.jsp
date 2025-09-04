@@ -5,13 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>주소록:작성화면</title>
-<link rel="stylesheet" href="${webappRoot}/resources/css/addrbook.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/addrbook.css" type="text/css" media="screen" />
 </head>
 <body>
 <div align="center">
 <H2>주소록:작성화면 </H2>
 <HR>
-[<a href="addrbook_list.do">주소록 목록으로</a>] <P>
+[<a href="/addrbook_list.do">주소록 목록으로</a>] <P>
 
 <form name=form1 method=post action=insert.do>
 
@@ -43,14 +43,19 @@
     <td><input type="text" name="abMemo"></td>
   </tr>
   <tr>
-    <td colspan=2 align=center><input type=submit value="저장"><input type=reset value="취소"></td>
+    <td colspan=2 align=center>
+    	<input type=submit value="저장">
+    	<input type=reset value="취소">
+    </td>
 </tr>
 </table>
 </form>
-
 <a href="logout_control.jsp">logout</a>
 
 
 </div>
 </body>
+<script type="text/javascript">
+
+</script>
 </html>

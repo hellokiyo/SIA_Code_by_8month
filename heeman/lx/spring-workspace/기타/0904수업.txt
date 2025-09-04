@@ -1,0 +1,12 @@
+1. main/java/resources/경로에 log4j.xml 생성(pom.xml 설정 추가)
+
+https://mkyong.com/logging/log4j-xml-example/의 첫번째꺼
+
+root경로 info로 변경
+
+
+logger 이용해서 RequestMappingHandlerMapping이쪽 보면 페이지가 나옴 
+
+2. 
+
+aop설정

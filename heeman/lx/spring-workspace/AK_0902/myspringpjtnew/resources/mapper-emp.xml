@@ -17,6 +17,7 @@
 				and last_name = #{lastName}
 			</when>
 		</choose>
+		
 	</select>
 
 	<select id="getEmpListByJobId" resultType="myspring.Emp">
