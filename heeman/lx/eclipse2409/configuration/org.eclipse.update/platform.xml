@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config date="1756862808571" transient="false">
+<config date="1757054240039" transient="false">
 	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
 		<feature id="org.eclipse.mylyn.github.feature" version="6.5.0.v20240711-1016" url="features/org.eclipse.mylyn.github.feature_6.5.0.v20240711-1016/" plugin-identifier="org.eclipse.mylyn.tasks.core">
 		</feature>
@@ -164,6 +164,8 @@
 		<feature id="org.eclipse.mylyn.team.feature" version="4.4.0.v20240617-1534" url="features/org.eclipse.mylyn.team.feature_4.4.0.v20240617-1534/" plugin-identifier="org.eclipse.mylyn.context.core">
 		</feature>
 		<feature id="org.eclipse.jdt" version="3.19.600.v20240903-0240" url="features/org.eclipse.jdt_3.19.600.v20240903-0240/">
+		</feature>
+		<feature id="org.thymeleaf.extras.eclipse.contentassist.feature" version="3.1.0.202310222155" url="features/org.thymeleaf.extras.eclipse.contentassist.feature_3.1.0.202310222155/">
 		</feature>
 		<feature id="org.eclipse.ecf.filetransfer.httpclient5.feature" version="1.1.702.v20240808-1900" url="features/org.eclipse.ecf.filetransfer.httpclient5.feature_1.1.702.v20240808-1900/">
 		</feature>

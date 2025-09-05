@@ -21,7 +21,7 @@
 </head>
 <!--
 -->
-<jsp:useBean id="data" scope="request" type="java.util.List<lx.edu.springmvc.vo.AddrBookVO>" />
+<jsp:useBean id="data" scope="request" type="java.util.Listlx.edu.springboot.vo.AddrBookVO>" />
 
 <body>
 	<div align="center">

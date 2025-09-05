@@ -1067,6 +1067,7 @@ org.springsource.ide.eclipse.commons.frameworks.ui,4.31.0.202506052016,plugins/o
 org.springsource.ide.eclipse.commons.jdk_tools,4.31.0.202506052016,plugins/org.springsource.ide.eclipse.commons.jdk_tools_4.31.0.202506052016.jar,4,false
 org.springsource.ide.eclipse.commons.livexp,4.31.0.202506052016,plugins/org.springsource.ide.eclipse.commons.livexp_4.31.0.202506052016.jar,4,false
 org.springsource.ide.eclipse.commons.ui,4.31.0.202506052016,plugins/org.springsource.ide.eclipse.commons.ui_4.31.0.202506052016.jar,4,false
+org.thymeleaf.extras.eclipse.contentassist,3.1.0.202310222155,plugins/org.thymeleaf.extras.eclipse.contentassist_3.1.0.202310222155.jar,4,false
 org.tukaani.xz,1.10.0,plugins/org.tukaani.xz_1.10.0.jar,4,false
 org.uddi4j,2.0.5.v20230923-0644,plugins/org.uddi4j_2.0.5.v20230923-0644.jar,4,false
 org.yaml.snakeyaml,2.4.0,plugins/org.yaml.snakeyaml_2.4.0.jar,4,false

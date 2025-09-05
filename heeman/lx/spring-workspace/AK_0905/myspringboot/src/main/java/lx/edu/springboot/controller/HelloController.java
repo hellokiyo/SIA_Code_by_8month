@@ -1,0 +1,27 @@
+package lx.edu.springboot.controller;
+
+import lx.edu.springboot.dao.AddrBookDAO;
+import lx.edu.springboot.vo.AddrBookVO;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloController {
+
+	@Autowired
+	AddrBookDAO dao;
+	
+	
+	@RequestMapping("/hello")
+	public String hello(Model model) throws Exception{
+		
+		AddrBookVO vo = dao.getDB(1);
+		vo.setAbName("hahaha");
+		model.addAttribute("vo", vo);
+		
+		return "hello";
+	}
+}
