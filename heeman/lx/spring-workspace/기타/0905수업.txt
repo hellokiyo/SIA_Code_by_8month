@@ -1,0 +1,21 @@
+객체 내부에 표현된 이름 : setViewName, 
+
+
+
+interceptor에 대해 배움
+- 지금은 
+
+
+
+restful방식으로 서버 변경
+
+
+JavaConfiguration
+AddrBookWebInitialzer, WebMvcConfig를 사용해서 자바로 config하는 법
+
+
+
+
+web.xml 삭제 후 
+AddrBookWebInitialzer, WebMvcConfig를 수정후 오류나면 서버를 초기화해주고 다시 실행해준다.
+
