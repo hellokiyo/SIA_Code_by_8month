@@ -12,9 +12,9 @@ import org.springframework.stereotype.Component;
 import lx.edu.springmvc.dao.RequestLogDAO;
 import lx.edu.springmvc.vo.RequestLogVO;
 
-@Aspect
-@Component
-@EnableAspectJAutoProxy
+//@Aspect
+//@Component
+//@EnableAspectJAutoProxy
 public class RequestLogAdvice {
 
 	@Autowired

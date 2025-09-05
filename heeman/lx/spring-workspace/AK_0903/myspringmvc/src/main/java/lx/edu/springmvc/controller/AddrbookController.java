@@ -19,14 +19,8 @@ import lx.edu.springmvc.vo.AddrBookVO;
 @Controller
 public class AddrbookController {
 
-    private final RequestLogAdvice requestLogAdvice;
-
 	@Autowired
 	AddrBookDAO dao;
-
-    AddrbookController(RequestLogAdvice requestLogAdvice) {
-        this.requestLogAdvice = requestLogAdvice;
-    }
 
 	@RequestMapping("/addrbook_form.do")
 	public String form() {
@@ -42,11 +36,14 @@ public class AddrbookController {
 //	}
 
 	@RequestMapping("/addrbook_list.do")
-	public String list(HttpSession session, HttpServletRequest req) throws Exception {
-		if(session.getAttribute("userId")==null) {
-			return "login";
-		}
+	public String list(HttpSession session, HttpServletRequest req){
+//		Interceptor방식으로 변경
+//		if(session.getAttribute("userId") ==null) {
+//			return "login";
+//		}
+		
 		List<AddrBookVO> list = this.dao.getDBList();
+		req.setAttribute("data", list);
 		return "addrbook_list";
 	}
 

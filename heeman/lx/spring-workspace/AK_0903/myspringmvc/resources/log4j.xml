@@ -12,7 +12,7 @@
 	</appender>
 
 	<logger name="org.springframework.web">
-		<level value="debug"></level>
+		<level value="trace"></level>
 	</logger>
 
 	<logger name="org.springframework.beans">

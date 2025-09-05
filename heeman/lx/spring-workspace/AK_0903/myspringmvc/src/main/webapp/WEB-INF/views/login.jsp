@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>login</h1>
-<form action="login_action.jsp">
+<form method="post" action="loginaction.do">
 	id : <input name="id" type="text"><br>
 	pw : <input name="pw" type="password"><br>
 	<input type="submit" value="로그인">
