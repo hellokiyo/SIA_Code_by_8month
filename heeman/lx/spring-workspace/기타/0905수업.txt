@@ -19,3 +19,11 @@ AddrBookWebInitialzer, WebMvcConfig를 사용해서 자바로 config하는 법
 web.xml 삭제 후 
 AddrBookWebInitialzer, WebMvcConfig를 수정후 오류나면 서버를 초기화해주고 다시 실행해준다.
 
+
+css> static
+html > template
+
+Interceptor(feat.session)이용해서 로그인 기능 만들기
+web.xml대신 자바파일로 서버 실행시켜보기 + spring boot 설치
+스프링 부트로 환경구성하기 application.properties, resources아래mapper, html > templates, css > static과 java/lx/edu/springboot 아래 mvc파일들 구성해줌
+
