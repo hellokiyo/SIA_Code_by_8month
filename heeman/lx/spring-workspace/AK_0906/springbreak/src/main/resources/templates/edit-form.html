@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>할 일 수정</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body class="container">
+	<header>
+		<h1>할 일 수정</h1>
+		<a href="/todo_list.do">목록으로</a>
+	</header>
+
+	<main>
+		<form th:action="@{/update.do}" method="post">
+			<!-- id는 hidden으로 전달 -->
+			<input type="hidden" name="id" th:value="${vo.id}" /> <label>내용
+				<input type="text" name="content" th:value="${vo.content}" required />
+			</label> <label> <input type="checkbox" name="completed"
+				th:checked="${vo.completed}" /> 완료
+			</label>
+
+			<p>
+				생성일:<span th:text="${#dates.format(vo.created_date, 'yyyy-MM-dd HH:mm')}">-</span>
+			</p>
+
+			<button type="submit">수정 저장</button>
+		</form>
+	</main>
+</body>
+</html>

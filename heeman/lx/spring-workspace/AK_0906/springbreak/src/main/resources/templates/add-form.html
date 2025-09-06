@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>할 일 추가</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body class="container">
+  <header>
+    <h1>할 일 추가</h1>
+    <a href="/todo_list.do">목록으로</a>
+  </header>
+
+  <main>
+    <form th:action="@{/insert.do}" method="post">
+      <!-- 스프링 시큐리티 사용 시 CSRF hidden 필요 -->
+      <label>내용
+        <input type="text" name="content" placeholder="할 일을 입력하세요" required />
+      </label>
+
+      <label>
+        <input type="checkbox" name="completed" /> 완료로 추가
+      </label>
+
+      <button type="submit">저장</button>
+    </form>
+  </main>
+</body>
+</html>

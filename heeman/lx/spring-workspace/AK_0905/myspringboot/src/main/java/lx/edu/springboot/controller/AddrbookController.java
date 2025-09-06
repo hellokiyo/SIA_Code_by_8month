@@ -74,7 +74,7 @@ public class AddrbookController {
 
 
 	@RequestMapping("/delete.do/{abId}")
-	public String delete(@PathVariable("abId") int abId, HttpServletRequest req) {
+	public String delete(@PathVariable("abId") int abId) {
 		dao.deleteDB(abId);
 		return "redirect:addrbook_list.do";
 	}

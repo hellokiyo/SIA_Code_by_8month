@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>ToDo List</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body class="container">
+	<header>
+		<h1>ToDo List</h1>
+		<nav>
+			<a href="/add.do" role="button">할 일 추가</a> <a
+				th:href="@{/complete.do(completed=true)}">완료한 항목 보기</a> <a
+				th:href="@{/complete.do(completed=false)}">미완료 항목 보기</a>
+		</nav>
+	</header>
+
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>내용</th>
+					<th>완료</th>
+					<th>생성일</th>
+					<th>액션</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="todo : ${data}">
+					<td th:text="${todo.id}">1</td>
+					<td th:text="${todo.content}">내용</td>
+					<td><span th:text="${todo.completed} ? '완료' : '미완료'">미완료</span>
+					</td>
+					<td
+						th:text="${#dates.format(todo.created_date, 'yyyy-MM-dd HH:mm')}">-</td>
+					<td><a th:href="@{/edit.do(id=${todo.id})}">수정</a> <a
+						th:href="@{/delete.do(id=${todo.id})}"
+						onclick="return confirm('정말 삭제할까요?');">삭제</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+</body>
+</html>
