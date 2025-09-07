@@ -50,7 +50,12 @@ public class ToDoDAO {
 	public int deleteDB(int id) {
 		return this.session.delete("mapper-todo.deleteDB",id);
 	}
-	
+
+	public int deleteDBone() {
+		return this.session.delete("mapper-todo.deleteDBone");
+	}
+
+
 //----------------------------------------------------
 
 }

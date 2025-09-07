@@ -74,6 +74,13 @@ public class ToDoController {
 		return "redirect:todo_list.do";
 	}
 	
+	// 할일 리스트 삭제 deleteDBone
+	@RequestMapping("/deleteOne.do")
+	public String deleteOne() {
+		dao.deleteDBone();
+		return "redirect:todo_list.do";
+	}
+	
 //---------------------------------------------------
 	
 	
