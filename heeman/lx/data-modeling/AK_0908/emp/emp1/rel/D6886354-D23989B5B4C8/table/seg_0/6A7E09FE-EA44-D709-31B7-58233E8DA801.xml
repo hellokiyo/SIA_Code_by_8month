@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A7E09FE-EA44-D709-31B7-58233E8DA801" name="직원">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 01:35:06 UTC</createdTime>
+<generatorID>7E194FF6-3370-625E-0819-6453AC4A3AA1</generatorID>
+<ownerDesignName>emp1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="사원번호" id="CE9B0040-3C3C-384B-9FC7-0AB63AA127BD">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 01:35:06 UTC</createdTime>
+<generatorID>4F60EDB8-C2DF-BD94-9E18-B09EE22CFDE0</generatorID>
+<ownerDesignName>emp1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="사원명" id="CAFC1416-1498-0B68-44F9-D528A7DB226C">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 01:35:06 UTC</createdTime>
+<generatorID>8958CE0F-2FA5-7F0F-D961-6CE13FC411D6</generatorID>
+<ownerDesignName>emp1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="부서_부서_ID" id="E3B50348-0674-CD3C-8605-F5B27A4FAD8F">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 01:35:06 UTC</createdTime>
+<ownerDesignName>emp1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EBB69A4-5BB4-76B8-682C-FBCF95B4DCF8" referredColumn="8B18BFBE-DD8F-091A-58B4-157250AAF256"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FCF40B0B-B9F3-12F2-985A-3A44EDAAEEC3" name="직원_부서_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 01:35:06 UTC</createdTime>
+<generatorID>5BB4E3C6-D839-B3B7-B323-FBAB4A702CBC</generatorID>
+<ownerDesignName>emp1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3B50348-0674-CD3C-8605-F5B27A4FAD8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

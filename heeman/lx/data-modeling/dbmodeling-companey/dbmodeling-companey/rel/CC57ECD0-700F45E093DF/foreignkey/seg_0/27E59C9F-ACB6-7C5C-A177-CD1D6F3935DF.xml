@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="27E59C9F-ACB6-7C5C-A177-CD1D6F3935DF" containerWithKeyObject="5B1FAE97-416F-5F0B-9C80-C424B03F39CB" localFKIndex="16C1708A-F218-F245-9A7F-FFAACA49C420" name="Relation_4_프로젝트_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>8FD1AE63-A00B-D0E5-98D8-FCC7810DDE23</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<referredTableLongName>프로젝트</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D62121C9-D324-BBBC-13C0-155F6ACD4603</referredTableID>
+<keyObject>50CD13FD-15B8-BEE0-CEEF-D50A29F90740</keyObject>
+<referredKeyID>50CD13FD-15B8-BEE0-CEEF-D50A29F90740</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>프로젝트번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

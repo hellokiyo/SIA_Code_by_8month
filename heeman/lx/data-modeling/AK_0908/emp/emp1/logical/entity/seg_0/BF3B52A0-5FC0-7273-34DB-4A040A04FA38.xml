@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF3B52A0-5FC0-7273-34DB-4A040A04FA38" name="부서">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 01:27:11 UTC</createdTime>
+<ownerDesignName>emp1</ownerDesignName>
+<engineerTo>
+<item key="D6886354-C67D-D726-EE93-D23989B5B4C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="부서명" id="BE5DA603-A3E5-E9C7-231B-34D0BD0AB224">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 01:29:35 UTC</createdTime>
+<ownerDesignName>emp1</ownerDesignName>
+<engineerTo>
+<item key="D6886354-C67D-D726-EE93-D23989B5B4C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서번호" id="C1A4E3A9-2AAB-1C94-03C7-DB0821D364AF">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 01:29:41 UTC</createdTime>
+<ownerDesignName>emp1</ownerDesignName>
+<engineerTo>
+<item key="D6886354-C67D-D726-EE93-D23989B5B4C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

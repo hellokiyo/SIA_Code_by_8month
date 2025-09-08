@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B1FAE97-416F-5F0B-9C80-C424B03F39CB" name="Relation_4">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="회사원_사번" id="96BE3229-E3FA-B206-C12B-B4D1CD376114">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ABE0C02B-86A8-EB90-8260-71F2C49AD461" referredColumn="C3AC1584-0D2D-0EBC-4D00-41DE61349095"/>
+</associations>
+</Column>
+<Column name="프로젝트_프로젝트번호" id="598B1579-C2F1-3CDE-94DA-D42C133621A6">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27E59C9F-ACB6-7C5C-A177-CD1D6F3935DF" referredColumn="67A47BAD-8D9F-D72D-F985-3DE1D0F4B9FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D2BC13F-3BC0-0196-AB3B-CD9706CFC257" name="Relation_4_PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96BE3229-E3FA-B206-C12B-B4D1CD376114"/>
+<colUsage columnID="598B1579-C2F1-3CDE-94DA-D42C133621A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64856A9A-853F-E18D-7A04-51EF8000523E" name="Relation_4_회사원_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>8FD1AE63-A00B-D0E5-98D8-FCC7810DDE23</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96BE3229-E3FA-B206-C12B-B4D1CD376114"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16C1708A-F218-F245-9A7F-FFAACA49C420" name="Relation_4_프로젝트_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>8FD1AE63-A00B-D0E5-98D8-FCC7810DDE23</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="598B1579-C2F1-3CDE-94DA-D42C133621A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

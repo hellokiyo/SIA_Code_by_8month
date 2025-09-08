@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EBE27A94-4042-E1E9-7C88-30CA9B0F50AA" name="투입 프로젝트">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:24:38 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="사번" id="187F66E0-B247-3FB3-A624-F7A35D550BB7">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:24:44 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="프로젝트번호" id="FFD75B31-11B9-18AC-1F63-492B7978E420">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:24:44 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="투입근무일수" id="7E78E290-1CA2-2605-C7BC-F7C981FE5B95">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:24:44 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="프로젝트번호1" id="CEB549BA-81F7-C7D7-2D4F-4EF13B1460FB">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:26:08 UTC</createdTime>
+<generatorID>BCAD5DB9-4784-4D29-4CA4-A3A90A7645E1</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<referedAttribute>A1969D52-68AC-D5A8-5B27-8DC23B694696</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="사번1" id="C272DF12-EAFE-3E76-7785-A384FA28A1ED">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:26:14 UTC</createdTime>
+<generatorID>A8F286A9-51BC-6359-F74E-B2496DFA6FE5</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<referedAttribute>BBDAD67C-1BC2-5E07-BB39-309EDE6C3A76</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43758248-CC4B-D9E9-82EB-C6AACC194455" name="투입 프로젝트 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:25:52 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FFD75B31-11B9-18AC-1F63-492B7978E420</attributeRef>
+<attributeRef>187F66E0-B247-3FB3-A624-F7A35D550BB7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

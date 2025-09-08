@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6F8BE471-DE4F-4326-0C22-25343CD5B420" name="회사원">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:41:40 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="사번" id="BBDAD67C-1BC2-5E07-BB39-309EDE6C3A76">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:44:40 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="성명" id="02AFBE36-DDE4-240B-52A7-F33C085DCCD6">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:44:40 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="주민번호" id="E4CBE9C1-D0A0-EAFE-51BB-702BCC70DF4B">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:44:40 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="주소" id="C3F2A9AD-94B4-A138-869C-972BA57FD716">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:44:41 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="급여" id="F04D33AF-6348-8577-B30C-4E14B2400077">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:44:41 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="성별" id="C9A53881-E17C-62D5-BCBA-5132AAA8C536">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:44:43 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="생년월일" id="CA7F4254-B15D-316E-9C9F-A84896818BF8">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:44:43 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서번호" id="A747E8BF-EC31-0886-D6B9-96D415ACA12D">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:15:54 UTC</createdTime>
+<generatorID>C8214220-BCF1-2524-B6A7-C13344CBF47D</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<referedAttribute>387790B6-B448-423C-355C-90B37574073A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="사번1" id="EF2FD49B-D7DD-81E9-58DF-17D58395FB1B">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:17:06 UTC</createdTime>
+<generatorID>34129BE1-DDDF-8ECE-5E43-E6C51CEF8CF6</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>BBDAD67C-1BC2-5E07-BB39-309EDE6C3A76</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="23DF0B9C-473D-9FF6-41C2-6A49D37B113B" name="회사원 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:44:50 UTC</createdTime>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<engineerTo>
+<item key="CC57ECD0-70AF-6AB3-ED71-700F45E093DF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BBDAD67C-1BC2-5E07-BB39-309EDE6C3A76</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

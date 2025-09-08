@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5149DA4B-BFC6-2C2C-49BE-6425EB956B6B" name="부서">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>BD06A52A-11EC-C01E-B928-B44EFED0FF69</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="부서번호" id="2CBE87DA-4957-134E-BE8A-66A80AD973BD">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>387790B6-B448-423C-355C-90B37574073A</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="부서명" id="8115714A-9039-DAC8-FE90-2E0BBEB04975">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>1CD5B799-A82A-A997-0419-E10065ABC7B9</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="부서장취임일자" id="2F85EFCF-6EB6-95C8-B79C-5B36ED3A995C">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>C96C10F5-385C-5486-61AF-DA9927EC6D3A</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="회사원_사번" id="065F1C59-EB5B-4373-A278-4AE2E2C98EA7">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>E862ED5E-1A28-0028-7A35-BBA15345671E</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31E4AE44-E436-A392-ACC5-6E64F6C0DF8C" referredColumn="C3AC1584-0D2D-0EBC-4D00-41DE61349095"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B4825DB5-5212-1E94-0E01-276EFEE249C5" name="부서_PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>02FC427B-5568-4B27-2398-29D1959F3FAD</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CBE87DA-4957-134E-BE8A-66A80AD973BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7063F471-8660-35E1-F9C0-2F9035B64C1F" name="부서_회사원_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:22:55 UTC</createdTime>
+<generatorID>EF780DEE-3A4E-A6AB-B979-3BCC5C22F702</generatorID>
+<ownerDesignName>dbmodeling-companey</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="065F1C59-EB5B-4373-A278-4AE2E2C98EA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
