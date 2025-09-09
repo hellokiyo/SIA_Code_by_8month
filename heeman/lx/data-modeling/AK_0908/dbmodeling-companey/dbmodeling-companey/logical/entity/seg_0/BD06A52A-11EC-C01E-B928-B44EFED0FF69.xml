@@ -47,7 +47,7 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="사번" id="E862ED5E-1A28-0028-7A35-BBA15345671E">
+<Attribute name="부서장사번" id="E862ED5E-1A28-0028-7A35-BBA15345671E">
 <createdBy>LX</createdBy>
 <createdTime>2025-09-08 07:09:40 UTC</createdTime>
 <generatorID>EF780DEE-3A4E-A6AB-B979-3BCC5C22F702</generatorID>

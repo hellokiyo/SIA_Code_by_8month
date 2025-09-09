@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="정규화실습_프로젝트관리" id="E7D5E754-5053-2EEA-59AE-FFC61C69C76E" version="3.5">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:27:01 UTC</createdTime>
+<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E7D5E754-5053-2EEA-59AE-FFC61C69C76E</designId>
+</OSDM_Design>

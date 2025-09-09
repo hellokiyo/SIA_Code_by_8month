@@ -103,7 +103,7 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="사번1" id="EF2FD49B-D7DD-81E9-58DF-17D58395FB1B">
+<Attribute name="상위관리자사번" id="EF2FD49B-D7DD-81E9-58DF-17D58395FB1B">
 <createdBy>LX</createdBy>
 <createdTime>2025-09-08 07:17:06 UTC</createdTime>
 <generatorID>34129BE1-DDDF-8ECE-5E43-E6C51CEF8CF6</generatorID>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F98FCFDF-F62F-9F3C-571F-B27881C14456" name="거래내역">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:03:26 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="일련번호" id="018F7592-5A43-B49B-7D16-55C91DC2DCDF">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:07:54 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="거래일자" id="86E68ECC-9C28-617F-AD8C-16F9B12DD912">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:07:54 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="거래시각" id="C0E64BE8-DC2D-737D-35BF-6103236719C6">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:07:54 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="거래금액" id="7527235F-C89D-C86A-98A4-0DADEECFDBD0">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:08:15 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="계좌번호" id="F04F232F-0DF8-E05F-1359-8A9D1A3309FF">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:23:02 UTC</createdTime>
+<generatorID>3FAA9D19-B692-11E1-BD93-DD6DE1AE5FCF</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<referedAttribute>0CF431FE-38BB-DEAE-C7D0-C17E0634B095</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BD0A5C3-10BD-0059-6B20-A0ED28328040" name="거래내역 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:08:19 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>018F7592-5A43-B49B-7D16-55C91DC2DCDF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

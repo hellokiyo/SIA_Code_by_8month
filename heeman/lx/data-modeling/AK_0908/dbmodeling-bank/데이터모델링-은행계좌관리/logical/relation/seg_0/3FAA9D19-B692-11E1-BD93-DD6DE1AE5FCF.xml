@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_11" directorySegmentName="seg_0" id="3FAA9D19-B692-11E1-BD93-DD6DE1AE5FCF">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:23:02 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<sourcePk>1C65982D-9301-49BF-1FF8-53221AA3AB3F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E9AF15D1-A136-BF69-2B96-08457B61F7DF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F98FCFDF-F62F-9F3C-571F-B27881C14456</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

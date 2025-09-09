@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1BEB46DA-AD88-1379-1FB2-F5879393AD8B" name="품목">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:29:47 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="품목번호" id="A9ECF747-1B62-39D7-FFD2-3FF1188BB79E">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:29:56 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="품목명" id="50A34B62-ECAE-DF21-3DC9-4AF09FAC6461">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:30:01 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="단가" id="EE4B31F4-858E-0FA0-D923-116CC44AABF2">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:30:06 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A630ECD-579F-D126-60A6-87E1B996D498" name="품목 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:30:14 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A9ECF747-1B62-39D7-FFD2-3FF1188BB79E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

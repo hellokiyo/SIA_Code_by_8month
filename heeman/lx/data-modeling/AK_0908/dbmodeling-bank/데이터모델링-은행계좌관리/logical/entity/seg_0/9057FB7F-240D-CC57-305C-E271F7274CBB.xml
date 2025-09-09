@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9057FB7F-240D-CC57-305C-E271F7274CBB" name="직원">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:03:12 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="직원번호" id="ADDB83E3-1D10-F239-3848-451C989B4B6E">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:06:43 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="직원명" id="D9F5C73D-81F5-EB37-7E87-4A177CF1550F">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:06:43 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="주소" id="E95B402E-8E0C-C23E-A095-C2C53F8D5BF9">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:06:43 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="전화번호" id="611566AA-8605-5409-0E86-C315EAB5D550">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:07:18 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="소속지점고유번호" id="E9BA33DA-7739-8194-4C48-9ECD9D15A577">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:18:41 UTC</createdTime>
+<generatorID>BC9F3EFD-ABB0-1E51-F6EA-1EE90B57B166</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<referedAttribute>E8E590D6-1D05-8C60-B62E-B33225BEA9ED</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F456399E-B8A5-29B7-7847-15E4FDE783CF" name="직원 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 01:07:11 UTC</createdTime>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<engineerTo>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ADDB83E3-1D10-F239-3848-451C989B4B6E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

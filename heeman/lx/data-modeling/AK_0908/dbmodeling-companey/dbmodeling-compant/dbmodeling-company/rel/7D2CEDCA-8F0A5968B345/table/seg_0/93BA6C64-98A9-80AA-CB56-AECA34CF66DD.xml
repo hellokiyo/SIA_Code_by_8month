@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93BA6C64-98A9-80AA-CB56-AECA34CF66DD" name="회사원">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>703BF687-FB77-A030-71D6-E8B792D22D45</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="사번" id="19E38887-A80B-79DB-06F6-DDDB7DF54E3C">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>B2FEEF50-BBBA-0EA3-CBF0-CA57BD0CD031</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성명" id="0431EF82-F7C4-2500-4CFB-A08F7D250B6E">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>C278ADAE-BAE5-107E-9EC6-53BAA8839D2D</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="주민번호" id="3A640854-E488-2981-66FE-3D25E6BE2757">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>40870CAD-22BD-354F-48DF-069B69FD5DA6</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="주소" id="A3FE72A7-62A4-9FD2-532F-F1966D3C2B78">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>129CC9B8-95AC-E91C-E47C-A362471E1DB9</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="급여" id="7EE72B2B-83AA-AE2E-746B-F91F991AE44F">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>5E1DFD1C-80EE-D517-FC21-26EA807EF73F</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="성별" id="EB130BFA-C682-DF3C-9E2D-89E8D06CCF3F">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>42CEA7FE-1A1E-40D5-BD1B-AC9FFE5497D3</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="생년월일" id="846D7D3E-5E98-954B-3A8C-4D668238AB7C">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>864891A4-F7DF-3647-7D31-1572D5FA63D2</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="부서_부서번호" id="D2CB0567-57E9-3089-F1AA-F5BD9BFA6080">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>3DB85405-D0BF-52B7-D3F7-50FFA2249ED6</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB3AED88-7506-C6B2-844B-8145D42C53EE" referredColumn="56B8C7DC-431E-2E3A-3C02-5D80D6D05E02"/>
+</associations>
+</Column>
+<Column name="회사원_사번" id="4DE3742A-6393-5608-C1B0-091958D46E59">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>EE279804-7867-B07F-D788-87A09165C344</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62ABA7C9-597C-DCA4-980D-CC4FC61F7EB7" referredColumn="19E38887-A80B-79DB-06F6-DDDB7DF54E3C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7060B10A-D4DC-C5FD-F47E-2D8DE4F2A4FD" name="회사원_PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>21830804-2923-7A22-77DF-1771592D5499</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19E38887-A80B-79DB-06F6-DDDB7DF54E3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8919CB1-DDAF-3780-145F-8645BF38374E" name="회사원_부서_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>62F840A8-7BFA-E804-57F9-967ACB00DC78</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2CB0567-57E9-3089-F1AA-F5BD9BFA6080"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A885992B-70A4-69C9-05AA-136F02B876BD" name="회사원_회사원_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>A12150B7-035C-8D59-4F84-36AAC69DEF29</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DE3742A-6393-5608-C1B0-091958D46E59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

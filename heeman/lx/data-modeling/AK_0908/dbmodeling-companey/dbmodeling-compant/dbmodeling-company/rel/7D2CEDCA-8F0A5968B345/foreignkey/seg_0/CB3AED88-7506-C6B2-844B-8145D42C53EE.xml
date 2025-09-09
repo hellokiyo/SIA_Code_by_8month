@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CB3AED88-7506-C6B2-844B-8145D42C53EE" containerWithKeyObject="93BA6C64-98A9-80AA-CB56-AECA34CF66DD" localFKIndex="A8919CB1-DDAF-3780-145F-8645BF38374E" name="회사원_부서_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:18:42 UTC</createdTime>
+<generatorID>62F840A8-7BFA-E804-57F9-967ACB00DC78</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<referredTableLongName>부서</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>16270C0B-DB62-4FB0-F2E0-9486D4F3D33F</referredTableID>
+<keyObject>C770C792-D406-716B-7C48-AA62DD809580</keyObject>
+<referredKeyID>C770C792-D406-716B-7C48-AA62DD809580</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>부서번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

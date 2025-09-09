@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BFF291A3-BFB2-0507-114C-1174445A8BA8" name="부서">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:35:42 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="부서번호" id="F8B46CD4-F969-2D50-97C3-195EFBCF31E4">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:36:24 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서명" id="068D2A5C-7AFF-5F11-E2B9-B3FDEFFAA73F">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:36:30 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서장취임일자" id="CE1D3B70-D3AC-768C-FAFA-49E08539B665">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:36:33 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서장사번" id="FBDA9D0C-6B7C-84B9-CDD2-78C19A3186B6">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:07:35 UTC</createdTime>
+<generatorID>A4484F17-A3E2-7EAE-D32A-13934ECF8898</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<referedAttribute>B2FEEF50-BBBA-0EA3-CBF0-CA57BD0CD031</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="11A5F398-61A4-7538-EC14-DDE157E22605" name="부서 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:41:04 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F8B46CD4-F969-2D50-97C3-195EFBCF31E4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

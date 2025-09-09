@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B780C65-4F0B-ED17-C517-87E87561F5E0" name="주문">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:11:44 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="주문번호" id="91A78A61-3BBD-43C0-003B-1C552D97D9FB">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:12:27 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="주문일자" id="E7DB5FD9-3D67-B352-C2F1-06C6FFD67E08">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:12:36 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="고객번호" id="DEEB5738-F0B2-5E13-80A0-D1D84DC9FD9B">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 00:33:59 UTC</createdTime>
+<generatorID>9B776100-BE9B-ECEE-048A-CE9FFA34C1F6</generatorID>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<referedAttribute>C14535DA-4046-A78F-47FE-DB1A63B88E1A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="사번" id="137218E8-ECE9-D1AC-ED5F-9B6B2F10CE0E">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 00:36:22 UTC</createdTime>
+<generatorID>DEDDEA0D-6F9B-CF60-127B-9A5DF0455F24</generatorID>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<referedAttribute>0BBD894D-F268-869E-7CB5-0799DAA338FA</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="03C2765E-EDFD-ECA5-BB5B-BF0F72A94F41" name="주문 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 08:13:40 UTC</createdTime>
+<ownerDesignName>정규화-주문관리</ownerDesignName>
+<engineerTo>
+<item key="530A0E40-0495-1B4D-D58C-729EE1B1FA0E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>91A78A61-3BBD-43C0-003B-1C552D97D9FB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
