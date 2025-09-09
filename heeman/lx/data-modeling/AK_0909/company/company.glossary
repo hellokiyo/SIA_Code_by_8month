@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<cwd_glossary name="dbmodeling-company" description="generated from logical model of design dbmodeling-company" id="3E2BC4ED-E749-B223-B107-1CE4B343ED74" incomplete_modifiers="true" >
+
+   <glossaryWord name="PK" plural="" abbreviation="" alt_abbreviation="" id="55570C82-01A3-3678-4221-4C3C7CA27EB0" import_id="" description="" />
+   <glossaryWord name="급여" plural="" abbreviation="SALARY" alt_abbreviation="" id="FE8307CF-86F5-0317-62F1-EC8462351CBE" import_id="" description="" />
+   <glossaryWord name="부서" plural="" abbreviation="DEPARTMENT" alt_abbreviation="" id="F0C35A6D-2BC0-D5C1-0835-8A91EB59FB05" import_id="" description="" />
+   <glossaryWord name="부서명" plural="" abbreviation="DEPARTMENT_NAME" alt_abbreviation="" id="FA6C9876-3484-BA7E-10C0-98C6F337BAA3" import_id="" description="" />
+   <glossaryWord name="부서번호" plural="" abbreviation="DEPARTMENT_NO" alt_abbreviation="" id="84D876A2-19BD-29BA-BC0E-62F234B05062" import_id="" description="" />
+   <glossaryWord name="부서장취임일자" plural="" abbreviation="MANAGER_START_DATE" alt_abbreviation="" id="43144C0D-52FC-54EA-3D83-FE09754BCB57" import_id="" description="" />
+   <glossaryWord name="부서지역" plural="" abbreviation="DEPARTMENT_LOCATION" alt_abbreviation="" id="8F74E3B5-7683-3119-DF59-5CCE1889F674" import_id="" description="" />
+   <glossaryWord name="사번" plural="" abbreviation="EMPLOYEE_ID" alt_abbreviation="" id="7C544430-B7E8-4BBF-F9E0-B2CD41A87003" import_id="" description="" />
+   <glossaryWord name="생년월일" plural="" abbreviation="BIRTH_DATE" alt_abbreviation="" id="E14FC096-1844-3EA4-C0C3-587EC7B1119D" import_id="" description="" />
+   <glossaryWord name="성명" plural="" abbreviation="NAME" alt_abbreviation="" id="E625836A-F0F3-DE36-4C3D-9B412485F241" import_id="" description="" />
+   <glossaryWord name="성별" plural="" abbreviation="GENDER" alt_abbreviation="" id="356884D2-8BB5-6D8C-A252-E1B65F04E13D" import_id="" description="" />
+   <glossaryWord name="수행장소" plural="" abbreviation="PROJECT_LOCATION" alt_abbreviation="" id="64A1CF95-9648-9073-C8E3-98F298D19E66" import_id="" description="" />
+   <glossaryWord name="주민번호" plural="" abbreviation="SSN" alt_abbreviation="" id="2033FA44-1B45-7784-738D-FDFACA9C4CE1" import_id="" description="" />
+   <glossaryWord name="주소" plural="" abbreviation="ADDRESS" alt_abbreviation="" id="64EDD41F-0D3C-B779-4C09-48A6DDEFEE5B" import_id="" description="" />
+   <glossaryWord name="지역명" plural="" abbreviation="LOCATION_NAME" alt_abbreviation="" id="AC290B0C-2F48-711F-8B43-636BDE39698B" import_id="" description="" />
+   <glossaryWord name="지역번호" plural="" abbreviation="LOCATION_NO" alt_abbreviation="" id="28D0EBF1-38E3-5A7D-0553-ED835F6CF0A9" import_id="" description="" />
+   <glossaryWord name="투입근무일수" plural="" abbreviation="WORK_DAYS_AMOUNT" alt_abbreviation="" id="14849440-C7F9-3B66-C67C-5B031EA468B8" import_id="" description="" />
+   <glossaryWord name="투입프로젝트" plural="" abbreviation="WORK_PROJECT" alt_abbreviation="" id="1A6A5CF1-12B6-9AAC-F698-6AFF97DACF98" import_id="" description="" />
+   <glossaryWord name="프로젝트" plural="" abbreviation="PROJECT" alt_abbreviation="" id="F8ABD100-87B1-5B73-6B42-B62881D287AE" import_id="" description="" />
+   <glossaryWord name="프로젝트명" plural="" abbreviation="PROJECT_NAME" alt_abbreviation="" id="B5D59C69-15B1-62A5-0B2C-5BA209748C1C" import_id="" description="" />
+   <glossaryWord name="프로젝트번호" plural="" abbreviation="PROJECT_NO" alt_abbreviation="" id="6B8F983C-9A67-390E-EC58-035BCE0F3B85" import_id="" description="" />
+   <glossaryWord name="회사원" plural="" abbreviation="EMPLOYEE" alt_abbreviation="" id="E0FDE7CF-3185-E820-9A92-4F89BD0BCF74" import_id="" description="" />
+
+</cwd_glossary>

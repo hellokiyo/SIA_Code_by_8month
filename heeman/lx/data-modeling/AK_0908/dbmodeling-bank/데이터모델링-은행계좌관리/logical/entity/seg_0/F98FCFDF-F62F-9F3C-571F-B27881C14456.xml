@@ -23,6 +23,8 @@
 <item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C1B3391E-AA07-59AE-0301-0776A23E94BB</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="거래일자" id="86E68ECC-9C28-617F-AD8C-16F9B12DD912">
@@ -34,6 +36,8 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>421AC612-11F6-6024-75D8-7C3068B01DE5</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="거래시각" id="C0E64BE8-DC2D-737D-35BF-6103236719C6">
@@ -45,6 +49,8 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>421AC612-11F6-6024-75D8-7C3068B01DE5</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="거래금액" id="7527235F-C89D-C86A-98A4-0DADEECFDBD0">
@@ -56,6 +62,8 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>E7B2C1FA-6042-21D1-CE99-EB7B340B0D15</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="계좌번호" id="F04F232F-0DF8-E05F-1359-8A9D1A3309FF">
@@ -68,6 +76,8 @@
 </engineerTo>
 <referedAttribute>0CF431FE-38BB-DEAE-C7D0-C17E0634B095</referedAttribute>
 <use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C1B3391E-AA07-59AE-0301-0776A23E94BB</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -76,8 +86,9 @@
 <createdBy>LX</createdBy>
 <createdTime>2025-09-09 01:08:19 UTC</createdTime>
 <ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="true"/>
+<item key="EC3F8803-34B0-D724-7551-F59157A88631" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

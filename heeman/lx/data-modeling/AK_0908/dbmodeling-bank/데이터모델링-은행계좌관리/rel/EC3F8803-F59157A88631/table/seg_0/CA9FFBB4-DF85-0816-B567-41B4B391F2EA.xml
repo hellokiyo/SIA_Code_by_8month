@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA9FFBB4-DF85-0816-B567-41B4B391F2EA" name="EMPLOYEE">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>9057FB7F-240D-CC57-305C-E271F7274CBB</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_NO" id="1DAE4C32-23DA-E10C-6C07-587AB0C43849">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>ADDB83E3-1D10-F239-3848-451C989B4B6E</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C1B3391E-AA07-59AE-0301-0776A23E94BB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_NAME" id="5DC72B07-F8C8-815D-BEE6-3C393D3A63DC">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>D9F5C73D-81F5-EB37-7E87-4A177CF1550F</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15DEBD18-CCBF-542A-0A37-7620E135544C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="4170A8A7-97A5-929B-8A71-860DFCD6CE37">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>E95B402E-8E0C-C23E-A095-C2C53F8D5BF9</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>34AFFCC3-CFFD-1769-5775-3B142C9CDC3C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOBILE" id="1774FDCF-43B5-1707-2BFC-DA7D2DFA9636">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>611566AA-8605-5409-0E86-C315EAB5D550</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ECFB186A-3248-1D85-2F88-46724A22946C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="지점_고유번호" id="8A5C9497-25B5-1BAF-5A6F-9F957246C3EC">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>E9BA33DA-7739-8194-4C48-9ECD9D15A577</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C1B3391E-AA07-59AE-0301-0776A23E94BB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="879AC0BB-5A5D-8C53-E442-14C5B58F58A0" referredColumn="18E182F6-9965-29DD-72A5-5591251AE5B1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF0E87A7-BDE2-BF64-6FFE-E2FA926F811A" name="직원_PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>F456399E-B8A5-29B7-7847-15E4FDE783CF</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DAE4C32-23DA-E10C-6C07-587AB0C43849"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B409E79-D15F-048E-8B4C-A0BE4580CD50" name="직원_지점_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>BC9F3EFD-ABB0-1E51-F6EA-1EE90B57B166</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A5C9497-25B5-1BAF-5A6F-9F957246C3EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64976A15-54F1-7146-CEAF-07FED6A30D92" name="WORK_PROJECT">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>DD82DCE5-26D9-B4DF-95DE-514E1D67BCE1</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="B6BB0700-75BB-01DD-2E04-651BDFF88337">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>40B89EFA-EE85-BE68-FF5A-59DE2D896281</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>93FB9541-4F2B-F71D-81FF-73338435C3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="457FBE4E-08AD-368B-2171-28A64B981F09" referredColumn="591A6073-057A-C428-4715-A10D4CADE08E"/>
+</associations>
+</Column>
+<Column name="PROJECT_NO" id="64C624A1-789E-CEAA-E4ED-9FB6B86A11B9">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>59A4AF5D-9570-8BF0-7DCD-F490DFEEF90D</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>58DCDD75-5CC3-C027-4483-316FFF3A58B3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E74D30F3-96B7-290F-87EF-49F5BC731923" referredColumn="EC92E937-27C4-C795-CBD4-D9ACCB408956"/>
+</associations>
+</Column>
+<Column name="WORK_DAYS_AMOUNT" id="88D58B7B-3D07-4485-9BDA-A2ED88F0ADA9">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>80AE4A7B-DCD2-F440-E110-4D9D6B27444A</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>7318AC1C-C4E6-CCF7-1DDA-911092936CB6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C0E2F00-B205-526C-35DE-3F9B4F5ABF5A" name="WORK_PROJECT_PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>D12AB75B-8D7C-6C14-96F6-B1588B610587</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6BB0700-75BB-01DD-2E04-651BDFF88337"/>
+<colUsage columnID="64C624A1-789E-CEAA-E4ED-9FB6B86A11B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33DE615B-9208-307F-96E1-12E2004678A8" name="EMPLOYEE_FKv2">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>FB4ECAC2-5BDD-8E6F-9A65-37FDC0B14BF6</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6BB0700-75BB-01DD-2E04-651BDFF88337"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07619BB1-073A-4CE5-E2FC-FC6193ABCA96" name="PROJECT_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>AB959F6E-CB10-B869-7BFC-34749E667DDA</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64C624A1-789E-CEAA-E4ED-9FB6B86A11B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E23F798-F586-C391-2CA0-27E952AFE9EF" name="프로젝트">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 02:04:55 UTC</createdTime>
+<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
+<engineerTo>
+<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="프로젝트번호" id="CAE6B244-6824-F8DA-CCCC-7C30E9DCC6A3">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 02:05:02 UTC</createdTime>
+<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
+<engineerTo>
+<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="프로젝트명" id="CBA6E840-FF39-5C0A-C872-7CA293AEC230">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 02:05:09 UTC</createdTime>
+<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
+<engineerTo>
+<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D734781D-D970-18B4-9A70-E6D0850242DF" name="프로젝트 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 02:05:16 UTC</createdTime>
+<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
+<engineerTo>
+<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CAE6B244-6824-F8DA-CCCC-7C30E9DCC6A3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

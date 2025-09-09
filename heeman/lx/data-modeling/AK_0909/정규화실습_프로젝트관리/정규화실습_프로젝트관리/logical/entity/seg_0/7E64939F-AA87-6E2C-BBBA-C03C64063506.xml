@@ -36,18 +36,6 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="투입프로젝트번호" id="EDDF6F8D-6AA2-6A0F-1DBA-CA17ABA06AEA">
-<createdBy>LX</createdBy>
-<createdTime>2025-09-09 01:33:02 UTC</createdTime>
-<generatorID>80BB65E0-4449-9965-1444-7F20D1ACB213</generatorID>
-<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
-<engineerTo>
-<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
-</engineerTo>
-<referedAttribute>A357B692-A4F5-7350-4610-A0925476B25A</referedAttribute>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="부서번호" id="84455047-CE35-E98A-7ECC-506AD000CA07">
 <createdBy>LX</createdBy>
 <createdTime>2025-09-09 01:33:10 UTC</createdTime>
@@ -60,7 +48,7 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="관리자사번1" id="66D8641B-1A0F-1626-E81A-77F6C5459739">
+<Attribute name="관리자사번" id="66D8641B-1A0F-1626-E81A-77F6C5459739">
 <createdBy>LX</createdBy>
 <createdTime>2025-09-09 01:43:24 UTC</createdTime>
 <generatorID>A7A3286F-9724-757D-F76D-970EFC481238</generatorID>

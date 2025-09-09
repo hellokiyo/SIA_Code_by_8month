@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<cwd_glossary name="dbmodeling-bank" description="generated from logical model of design dbmodeling-bank" id="162DF4E0-4A9D-60E7-2D8B-1D2B43A950FD" incomplete_modifiers="true" >
+
+   <glossaryWord name="PK" plural="" abbreviation="" alt_abbreviation="" id="9A47F43C-84E1-7F4D-1EA7-982F1E2902F6" import_id="" description="" />
+   <glossaryWord name="거래금액" plural="" abbreviation="TRANSCATION_AMOUNT" alt_abbreviation="" id="FF931D66-7D8D-F3D9-69FF-0027F161AEBB" import_id="" description="" />
+   <glossaryWord name="거래내역" plural="" abbreviation="TRANSCATION_LIST" alt_abbreviation="" id="D4BB33C5-D0D4-44BF-FF03-31E202D4B1F2" import_id="" description="" />
+   <glossaryWord name="거래시각" plural="" abbreviation="TRANSCATION_TIME" alt_abbreviation="" id="10D37E13-47DB-BB1E-9E02-77B227C1B666" import_id="" description="" />
+   <glossaryWord name="거래일자" plural="" abbreviation="TRANSCATION_DATE" alt_abbreviation="" id="C3906D9E-805F-EC44-3F35-4E9A8D5FC1BB" import_id="" description="" />
+   <glossaryWord name="계좌" plural="" abbreviation="ACCOUNT" alt_abbreviation="" id="6E9B5CDA-F5BC-8B00-6E7F-0751B82EBBCF" import_id="" description="" />
+   <glossaryWord name="계좌구분" plural="" abbreviation="ACCOUNT_TYPE" alt_abbreviation="" id="B593E8CC-FB04-6742-3127-CEA6B3B51423" import_id="" description="" />
+   <glossaryWord name="계좌번호" plural="" abbreviation="ACCOUNT_NO" alt_abbreviation="" id="6E508C9F-6C2B-B42B-9021-4A54CB669495" import_id="" description="" />
+   <glossaryWord name="고객" plural="" abbreviation="CUSTOMER" alt_abbreviation="" id="37CE52AC-61AE-38B5-3A81-A2433A31B718" import_id="" description="" />
+   <glossaryWord name="고객명" plural="" abbreviation="CUSTOMER_NAME" alt_abbreviation="" id="7E8DC56B-034C-AF56-89C7-8795E4F8D20E" import_id="" description="" />
+   <glossaryWord name="고유번호" plural="" abbreviation="UNIQUE_NO" alt_abbreviation="" id="936B4056-E66D-EF81-47D5-449E5C625935" import_id="" description="" />
+   <glossaryWord name="원금" plural="" abbreviation="PRINCIPAL" alt_abbreviation="" id="3C993D52-68C6-8637-56F9-ECC5F04F947A" import_id="" description="" />
+   <glossaryWord name="이자" plural="" abbreviation="INTEREST" alt_abbreviation="" id="A8B8FA22-21C1-102C-6E48-51715D0E0B4C" import_id="" description="" />
+   <glossaryWord name="일련번호" plural="" abbreviation="SERIAL_NO" alt_abbreviation="" id="F75A9967-5722-ABFF-B5D8-33E613CD3E94" import_id="" description="" />
+   <glossaryWord name="잔고" plural="" abbreviation="ACCOUNT_BALANCE" alt_abbreviation="" id="5ACA7539-AAC4-C995-FB8E-714711094A74" import_id="" description="" />
+   <glossaryWord name="전화번호" plural="" abbreviation="MOBILE" alt_abbreviation="" id="A694CCCA-3578-D76D-83A6-5D888AD15443" import_id="" description="" />
+   <glossaryWord name="주민번호" plural="" abbreviation="SSN" alt_abbreviation="" id="DD80CDB5-B1A4-38F1-4C91-8D8FE969ADD0" import_id="" description="" />
+   <glossaryWord name="주소" plural="" abbreviation="ADDRESS" alt_abbreviation="" id="0F4A13C1-7391-2145-B217-14DBCB6B2667" import_id="" description="" />
+   <glossaryWord name="지점" plural="" abbreviation="OFFICE" alt_abbreviation="" id="95036DE9-9331-E35F-9D04-52A87C7E2FA5" import_id="" description="" />
+   <glossaryWord name="지점명" plural="" abbreviation="OFFICE_NAME" alt_abbreviation="" id="7F532350-B628-6A4B-4E20-EF8A941A432F" import_id="" description="" />
+   <glossaryWord name="직원" plural="" abbreviation="EMPLOYEE" alt_abbreviation="" id="F5480B03-C1F4-E1C2-7C3D-B6E338560E27" import_id="" description="" />
+   <glossaryWord name="직원명" plural="" abbreviation="EMPLOYEE_NAME" alt_abbreviation="" id="B7FE06DE-B225-16E0-61D2-245B0727EA7A" import_id="" description="" />
+   <glossaryWord name="직원번호" plural="" abbreviation="EMPLOYEE_NO" alt_abbreviation="" id="4A635496-C09C-E3E4-6AB1-9D706DEEE1B3" import_id="" description="" />
+
+</cwd_glossary>

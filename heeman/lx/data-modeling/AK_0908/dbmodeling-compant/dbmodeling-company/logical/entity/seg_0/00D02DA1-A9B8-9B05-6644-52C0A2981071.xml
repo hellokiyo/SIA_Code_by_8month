@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00D02DA1-A9B8-9B05-6644-52C0A2981071" name="부서지역">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:36:06 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="지역번호" id="EB443520-5170-EEA4-DEFA-38D718C18749">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:38:11 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E93264EB-9038-00BD-3364-F486225C8D8B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="지역명" id="A0A95213-E896-F93E-247E-C0C6CA81E16F">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:38:19 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>61A3AEC9-A844-63F4-8A93-891647F1BDE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="부서번호" id="45DBA83A-6B93-96EF-E7FA-0C69BD173CB4">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 07:16:09 UTC</createdTime>
+<generatorID>30631151-BA41-6537-2AD5-7CEB3B7E4713</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="true"/>
+</engineerTo>
+<referedAttribute>F8B46CD4-F969-2D50-97C3-195EFBCF31E4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<domain>E93264EB-9038-00BD-3364-F486225C8D8B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6483AEB7-014E-3B5F-9C74-563530EB361D" name="부서지역 PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-08 06:41:28 UTC</createdTime>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7D2CEDCA-5FAB-D63A-C142-8F0A5968B345" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EB443520-5170-EEA4-DEFA-38D718C18749</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

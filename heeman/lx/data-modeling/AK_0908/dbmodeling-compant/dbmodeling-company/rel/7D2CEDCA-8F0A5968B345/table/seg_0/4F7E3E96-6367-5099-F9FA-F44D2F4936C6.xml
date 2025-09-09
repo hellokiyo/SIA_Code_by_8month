@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F7E3E96-6367-5099-F9FA-F44D2F4936C6" name="DEPARTMENT">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>BFF291A3-BFB2-0507-114C-1174445A8BA8</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPARTMENT_NO" id="346FAB62-CE16-C30D-0123-B3946E2BAD9A">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>F8B46CD4-F969-2D50-97C3-195EFBCF31E4</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<domain>E93264EB-9038-00BD-3364-F486225C8D8B</domain>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NAME" id="962CD839-BC14-DFC2-3CAF-7E1891819237">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>068D2A5C-7AFF-5F11-E2B9-B3FDEFFAA73F</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2AA4DA-C31F-BDCB-B882-50C640E0EEAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_START_DATE" id="ACF04A22-DF45-5B3C-E774-7F224296806E">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>CE1D3B70-D3AC-768C-FAFA-49E08539B665</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>40310C5C-7E68-F328-4AAA-F0DE189A61D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_ID" id="684617EE-25DE-5DA6-57EC-001E088595A2">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>FBDA9D0C-6B7C-84B9-CDD2-78C19A3186B6</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>93FB9541-4F2B-F71D-81FF-73338435C3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6331BC61-2619-471D-1C9E-9F07FE1FA83D" referredColumn="591A6073-057A-C428-4715-A10D4CADE08E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B12EB4D8-9560-418D-1942-509CD869F03C" name="DEPARTMENT_PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>11A5F398-61A4-7538-EC14-DDE157E22605</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="346FAB62-CE16-C30D-0123-B3946E2BAD9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93AF6516-8C0B-C285-1E5D-D7E38E96AA7C" name="EMPLOYEE_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>A4484F17-A3E2-7EAE-D32A-13934ECF8898</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="684617EE-25DE-5DA6-57EC-001E088595A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

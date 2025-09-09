@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EE4F4715-306E-014A-9B60-D644A9AE2266" name="EMPLOYEE">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>703BF687-FB77-A030-71D6-E8B792D22D45</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="591A6073-057A-C428-4715-A10D4CADE08E">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>B2FEEF50-BBBA-0EA3-CBF0-CA57BD0CD031</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>93FB9541-4F2B-F71D-81FF-73338435C3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="776422DC-0703-D83B-6EB8-117862A21FEE">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>C278ADAE-BAE5-107E-9EC6-53BAA8839D2D</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2AA4DA-C31F-BDCB-B882-50C640E0EEAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SSN" id="E6E3CB49-94DB-BB5C-5480-4ADC89132B66">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>40870CAD-22BD-354F-48DF-069B69FD5DA6</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B4CD6659-58B5-5C58-F441-A8DF25DE1613</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="24780A0B-4B15-9958-4279-0C4A0C10B94F">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>129CC9B8-95AC-E91C-E47C-A362471E1DB9</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>635A237D-2130-C20D-A20B-39FC48C9C025</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALARY" id="B1FE478E-0FF8-3724-C369-200FA4E61378">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>5E1DFD1C-80EE-D517-FC21-26EA807EF73F</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<domain>0EB5259A-16A8-BE4E-26F6-980A19917947</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENDER" id="2DE84501-DAC6-9540-BBB5-2DEB5DC90115">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>42CEA7FE-1A1E-40D5-BD1B-AC9FFE5497D3</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>2E1AA292-CDB9-1215-E06B-2C73585CBDB8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTH_DATE" id="E587D5CF-EBDE-D267-6789-B90183BAD9BB">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>864891A4-F7DF-3647-7D31-1572D5FA63D2</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>40310C5C-7E68-F328-4AAA-F0DE189A61D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NO" id="1D2F6104-2C52-8DA5-79D9-78A919475CBE">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>3DB85405-D0BF-52B7-D3F7-50FFA2249ED6</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<domain>E93264EB-9038-00BD-3364-F486225C8D8B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59E5C4CA-CDD3-FF70-068C-62C3223A37ED" referredColumn="346FAB62-CE16-C30D-0123-B3946E2BAD9A"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_ID" id="74A7AA39-9C94-9727-43E7-74E4BF51CEF7">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>EE279804-7867-B07F-D788-87A09165C344</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>93FB9541-4F2B-F71D-81FF-73338435C3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="032011DB-D2AF-4944-64CE-EEA2B7148E4D" referredColumn="591A6073-057A-C428-4715-A10D4CADE08E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="469F281C-2C46-2588-BB9B-8C81E68F40BE" name="EMPLOYEE_PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>21830804-2923-7A22-77DF-1771592D5499</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="591A6073-057A-C428-4715-A10D4CADE08E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03B2592A-8063-EB02-7ACD-4AF9D6C8823C" name="DEPARTMENT_FKv1">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>62F840A8-7BFA-E804-57F9-967ACB00DC78</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D2F6104-2C52-8DA5-79D9-78A919475CBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8611091-AD57-E461-01E0-F880E8A8A010" name="EMPLOYEE_FKv1">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>A12150B7-035C-8D59-4F84-36AAC69DEF29</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74A7AA39-9C94-9727-43E7-74E4BF51CEF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

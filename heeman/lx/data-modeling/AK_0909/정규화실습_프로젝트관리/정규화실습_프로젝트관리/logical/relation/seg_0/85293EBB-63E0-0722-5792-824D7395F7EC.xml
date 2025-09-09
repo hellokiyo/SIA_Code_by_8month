@@ -1,19 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_1" directorySegmentName="seg_0" id="80BB65E0-4449-9965-1444-7F20D1ACB213">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="85293EBB-63E0-0722-5792-824D7395F7EC">
 <createdBy>LX</createdBy>
-<createdTime>2025-09-09 01:33:02 UTC</createdTime>
+<createdTime>2025-09-09 02:01:50 UTC</createdTime>
 <ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
 <engineerTo>
 <item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
 </engineerTo>
-<sourcePk>BCE57F5A-81B6-5B5F-3A64-A3F5058D8598</sourcePk>
-<identifying>false</identifying>
+<sourcePk>5E92BEFB-3FA0-3A7B-439B-FD476BD43583</sourcePk>
+<identifying>true</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>0202DA83-1A04-D940-F145-605DB20C9440</sourceEntity>
+<sourceEntity>7E64939F-AA87-6E2C-BBBA-C03C64063506</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>7E64939F-AA87-6E2C-BBBA-C03C64063506</targetEntity>
+<targetEntity>0202DA83-1A04-D940-F145-605DB20C9440</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

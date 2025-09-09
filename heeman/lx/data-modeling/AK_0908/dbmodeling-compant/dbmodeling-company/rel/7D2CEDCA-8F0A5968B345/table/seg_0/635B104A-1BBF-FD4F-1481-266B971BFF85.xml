@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="635B104A-1BBF-FD4F-1481-266B971BFF85" name="PROJECT">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>0010D796-CB41-63AB-D3E0-846553659FA2</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROJECT_NO" id="EC92E937-27C4-C795-CBD4-D9ACCB408956">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>8625A86E-08BF-1D9E-1A56-6A4CC0AAD113</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>58DCDD75-5CC3-C027-4483-316FFF3A58B3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROJECT_NAME" id="BF0B77C3-D688-624A-7D3A-3220D0189453">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>D3926F4B-26FF-CBAC-1F84-CB42F4885394</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>61A3AEC9-A844-63F4-8A93-891647F1BDE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROJECT_LOCATION" id="308B7F1E-C9C5-3B20-BD55-BDD3063F036A">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>6135D64C-436B-6C57-49FC-D07E78E50FE9</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>635A237D-2130-C20D-A20B-39FC48C9C025</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NO" id="B7C8FCF3-B13F-C06F-FC1B-AD8C7A1C93F9">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>89B89A06-91D5-DA92-52DB-7E5798356197</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<domain>E93264EB-9038-00BD-3364-F486225C8D8B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5851362-8A13-4E34-F8F5-992A140BFD94" referredColumn="346FAB62-CE16-C30D-0123-B3946E2BAD9A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C4330C4-7902-59E1-9245-ED9C51091908" name="PROJECT_PK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>2A1C458E-18C1-4F1B-B55A-B68699B2996A</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC92E937-27C4-C795-CBD4-D9ACCB408956"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5459B086-B1AC-F698-7671-36B122CB4E7C" name="DEPARTMENT_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 05:42:55 UTC</createdTime>
+<generatorID>8FC57305-63DB-6CF3-249E-3BCAFF50E934</generatorID>
+<ownerDesignName>dbmodeling-company</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7C8FCF3-B13F-C06F-FC1B-AD8C7A1C93F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

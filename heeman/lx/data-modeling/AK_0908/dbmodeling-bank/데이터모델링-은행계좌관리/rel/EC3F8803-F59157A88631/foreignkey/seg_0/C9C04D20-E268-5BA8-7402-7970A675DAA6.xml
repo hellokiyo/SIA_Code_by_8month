@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C9C04D20-E268-5BA8-7402-7970A675DAA6" containerWithKeyObject="CE61FBE6-BB38-230C-A6C5-AF859161EE4F" localFKIndex="988447FA-FEF4-A05F-2DB6-75AEC1350E9B" name="계좌_직원_FK">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 07:16:51 UTC</createdTime>
+<generatorID>E504ABE4-8A4A-CD91-685C-BCDAE398C575</generatorID>
+<ownerDesignName>데이터모델링-은행계좌관리</ownerDesignName>
+<referredTableLongName>EMPLOYEE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CA9FFBB4-DF85-0816-B567-41B4B391F2EA</referredTableID>
+<keyObject>BF0E87A7-BDE2-BF64-6FFE-E2FA926F811A</keyObject>
+<referredKeyID>BF0E87A7-BDE2-BF64-6FFE-E2FA926F811A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EMPLOYEE_NO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

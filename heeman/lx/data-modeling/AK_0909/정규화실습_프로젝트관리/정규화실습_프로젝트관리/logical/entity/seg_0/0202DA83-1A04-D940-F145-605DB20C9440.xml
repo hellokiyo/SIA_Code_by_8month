@@ -15,27 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="투입프로젝트번호" id="A357B692-A4F5-7350-4610-A0925476B25A">
-<createdBy>LX</createdBy>
-<createdTime>2025-09-09 01:30:06 UTC</createdTime>
-<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
-<engineerTo>
-<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="투입프로젝트명" id="9370EC59-6CF8-ECB2-9BB8-E50D045D2B5D">
-<createdBy>LX</createdBy>
-<createdTime>2025-09-09 01:30:13 UTC</createdTime>
-<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
-<engineerTo>
-<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="투입일자" id="E4237702-C0B2-A351-39FC-BA6B854ECD2F">
 <createdBy>LX</createdBy>
 <createdTime>2025-09-09 01:30:20 UTC</createdTime>
@@ -58,6 +37,30 @@
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="사번" id="3C19D613-4AAD-3A3B-2D31-A286E4A99C18">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 02:01:50 UTC</createdTime>
+<generatorID>85293EBB-63E0-0722-5792-824D7395F7EC</generatorID>
+<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
+<engineerTo>
+<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
+</engineerTo>
+<referedAttribute>F6E8545C-6801-E298-A48D-1C65372987AF</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="프로젝트번호" id="D47D3201-7A4A-1104-BFDF-597E7843C1DA">
+<createdBy>LX</createdBy>
+<createdTime>2025-09-09 02:05:32 UTC</createdTime>
+<generatorID>F390EFCB-372F-A7EB-B488-E9854B5A5DFF</generatorID>
+<ownerDesignName>정규화실습_프로젝트관리</ownerDesignName>
+<engineerTo>
+<item key="15629366-FFDE-A979-59C0-E15A2166AD37" value="true"/>
+</engineerTo>
+<referedAttribute>CAE6B244-6824-F8DA-CCCC-7C30E9DCC6A3</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="BCE57F5A-81B6-5B5F-3A64-A3F5058D8598" name="투입프로젝트 PK">
@@ -69,7 +72,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>A357B692-A4F5-7350-4610-A0925476B25A</attributeRef>
+<attributeRef>3C19D613-4AAD-3A3B-2D31-A286E4A99C18</attributeRef>
+<attributeRef>D47D3201-7A4A-1104-BFDF-597E7843C1DA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
