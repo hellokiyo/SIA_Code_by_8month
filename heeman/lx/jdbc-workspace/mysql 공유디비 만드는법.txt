@@ -1,0 +1,18 @@
+C:\ProgramData\MySQL\MySQL Server 8.0/my.ini
+>>수정
+
+
+
+76번째 줄 
+[mysqld]
+bind-address = 0.0.0.0
+
+
+CREATE USER 'root'@'%' IDENTIFIED BY 'rootroot';
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
+
+FLUSH PRIVILEGES;
+
+
+'서비스' 검색후 mysql 재시작

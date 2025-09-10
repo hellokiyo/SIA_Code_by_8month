@@ -1,0 +1,16 @@
+rmdir /s 폴더명 : 초기화
+
+# 터널링 프로그램
+ngrok 방식 
+
+# 터널링 프로그램
+caddy 방식 - 공유기설정필요
+
+# 무료 도메인 
+Duck DNS token : bef4065e-a9de-4fb8-9f4a-39331076176b
+
+
+#터널링 프로그램
+Localtunnel
+Cloudflare
+zrok
